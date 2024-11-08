@@ -1,0 +1,25 @@
+name: test integrations
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+            python-version: '3.11'
+
+      - name: Install Minari
+        run: pip install .[all,testing,integrations]
+
+      - name: Run integration tests
+        run: pytest tests/integrations
