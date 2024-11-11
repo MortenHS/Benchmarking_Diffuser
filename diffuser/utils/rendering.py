@@ -3,6 +3,7 @@ import numpy as np
 import einops
 import imageio
 import matplotlib.pyplot as plt
+from matplotlib.patches import Circle
 from matplotlib.colors import ListedColormap
 import gym
 import mujoco_py as mjc
@@ -11,6 +12,8 @@ import pdb
 from .arrays import to_np
 from .video import save_video, save_videos
 from diffuser.datasets.d4rl import load_environment
+from d4rl.locomotion.ant import AntMazeEnv
+
 #-----------------------------------------------------------------------------#
 #------------------------------- helper structs ------------------------------#
 #-----------------------------------------------------------------------------#
@@ -222,6 +225,7 @@ MAZE_BOUNDS = {
     'maze2d-large-v1': (0, 9, 0, 12)
     # ,'antmaze-medium-diverse':(0, 9, 0, 12)
 }
+
 class MazeRenderer:
     def __init__(self, env):
         if type(env) is str: env = load_environment(env)
@@ -259,6 +263,7 @@ class MazeRenderer:
             '(nrow ncol) H W C -> (nrow H) (ncol W) C', nrow=nrow, ncol=ncol)
         imageio.imsave(savepath, images)
         print(f'Saved {len(paths)} samples to: {savepath}')
+
 class Maze2dRenderer(MazeRenderer):
     def __init__(self, env, observation_dim=None):
         self.env_name = env
@@ -284,6 +289,105 @@ class Maze2dRenderer(MazeRenderer):
         if conditions is not None:
             conditions /= scale
         return super().renders(observations, conditions, **kwargs)
+
+class AntMazeRenderer:
+    def __init__(self, env, observation_dim=None):
+        """
+        Initialize the AntMazeRenderer with the given environment.
+
+        Args:
+            env (AntMazeEnv): The AntMaze environment instance.
+            observation_dim (int, optional): Dimension of the observations.
+        """
+        self.env_name = env
+        self.env = load_environment(env)
+        self.observation_dim = np.prod(self.env.observation_space.shape) if observation_dim is None else observation_dim
+        self.action_dim = np.prod(self.env.action_space.shape)
+        self.fig, self.ax = plt.subplots()
+        self.ax.set_xlim(-5, 5)
+        self.ax.set_ylim(-5, 5)
+        self.goal = self.env.goal_location if hasattr(self.env, 'goal_location') else None
+        self._background = None
+
+    def render(self, observations, conditions=None, **kwargs):
+        """
+        Render the trajectory of the agent in the AntMaze environment.
+
+        Args:
+            observations (np.ndarray): The agent's observations.
+            conditions (np.ndarray, optional): Additional conditions, such as goals.
+        """
+        self.ax.clear()
+        self.ax.set_xlim(-5, 5)
+        self.ax.set_ylim(-5, 5)
+        self.ax.set_aspect('equal', adjustable='box')
+
+        # Draw the maze layout if available
+        if hasattr(self.env, 'maze_arr'):
+            self._render_maze(self.env.maze_arr)
+
+        # Draw goal location if available
+        if self.goal is not None:
+            self.ax.add_patch(Circle(self.goal, radius=0.2, color='green', label='Goal'))
+
+        # Plot the observations
+        for obs in observations:
+            self.ax.plot(obs[0], obs[1], 'ro', markersize=3)
+
+        plt.draw()
+        plt.pause(0.01)
+
+    def _render_maze(self, maze_arr):
+        """
+        Render the maze layout using the provided maze array.
+        """
+        for i, row in enumerate(maze_arr):
+            for j, cell in enumerate(row):
+                if cell == 1:  # Wall
+                    self.ax.add_patch(plt.Rectangle((j - 0.5, i - 0.5), 1, 1, color='black'))
+    
+    def composite(self, savepath, paths, ncol=5, **kwargs):
+        '''
+        Generate a composite image of multiple trajectories.
+
+        Args:
+            savepath (str): Path to save the output image.
+            paths (list): List of paths, where each path is [horizon x 2].
+            ncol (int): Number of columns in the composite image.
+        '''
+        assert len(paths) % ncol == 0, 'Number of paths must be divisible by the number of columns'
+        images = []
+
+        # Iterate over each path and render it using the AntMazeRenderer
+        for path in paths:
+            # Create a temporary list to store rendered frames for the current path
+            for obs in path:
+                # Render the current observation and convert the figure to an image array
+                self.render([obs])
+                
+                # Capture the current plot as an image array
+                self.fig.canvas.draw()
+                img = np.frombuffer(self.fig.canvas.tostring_rgb(), dtype=np.uint8)
+                img = img.reshape(self.fig.canvas.get_width_height()[::-1] + (3,))
+                
+                images.append(img)
+
+        # Stack images and arrange them into a grid
+        images = np.stack(images, axis=0)
+        nrow = len(images) // ncol
+        images = einops.rearrange(images, '(nrow ncol) H W C -> (nrow H) (ncol W) C', nrow=nrow, ncol=ncol)
+        
+        # Save the composite image
+        imageio.imsave(savepath, images)
+        print(f'Saved {len(paths)} samples to: {savepath}')
+
+
+    def close(self):
+        """
+        Close the rendering window.
+        """
+        plt.close(self.fig)
+
 # class AntMazeRenderer(MazeRenderer):
     
 #     def __init__(self, env, observation_dim=None):
@@ -312,6 +416,8 @@ class Maze2dRenderer(MazeRenderer):
 #         if conditions is not None:
 #             conditions /= scale
 #         return super().renders(observations, conditions, **kwargs)
+
+
 #-----------------------------------------------------------------------------#
 #---------------------------------- rollouts ---------------------------------#
 #-----------------------------------------------------------------------------#
@@ -330,6 +436,7 @@ def rollouts_from_state(env, state, actions_l):
         for actions in actions_l
     ])
     return rollouts
+
 def rollout_from_state(env, state, actions):
     qpos_dim = env.sim.data.qpos.size
     env.set_state(state[:qpos_dim], state[qpos_dim:])

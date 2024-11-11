@@ -32,7 +32,7 @@ base = {
         'loss_discount': 1,
         'predict_epsilon': False,
         'dim_mults': (1, 4, 8),
-        'renderer': 'utils.Maze2dRenderer',
+        'renderer': 'utils.AntMazeRenderer',
         ## dataset
         'loader': 'datasets.GoalDataset',
         'termination_penalty': None,
@@ -85,7 +85,7 @@ antmaze_medium_diverse = {
     'diffusion': {
         'horizon': 600,             # Higher step count for larger antmaze
         'n_diffusion_steps': 256,    # Similar to large maze example
-        'renderer': 'utils.Maze2dRenderer',  # Update renderer for antmaze
+        'renderer': 'utils.AntMazeRenderer',  # Update renderer for antmaze
         'loader': 'datasets.GoalDataset',     # Ensure the loader aligns with antmaze goal setting
         'normalizer': 'LimitsNormalizer',
         'preprocess_fns': ['antmaze_set_terminals'],
