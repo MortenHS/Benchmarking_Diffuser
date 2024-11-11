@@ -1,0 +1,66 @@
+{
+  "build": "h6a678d5_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-cupti-12.4.127-h6a678d5_1",
+  "features": "",
+  "files": [
+    "lib/libcupti.so.12",
+    "lib/libcupti.so.2024.1.1",
+    "targets/x86_64-linux/lib/libcupti.so.12",
+    "targets/x86_64-linux/lib/libcupti.so.2024.1.1"
+  ],
+  "fn": "cuda-cupti-12.4.127-h6a678d5_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-cupti-12.4.127-h6a678d5_1",
+    "type": 1
+  },
+  "md5": "34cb8f452c07ce072f434246fec72e2f",
+  "name": "cuda-cupti",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-cupti-12.4.127-h6a678d5_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libcupti.so.12",
+        "path_type": "softlink",
+        "sha256": "8bd58667fa4dafdfbef44521d2630fb590cd8630688cdabe191949c9b10b31a0",
+        "size_in_bytes": 7760153
+      },
+      {
+        "_path": "lib/libcupti.so.2024.1.1",
+        "path_type": "softlink",
+        "sha256": "8bd58667fa4dafdfbef44521d2630fb590cd8630688cdabe191949c9b10b31a0",
+        "size_in_bytes": 7760153
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcupti.so.12",
+        "path_type": "softlink",
+        "sha256": "8bd58667fa4dafdfbef44521d2630fb590cd8630688cdabe191949c9b10b31a0",
+        "size_in_bytes": 7760153
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcupti.so.2024.1.1",
+        "path_type": "hardlink",
+        "sha256": "8bd58667fa4dafdfbef44521d2630fb590cd8630688cdabe191949c9b10b31a0",
+        "sha256_in_prefix": "8bd58667fa4dafdfbef44521d2630fb590cd8630688cdabe191949c9b10b31a0",
+        "size_in_bytes": 7760153
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d8d4432bc70578d7ff78e3a003f6aa56be294c1523524943e44f221d5bd19d4f",
+  "size": 2146546,
+  "subdir": "linux-64",
+  "timestamp": 1714771818000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cuda-cupti-12.4.127-h6a678d5_1.conda",
+  "version": "12.4.127"
+}

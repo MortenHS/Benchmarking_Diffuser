@@ -1,0 +1,357 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libnpp-12.2.5.30-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libnppc.so.12",
+    "lib/libnppc.so.12.2.5.30",
+    "lib/libnppial.so.12",
+    "lib/libnppial.so.12.2.5.30",
+    "lib/libnppicc.so.12",
+    "lib/libnppicc.so.12.2.5.30",
+    "lib/libnppidei.so.12",
+    "lib/libnppidei.so.12.2.5.30",
+    "lib/libnppif.so.12",
+    "lib/libnppif.so.12.2.5.30",
+    "lib/libnppig.so.12",
+    "lib/libnppig.so.12.2.5.30",
+    "lib/libnppim.so.12",
+    "lib/libnppim.so.12.2.5.30",
+    "lib/libnppist.so.12",
+    "lib/libnppist.so.12.2.5.30",
+    "lib/libnppisu.so.12",
+    "lib/libnppisu.so.12.2.5.30",
+    "lib/libnppitc.so.12",
+    "lib/libnppitc.so.12.2.5.30",
+    "lib/libnpps.so.12",
+    "lib/libnpps.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppc.so.12",
+    "targets/x86_64-linux/lib/libnppc.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppial.so.12",
+    "targets/x86_64-linux/lib/libnppial.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppicc.so.12",
+    "targets/x86_64-linux/lib/libnppicc.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppidei.so.12",
+    "targets/x86_64-linux/lib/libnppidei.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppif.so.12",
+    "targets/x86_64-linux/lib/libnppif.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppig.so.12",
+    "targets/x86_64-linux/lib/libnppig.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppim.so.12",
+    "targets/x86_64-linux/lib/libnppim.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppist.so.12",
+    "targets/x86_64-linux/lib/libnppist.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppisu.so.12",
+    "targets/x86_64-linux/lib/libnppisu.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnppitc.so.12",
+    "targets/x86_64-linux/lib/libnppitc.so.12.2.5.30",
+    "targets/x86_64-linux/lib/libnpps.so.12",
+    "targets/x86_64-linux/lib/libnpps.so.12.2.5.30"
+  ],
+  "fn": "libnpp-12.2.5.30-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libnpp-12.2.5.30-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "c02278ffa29d151a49d41bab32200f26",
+  "name": "libnpp",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libnpp-12.2.5.30-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libnppc.so.12",
+        "path_type": "softlink",
+        "sha256": "78aa1101fac1dadd3804f7a90b4dada9bfa78f69bff0ae0d49df87088dd02b3f",
+        "size_in_bytes": 1647088
+      },
+      {
+        "_path": "lib/libnppc.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "78aa1101fac1dadd3804f7a90b4dada9bfa78f69bff0ae0d49df87088dd02b3f",
+        "size_in_bytes": 1647088
+      },
+      {
+        "_path": "lib/libnppial.so.12",
+        "path_type": "softlink",
+        "sha256": "08271427c690837094f0b879ee4401ebbf480eb73bc1e8cf582f341365d89487",
+        "size_in_bytes": 17736496
+      },
+      {
+        "_path": "lib/libnppial.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "08271427c690837094f0b879ee4401ebbf480eb73bc1e8cf582f341365d89487",
+        "size_in_bytes": 17736496
+      },
+      {
+        "_path": "lib/libnppicc.so.12",
+        "path_type": "softlink",
+        "sha256": "039034083cb0e92b4666ee30f4a667904b70d5f4ef05c95c37d5de2670b996a7",
+        "size_in_bytes": 7549768
+      },
+      {
+        "_path": "lib/libnppicc.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "039034083cb0e92b4666ee30f4a667904b70d5f4ef05c95c37d5de2670b996a7",
+        "size_in_bytes": 7549768
+      },
+      {
+        "_path": "lib/libnppidei.so.12",
+        "path_type": "softlink",
+        "sha256": "0890c40fca78e5aef1a85b083059372511cb2aa1b4c76164eb83236d3470a0d5",
+        "size_in_bytes": 11244696
+      },
+      {
+        "_path": "lib/libnppidei.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "0890c40fca78e5aef1a85b083059372511cb2aa1b4c76164eb83236d3470a0d5",
+        "size_in_bytes": 11244696
+      },
+      {
+        "_path": "lib/libnppif.so.12",
+        "path_type": "softlink",
+        "sha256": "8a3198c607e6f4e5bc55fdaa7cccc90cbb822d0e453e0ee939cd83bd0f568eca",
+        "size_in_bytes": 101210184
+      },
+      {
+        "_path": "lib/libnppif.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "8a3198c607e6f4e5bc55fdaa7cccc90cbb822d0e453e0ee939cd83bd0f568eca",
+        "size_in_bytes": 101210184
+      },
+      {
+        "_path": "lib/libnppig.so.12",
+        "path_type": "softlink",
+        "sha256": "b115eecace7d25a13b4f24273ec41aa5292813832e448311bd49333853248b50",
+        "size_in_bytes": 41223056
+      },
+      {
+        "_path": "lib/libnppig.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "b115eecace7d25a13b4f24273ec41aa5292813832e448311bd49333853248b50",
+        "size_in_bytes": 41223056
+      },
+      {
+        "_path": "lib/libnppim.so.12",
+        "path_type": "softlink",
+        "sha256": "863f65ea835eeaee6783845d8d9d787120325dd2952368112b3df66ca3238057",
+        "size_in_bytes": 10355528
+      },
+      {
+        "_path": "lib/libnppim.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "863f65ea835eeaee6783845d8d9d787120325dd2952368112b3df66ca3238057",
+        "size_in_bytes": 10355528
+      },
+      {
+        "_path": "lib/libnppist.so.12",
+        "path_type": "softlink",
+        "sha256": "246f78e0d82fbf52d7b208f574801b0c5325250084d5e2d0ae22e142554d7dbf",
+        "size_in_bytes": 37852240
+      },
+      {
+        "_path": "lib/libnppist.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "246f78e0d82fbf52d7b208f574801b0c5325250084d5e2d0ae22e142554d7dbf",
+        "size_in_bytes": 37852240
+      },
+      {
+        "_path": "lib/libnppisu.so.12",
+        "path_type": "softlink",
+        "sha256": "a826ea18594d435c761c63495efa3b9dfcf35d024d372fc6952fa3c7601aa580",
+        "size_in_bytes": 720264
+      },
+      {
+        "_path": "lib/libnppisu.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "a826ea18594d435c761c63495efa3b9dfcf35d024d372fc6952fa3c7601aa580",
+        "size_in_bytes": 720264
+      },
+      {
+        "_path": "lib/libnppitc.so.12",
+        "path_type": "softlink",
+        "sha256": "f43cc7252c17fd68361849b1b12d2838b6c1188709f5ae4d44145595ce70e12e",
+        "size_in_bytes": 5591664
+      },
+      {
+        "_path": "lib/libnppitc.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "f43cc7252c17fd68361849b1b12d2838b6c1188709f5ae4d44145595ce70e12e",
+        "size_in_bytes": 5591664
+      },
+      {
+        "_path": "lib/libnpps.so.12",
+        "path_type": "softlink",
+        "sha256": "a1c1c62bf638f74e0ce085e8ff9fb4c4b02484fea74d2471ddd8729e48cfac91",
+        "size_in_bytes": 14165240
+      },
+      {
+        "_path": "lib/libnpps.so.12.2.5.30",
+        "path_type": "softlink",
+        "sha256": "a1c1c62bf638f74e0ce085e8ff9fb4c4b02484fea74d2471ddd8729e48cfac91",
+        "size_in_bytes": 14165240
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppc.so.12",
+        "path_type": "softlink",
+        "sha256": "78aa1101fac1dadd3804f7a90b4dada9bfa78f69bff0ae0d49df87088dd02b3f",
+        "size_in_bytes": 1647088
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppc.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "78aa1101fac1dadd3804f7a90b4dada9bfa78f69bff0ae0d49df87088dd02b3f",
+        "sha256_in_prefix": "78aa1101fac1dadd3804f7a90b4dada9bfa78f69bff0ae0d49df87088dd02b3f",
+        "size_in_bytes": 1647088
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppial.so.12",
+        "path_type": "softlink",
+        "sha256": "08271427c690837094f0b879ee4401ebbf480eb73bc1e8cf582f341365d89487",
+        "size_in_bytes": 17736496
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppial.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "08271427c690837094f0b879ee4401ebbf480eb73bc1e8cf582f341365d89487",
+        "sha256_in_prefix": "08271427c690837094f0b879ee4401ebbf480eb73bc1e8cf582f341365d89487",
+        "size_in_bytes": 17736496
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppicc.so.12",
+        "path_type": "softlink",
+        "sha256": "039034083cb0e92b4666ee30f4a667904b70d5f4ef05c95c37d5de2670b996a7",
+        "size_in_bytes": 7549768
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppicc.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "039034083cb0e92b4666ee30f4a667904b70d5f4ef05c95c37d5de2670b996a7",
+        "sha256_in_prefix": "039034083cb0e92b4666ee30f4a667904b70d5f4ef05c95c37d5de2670b996a7",
+        "size_in_bytes": 7549768
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppidei.so.12",
+        "path_type": "softlink",
+        "sha256": "0890c40fca78e5aef1a85b083059372511cb2aa1b4c76164eb83236d3470a0d5",
+        "size_in_bytes": 11244696
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppidei.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "0890c40fca78e5aef1a85b083059372511cb2aa1b4c76164eb83236d3470a0d5",
+        "sha256_in_prefix": "0890c40fca78e5aef1a85b083059372511cb2aa1b4c76164eb83236d3470a0d5",
+        "size_in_bytes": 11244696
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppif.so.12",
+        "path_type": "softlink",
+        "sha256": "8a3198c607e6f4e5bc55fdaa7cccc90cbb822d0e453e0ee939cd83bd0f568eca",
+        "size_in_bytes": 101210184
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppif.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "8a3198c607e6f4e5bc55fdaa7cccc90cbb822d0e453e0ee939cd83bd0f568eca",
+        "sha256_in_prefix": "8a3198c607e6f4e5bc55fdaa7cccc90cbb822d0e453e0ee939cd83bd0f568eca",
+        "size_in_bytes": 101210184
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppig.so.12",
+        "path_type": "softlink",
+        "sha256": "b115eecace7d25a13b4f24273ec41aa5292813832e448311bd49333853248b50",
+        "size_in_bytes": 41223056
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppig.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "b115eecace7d25a13b4f24273ec41aa5292813832e448311bd49333853248b50",
+        "sha256_in_prefix": "b115eecace7d25a13b4f24273ec41aa5292813832e448311bd49333853248b50",
+        "size_in_bytes": 41223056
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppim.so.12",
+        "path_type": "softlink",
+        "sha256": "863f65ea835eeaee6783845d8d9d787120325dd2952368112b3df66ca3238057",
+        "size_in_bytes": 10355528
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppim.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "863f65ea835eeaee6783845d8d9d787120325dd2952368112b3df66ca3238057",
+        "sha256_in_prefix": "863f65ea835eeaee6783845d8d9d787120325dd2952368112b3df66ca3238057",
+        "size_in_bytes": 10355528
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppist.so.12",
+        "path_type": "softlink",
+        "sha256": "246f78e0d82fbf52d7b208f574801b0c5325250084d5e2d0ae22e142554d7dbf",
+        "size_in_bytes": 37852240
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppist.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "246f78e0d82fbf52d7b208f574801b0c5325250084d5e2d0ae22e142554d7dbf",
+        "sha256_in_prefix": "246f78e0d82fbf52d7b208f574801b0c5325250084d5e2d0ae22e142554d7dbf",
+        "size_in_bytes": 37852240
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppisu.so.12",
+        "path_type": "softlink",
+        "sha256": "a826ea18594d435c761c63495efa3b9dfcf35d024d372fc6952fa3c7601aa580",
+        "size_in_bytes": 720264
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppisu.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "a826ea18594d435c761c63495efa3b9dfcf35d024d372fc6952fa3c7601aa580",
+        "sha256_in_prefix": "a826ea18594d435c761c63495efa3b9dfcf35d024d372fc6952fa3c7601aa580",
+        "size_in_bytes": 720264
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppitc.so.12",
+        "path_type": "softlink",
+        "sha256": "f43cc7252c17fd68361849b1b12d2838b6c1188709f5ae4d44145595ce70e12e",
+        "size_in_bytes": 5591664
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnppitc.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "f43cc7252c17fd68361849b1b12d2838b6c1188709f5ae4d44145595ce70e12e",
+        "sha256_in_prefix": "f43cc7252c17fd68361849b1b12d2838b6c1188709f5ae4d44145595ce70e12e",
+        "size_in_bytes": 5591664
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnpps.so.12",
+        "path_type": "softlink",
+        "sha256": "a1c1c62bf638f74e0ce085e8ff9fb4c4b02484fea74d2471ddd8729e48cfac91",
+        "size_in_bytes": 14165240
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnpps.so.12.2.5.30",
+        "path_type": "hardlink",
+        "sha256": "a1c1c62bf638f74e0ce085e8ff9fb4c4b02484fea74d2471ddd8729e48cfac91",
+        "sha256_in_prefix": "a1c1c62bf638f74e0ce085e8ff9fb4c4b02484fea74d2471ddd8729e48cfac91",
+        "size_in_bytes": 14165240
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "03e27d935ed5c8600db1d666dca9609c3e3cccc9b84c61a5b8cdd4b8f7173586",
+  "size": 105377937,
+  "subdir": "linux-64",
+  "timestamp": 1715371640000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnpp-12.2.5.30-h99ab3db_1.conda",
+  "version": "12.2.5.30"
+}

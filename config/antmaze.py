@@ -107,7 +107,6 @@ antmaze_medium_diverse = {
         'loader': 'datasets.GoalDataset',     # Ensure the loader aligns with antmaze goal setting
         'normalizer': 'LimitsNormalizer',
         'preprocess_fns': ['antmaze_set_terminals'],
-        # 'preprocess_fns': ['maze2d_set_terminals'],
     },
     'plan': {
         'horizon': 600,

@@ -1,0 +1,96 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libcufft-11.2.1.3-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libcufft.so.11",
+    "lib/libcufft.so.11.2.1.3",
+    "lib/libcufftw.so.11",
+    "lib/libcufftw.so.11.2.1.3",
+    "targets/x86_64-linux/lib/libcufft.so.11",
+    "targets/x86_64-linux/lib/libcufft.so.11.2.1.3",
+    "targets/x86_64-linux/lib/libcufftw.so.11",
+    "targets/x86_64-linux/lib/libcufftw.so.11.2.1.3"
+  ],
+  "fn": "libcufft-11.2.1.3-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libcufft-11.2.1.3-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "5e77094acd0b75dd12b86944b06d3af8",
+  "name": "libcufft",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libcufft-11.2.1.3-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libcufft.so.11",
+        "path_type": "softlink",
+        "sha256": "5acad2a0fe6f90155305126e3b152fba20227a8dd9df9d17b7c027a9160b15da",
+        "size_in_bytes": 292889192
+      },
+      {
+        "_path": "lib/libcufft.so.11.2.1.3",
+        "path_type": "softlink",
+        "sha256": "5acad2a0fe6f90155305126e3b152fba20227a8dd9df9d17b7c027a9160b15da",
+        "size_in_bytes": 292889192
+      },
+      {
+        "_path": "lib/libcufftw.so.11",
+        "path_type": "softlink",
+        "sha256": "1ee320458018e9ca169981e5870f4ce93315653c8f7db7ad89c9be5fde2f47bd",
+        "size_in_bytes": 974888
+      },
+      {
+        "_path": "lib/libcufftw.so.11.2.1.3",
+        "path_type": "softlink",
+        "sha256": "1ee320458018e9ca169981e5870f4ce93315653c8f7db7ad89c9be5fde2f47bd",
+        "size_in_bytes": 974888
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcufft.so.11",
+        "path_type": "softlink",
+        "sha256": "5acad2a0fe6f90155305126e3b152fba20227a8dd9df9d17b7c027a9160b15da",
+        "size_in_bytes": 292889192
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcufft.so.11.2.1.3",
+        "path_type": "hardlink",
+        "sha256": "5acad2a0fe6f90155305126e3b152fba20227a8dd9df9d17b7c027a9160b15da",
+        "sha256_in_prefix": "5acad2a0fe6f90155305126e3b152fba20227a8dd9df9d17b7c027a9160b15da",
+        "size_in_bytes": 292889192
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcufftw.so.11",
+        "path_type": "softlink",
+        "sha256": "1ee320458018e9ca169981e5870f4ce93315653c8f7db7ad89c9be5fde2f47bd",
+        "size_in_bytes": 974888
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcufftw.so.11.2.1.3",
+        "path_type": "hardlink",
+        "sha256": "1ee320458018e9ca169981e5870f4ce93315653c8f7db7ad89c9be5fde2f47bd",
+        "sha256_in_prefix": "1ee320458018e9ca169981e5870f4ce93315653c8f7db7ad89c9be5fde2f47bd",
+        "size_in_bytes": 974888
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "32e31c5dcd3c5523784a22b8ebd56a8caca5163e5529892fc17412fddc3d27d7",
+  "size": 182957221,
+  "subdir": "linux-64",
+  "timestamp": 1714677585000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libcufft-11.2.1.3-h99ab3db_1.conda",
+  "version": "11.2.1.3"
+}

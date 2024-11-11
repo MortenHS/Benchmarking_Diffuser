@@ -1,0 +1,67 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libnvjitlink-12.4.127-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libnvJitLink.so.12",
+    "lib/libnvJitLink.so.12.4.127",
+    "targets/x86_64-linux/lib/libnvJitLink.so.12",
+    "targets/x86_64-linux/lib/libnvJitLink.so.12.4.127"
+  ],
+  "fn": "libnvjitlink-12.4.127-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libnvjitlink-12.4.127-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "323f58c3cb935358c16d8f12c098f501",
+  "name": "libnvjitlink",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libnvjitlink-12.4.127-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libnvJitLink.so.12",
+        "path_type": "softlink",
+        "sha256": "0f4f3edc2a8f8a66b1210ec1a3d3a06924890322f601f0187e508f55b87daa01",
+        "size_in_bytes": 53604385
+      },
+      {
+        "_path": "lib/libnvJitLink.so.12.4.127",
+        "path_type": "softlink",
+        "sha256": "0f4f3edc2a8f8a66b1210ec1a3d3a06924890322f601f0187e508f55b87daa01",
+        "size_in_bytes": 53604385
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvJitLink.so.12",
+        "path_type": "softlink",
+        "sha256": "0f4f3edc2a8f8a66b1210ec1a3d3a06924890322f601f0187e508f55b87daa01",
+        "size_in_bytes": 53604385
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvJitLink.so.12.4.127",
+        "path_type": "hardlink",
+        "sha256": "0f4f3edc2a8f8a66b1210ec1a3d3a06924890322f601f0187e508f55b87daa01",
+        "sha256_in_prefix": "0f4f3edc2a8f8a66b1210ec1a3d3a06924890322f601f0187e508f55b87daa01",
+        "size_in_bytes": 53604385
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e82abd264b9a87b125def72e5c3994ac541185033ff628d2f00294b2d4c3cf03",
+  "size": 18274781,
+  "subdir": "linux-64",
+  "timestamp": 1714771881000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnvjitlink-12.4.127-h99ab3db_1.conda",
+  "version": "12.4.127"
+}

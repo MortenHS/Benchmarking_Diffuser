@@ -1,0 +1,62 @@
+{
+  "build": "h6a678d5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/apps/eb/software/Anaconda3/2024.02-1/pkgs/patchelf-0.17.2-h6a678d5_0",
+  "features": "",
+  "files": [
+    "bin/patchelf",
+    "share/doc/patchelf/README.md",
+    "share/man/man1/patchelf.1"
+  ],
+  "fn": "patchelf-0.17.2-h6a678d5_0.conda",
+  "license": "GPL-3.0-or-later",
+  "link": {
+    "source": "/cluster/apps/eb/software/Anaconda3/2024.02-1/pkgs/patchelf-0.17.2-h6a678d5_0",
+    "type": 1
+  },
+  "md5": "63ad6ea1e47f568a1bdb5edb66734026",
+  "name": "patchelf",
+  "package_tarball_full_path": "/cluster/apps/eb/software/Anaconda3/2024.02-1/pkgs/patchelf-0.17.2-h6a678d5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/patchelf",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/croot/patchelf_1675208065017/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "82f652529bebb0f160afc9e99cdf61b7622a967263f077c4153ff1b6bbdf7684",
+        "sha256_in_prefix": "22339e18b91dbe6d18654a38967692ba2dbbf2ac128848ee531b2e42a4ea611f",
+        "size_in_bytes": 213424
+      },
+      {
+        "_path": "share/doc/patchelf/README.md",
+        "path_type": "hardlink",
+        "sha256": "ea103a890991bc00a3f7879ac2296a7fe558893585e59c65038ad6599ac0ddd7",
+        "sha256_in_prefix": "ea103a890991bc00a3f7879ac2296a7fe558893585e59c65038ad6599ac0ddd7",
+        "size_in_bytes": 3196
+      },
+      {
+        "_path": "share/man/man1/patchelf.1",
+        "path_type": "hardlink",
+        "sha256": "54e4acca2f0c5c4631ce27f20b5da9c7ad08fabe4f272becbc0feabff00cc312",
+        "sha256_in_prefix": "54e4acca2f0c5c4631ce27f20b5da9c7ad08fabe4f272becbc0feabff00cc312",
+        "size_in_bytes": 4466
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "defaults/linux-64::patchelf==0.17.2=h6a678d5_0",
+  "sha256": "b9f23d21314cbb1657a8058913d4074c0c1f28bac66573e899085ec820a8200c",
+  "size": 100532,
+  "subdir": "linux-64",
+  "timestamp": 1675208106000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/patchelf-0.17.2-h6a678d5_0.conda",
+  "version": "0.17.2"
+}

@@ -1,0 +1,3041 @@
+{
+  "build": "py38",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/pytorch/linux-64",
+  "constrains": [],
+  "depends": [
+    "filelock",
+    "python >=3.8,<3.9.0a0",
+    "pytorch"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/torchtriton-3.0.0-py38",
+  "features": "",
+  "files": [
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/PKG-INFO",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/SOURCES.txt",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/dependency_links.txt",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/entry_points.txt",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/not-zip-safe",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/requires.txt",
+    "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/top_level.txt",
+    "lib/python3.8/site-packages/triton/_C/libproton.so",
+    "lib/python3.8/site-packages/triton/_C/libtriton.so",
+    "lib/python3.8/site-packages/triton/__init__.py",
+    "lib/python3.8/site-packages/triton/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/__pycache__/errors.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/__pycache__/testing.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/__init__.py",
+    "lib/python3.8/site-packages/triton/backends/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/__pycache__/compiler.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/__pycache__/driver.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/amd/__pycache__/compiler.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/amd/__pycache__/driver.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/amd/compiler.py",
+    "lib/python3.8/site-packages/triton/backends/amd/driver.c",
+    "lib/python3.8/site-packages/triton/backends/amd/driver.py",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_channel_descriptor.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_device_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_atomic.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_bf16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_bfloat16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_common.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_complex.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_cooperative_groups.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_fp16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_gl_interop.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_math_constants.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_runtime.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_runtime_pt_api.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_unsafe_atomics.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_vector_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_math_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_surface_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_warp_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/concepts.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/device_library_decls.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/functional_grid_launch.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch_GGL.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/helpers.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_api_trace.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_assert.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_cooperative_groups_helper.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_fp16_gcc.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_fp16_math_fwd.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_ldg.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_prof_str.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_runtime_prof.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/host_defines.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hsa_helpers.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/macro_based_grid_launch.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/math_fwd.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/ockl_image.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/program_state.hpp",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/texture_fetch_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/texture_indirect_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/channel_descriptor.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/device_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/driver_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_bf16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_bfloat16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_common.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_complex.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_cooperative_groups.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_deprecated.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_ext.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_fp16.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_gl_interop.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_hcc.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_math_constants.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_profile.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_runtime.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_runtime_api.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_texture_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_vector_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_version.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/hiprtc.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/library_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/math_functions.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/surface_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hip/texture_types.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/Brig.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_common.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_elf.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_kernel_code.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_queue.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_signal.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_amd_tool.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_api_trace.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_amd.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_finalize.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_image.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ven_amd_aqlprofile.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ven_amd_loader.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/ext/prof_protocol.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hip_ostream_ops.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hsa_ostream_ops.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hsa_prof_str.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_ext.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hcc.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hip.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hsa.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_plugin.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_roctx.h",
+    "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctx.h",
+    "lib/python3.8/site-packages/triton/backends/amd/lib/ockl.bc",
+    "lib/python3.8/site-packages/triton/backends/amd/lib/ocml.bc",
+    "lib/python3.8/site-packages/triton/backends/compiler.py",
+    "lib/python3.8/site-packages/triton/backends/driver.py",
+    "lib/python3.8/site-packages/triton/backends/nvidia/__init__.py",
+    "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/compiler.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/driver.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/backends/nvidia/bin/cuobjdump",
+    "lib/python3.8/site-packages/triton/backends/nvidia/bin/nvdisasm",
+    "lib/python3.8/site-packages/triton/backends/nvidia/bin/ptxas",
+    "lib/python3.8/site-packages/triton/backends/nvidia/compiler.py",
+    "lib/python3.8/site-packages/triton/backends/nvidia/driver.c",
+    "lib/python3.8/site-packages/triton/backends/nvidia/driver.py",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/Openacc/cupti_openacc.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/Openmp/cupti_openmp.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/Openmp/omp-tools.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/builtin_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/channel_descriptor.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/common_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/async.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/coalesced_reduce.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/coalesced_scan.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/driver_abi.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/functional.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/helpers.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/info.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/invoke.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/memory.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/partitioning.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/reduce.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/scan.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/sync.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/memcpy_async.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/reduce.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/scan.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/common_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/cudacc_ext.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_double_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_double_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/func_macro.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_config.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_defines.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_runtime.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/math_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/math_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/mma.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/mma.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/nvfunctional",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_70_rt.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_70_rt.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_80_rt.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_80_rt.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_90_rt.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_90_rt.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/storage_class.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuComplex.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaEGL.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaEGLTypedefs.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaGL.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaGLTypedefs.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaProfilerTypedefs.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaTypedefs.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaVDPAU.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaVDPAUTypedefs.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier_helpers.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier_primitives.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_bf16.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_bf16.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_device_runtime_api.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_egl_interop.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp16.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp16.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp8.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp8.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_gl_interop.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_occupancy.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline_helpers.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline_primitives.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_runtime.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_runtime_api.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_stdint.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_surface_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_texture_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_vdpau_interop.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cudart_platform.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_activity.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_activity_deprecated.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_callbacks.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_checkpoint.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_common.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_driver_cbid.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_events.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_metrics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_nvtx_cbid.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_pcsampling.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_pcsampling_util.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_profiler_target.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_result.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_runtime_cbid.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_sass_metrics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_target.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_version.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_atomic_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_atomic_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_double_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_launch_parameters.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/device_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/driver_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/driver_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/fatbinary_section.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudaGL_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudaVDPAU_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_gl_interop_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_runtime_api_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_vdpau_interop_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudart_removed_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_nvtx_meta.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/host_config.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/host_defines.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/library_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/math_constants.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/math_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/mma.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvPTXCompiler.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvfunctional",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_common.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_cuda_host.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_host.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_target.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_atomic_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_atomic_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_intrinsics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_intrinsics.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_30_intrinsics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_30_intrinsics.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_atomic_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_atomic_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_intrinsics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_intrinsics.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_35_atomic_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_35_intrinsics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_60_atomic_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_60_atomic_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_61_intrinsics.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_61_intrinsics.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_indirect_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_fetch_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_indirect_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_functions.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_functions.hpp",
+    "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_types.h",
+    "lib/python3.8/site-packages/triton/backends/nvidia/lib/libdevice.10.bc",
+    "lib/python3.8/site-packages/triton/compiler/__init__.py",
+    "lib/python3.8/site-packages/triton/compiler/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/compiler/__pycache__/code_generator.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/compiler/__pycache__/compiler.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/compiler/__pycache__/errors.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/compiler/__pycache__/make_launcher.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/compiler/code_generator.py",
+    "lib/python3.8/site-packages/triton/compiler/compiler.py",
+    "lib/python3.8/site-packages/triton/compiler/errors.py",
+    "lib/python3.8/site-packages/triton/compiler/make_launcher.py",
+    "lib/python3.8/site-packages/triton/errors.py",
+    "lib/python3.8/site-packages/triton/language/__init__.py",
+    "lib/python3.8/site-packages/triton/language/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/__pycache__/core.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/__pycache__/math.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/__pycache__/random.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/__pycache__/semantic.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/__pycache__/standard.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/core.py",
+    "lib/python3.8/site-packages/triton/language/extra/__init__.py",
+    "lib/python3.8/site-packages/triton/language/extra/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/__pycache__/libdevice.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/__init__.py",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/libdevice.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/utils.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/libdevice.py",
+    "lib/python3.8/site-packages/triton/language/extra/cuda/utils.py",
+    "lib/python3.8/site-packages/triton/language/extra/hip/__init__.py",
+    "lib/python3.8/site-packages/triton/language/extra/hip/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/hip/__pycache__/libdevice.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/language/extra/hip/libdevice.py",
+    "lib/python3.8/site-packages/triton/language/extra/libdevice.py",
+    "lib/python3.8/site-packages/triton/language/math.py",
+    "lib/python3.8/site-packages/triton/language/random.py",
+    "lib/python3.8/site-packages/triton/language/semantic.py",
+    "lib/python3.8/site-packages/triton/language/standard.py",
+    "lib/python3.8/site-packages/triton/ops/__init__.py",
+    "lib/python3.8/site-packages/triton/ops/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/__pycache__/cross_entropy.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/__pycache__/flash_attention.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/__pycache__/matmul.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/__pycache__/matmul_perf_model.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/__init__.py",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/matmul.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/softmax.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/matmul.py",
+    "lib/python3.8/site-packages/triton/ops/blocksparse/softmax.py",
+    "lib/python3.8/site-packages/triton/ops/cross_entropy.py",
+    "lib/python3.8/site-packages/triton/ops/flash_attention.py",
+    "lib/python3.8/site-packages/triton/ops/matmul.py",
+    "lib/python3.8/site-packages/triton/ops/matmul_perf_model.py",
+    "lib/python3.8/site-packages/triton/profiler/__init__.py",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/flags.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/hook.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/profile.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/proton.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/scope.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/__pycache__/viewer.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/profiler/flags.py",
+    "lib/python3.8/site-packages/triton/profiler/hook.py",
+    "lib/python3.8/site-packages/triton/profiler/profile.py",
+    "lib/python3.8/site-packages/triton/profiler/proton.py",
+    "lib/python3.8/site-packages/triton/profiler/scope.py",
+    "lib/python3.8/site-packages/triton/profiler/viewer.py",
+    "lib/python3.8/site-packages/triton/runtime/__init__.py",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/autotuner.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/build.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/cache.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/driver.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/errors.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/interpreter.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/__pycache__/jit.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/runtime/autotuner.py",
+    "lib/python3.8/site-packages/triton/runtime/build.py",
+    "lib/python3.8/site-packages/triton/runtime/cache.py",
+    "lib/python3.8/site-packages/triton/runtime/driver.py",
+    "lib/python3.8/site-packages/triton/runtime/errors.py",
+    "lib/python3.8/site-packages/triton/runtime/interpreter.py",
+    "lib/python3.8/site-packages/triton/runtime/jit.py",
+    "lib/python3.8/site-packages/triton/testing.py",
+    "lib/python3.8/site-packages/triton/tools/__init__.py",
+    "lib/python3.8/site-packages/triton/tools/__pycache__/__init__.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/tools/__pycache__/build_extern.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/tools/__pycache__/compile.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/tools/__pycache__/disasm.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/tools/__pycache__/link.cpython-38.pyc",
+    "lib/python3.8/site-packages/triton/tools/build_extern.py",
+    "lib/python3.8/site-packages/triton/tools/compile.c",
+    "lib/python3.8/site-packages/triton/tools/compile.h",
+    "lib/python3.8/site-packages/triton/tools/compile.py",
+    "lib/python3.8/site-packages/triton/tools/disasm.py",
+    "lib/python3.8/site-packages/triton/tools/link.py"
+  ],
+  "fn": "torchtriton-3.0.0-py38.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/torchtriton-3.0.0-py38",
+    "type": 1
+  },
+  "md5": "7e65962f2c1c0638f57e9654137c0a16",
+  "name": "torchtriton",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/torchtriton-3.0.0-py38.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "6f02b472aa4c6427516a3f67aa4e5a5b105371fee92a45e4a7ab34c6639b7a47",
+        "sha256_in_prefix": "6f02b472aa4c6427516a3f67aa4e5a5b105371fee92a45e4a7ab34c6639b7a47",
+        "size_in_bytes": 1310
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "185d01a3c57549f53c1eb942db15c7c3c57a918473d55de18a4f2ab773a9f8da",
+        "sha256_in_prefix": "185d01a3c57549f53c1eb942db15c7c3c57a918473d55de18a4f2ab773a9f8da",
+        "size_in_bytes": 15104
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "480887623e71c66d54e5df39ebd3db3179ad5a428636d8b2cbb2de4e55076a53",
+        "sha256_in_prefix": "480887623e71c66d54e5df39ebd3db3179ad5a428636d8b2cbb2de4e55076a53",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "428e861e15004c9dbd5e6809f522459b878d936251649c9a8e2f5cdee728bcf5",
+        "sha256_in_prefix": "428e861e15004c9dbd5e6809f522459b878d936251649c9a8e2f5cdee728bcf5",
+        "size_in_bytes": 144
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton-3.0.0-py3.8.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "1dbfe40f327b4ec188e8d08895a7643e47645e8bdb9085b1a477af28def9f697",
+        "sha256_in_prefix": "1dbfe40f327b4ec188e8d08895a7643e47645e8bdb9085b1a477af28def9f697",
+        "size_in_bytes": 261
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/_C/libproton.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/torchtriton_1721332514068/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "7f76dd66643de22e100b01842c1316bff9d133ec0e6726776484ca90ac25df7e",
+        "sha256_in_prefix": "804551ed9d266e09e66adec437b92cd99d7950201fbfbc761217304507953aa6",
+        "size_in_bytes": 20224432
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/_C/libtriton.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/torchtriton_1721332514068/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "5ea24f8789840b12e7a2fe20a8e0f8ae51c99c1af105c6f39170693d5b143e07",
+        "sha256_in_prefix": "04b98851d9599bc4e89fe034ea09bcbe1a0dd4106f1ba672a8c58ab3504455da",
+        "size_in_bytes": 548701888
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "31ac9f6021c229ea0db8a9e7875dab0864d2e3b2af61ba5641ea353d7fb067cf",
+        "sha256_in_prefix": "31ac9f6021c229ea0db8a9e7875dab0864d2e3b2af61ba5641ea353d7fb067cf",
+        "size_in_bytes": 1347
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "c94d9df8889e72be400b3cbac7a8ff2ae756b84fca537e26318b477c2ea0dcaa",
+        "sha256_in_prefix": "c94d9df8889e72be400b3cbac7a8ff2ae756b84fca537e26318b477c2ea0dcaa",
+        "size_in_bytes": 1333
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/__pycache__/errors.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "44d6964e0cc84725a120dc7f81e1494158ee67630fc386871320d11d761863c9",
+        "sha256_in_prefix": "44d6964e0cc84725a120dc7f81e1494158ee67630fc386871320d11d761863c9",
+        "size_in_bytes": 360
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/__pycache__/testing.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d39cbc0ec7d5da0a63bec8061afd7aa23b98b0ae25441e5c576b102f29a3da2",
+        "sha256_in_prefix": "8d39cbc0ec7d5da0a63bec8061afd7aa23b98b0ae25441e5c576b102f29a3da2",
+        "size_in_bytes": 14571
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "22aa6b2a56db4ccea7f890a5e95784e5553c9153a26883fb5194903f3f30e1dc",
+        "sha256_in_prefix": "22aa6b2a56db4ccea7f890a5e95784e5553c9153a26883fb5194903f3f30e1dc",
+        "size_in_bytes": 1600
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "429420256b92ed312f41987657fa4577a7d73ba616b4a0749a468f6bfc16d3c2",
+        "sha256_in_prefix": "429420256b92ed312f41987657fa4577a7d73ba616b4a0749a468f6bfc16d3c2",
+        "size_in_bytes": 1793
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/__pycache__/compiler.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "d459fd23f824d693d7df213c6f5874c345307813b47cccc5c98ebad88cff59d8",
+        "sha256_in_prefix": "d459fd23f824d693d7df213c6f5874c345307813b47cccc5c98ebad88cff59d8",
+        "size_in_bytes": 3389
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/__pycache__/driver.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "8f5d530077d7152831b3217d33e382bff4aa1a46f68b24e0651f421967c881ec",
+        "sha256_in_prefix": "8f5d530077d7152831b3217d33e382bff4aa1a46f68b24e0651f421967c881ec",
+        "size_in_bytes": 1725
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/__pycache__/compiler.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "7e34d87664cdf721b64a6adb185959838dc2cfbc6c1666c59a6bed9bb7afe056",
+        "sha256_in_prefix": "7e34d87664cdf721b64a6adb185959838dc2cfbc6c1666c59a6bed9bb7afe056",
+        "size_in_bytes": 9944
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/__pycache__/driver.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "97a042fb2bfea0500bd6bc22c9657a54bf26b755be747415a55db5b76783fc04",
+        "sha256_in_prefix": "97a042fb2bfea0500bd6bc22c9657a54bf26b755be747415a55db5b76783fc04",
+        "size_in_bytes": 15996
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/compiler.py",
+        "path_type": "hardlink",
+        "sha256": "7954fead998af36da5270c5b396eed45d36b49bec5a9f68bdcf9e85c30b9431c",
+        "sha256_in_prefix": "7954fead998af36da5270c5b396eed45d36b49bec5a9f68bdcf9e85c30b9431c",
+        "size_in_bytes": 11084
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/driver.c",
+        "path_type": "hardlink",
+        "sha256": "fabd4250d93546b31a51322a3ba8858ce5bd3302e567f611191f4b8c87a9f778",
+        "sha256_in_prefix": "fabd4250d93546b31a51322a3ba8858ce5bd3302e567f611191f4b8c87a9f778",
+        "size_in_bytes": 8397
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/driver.py",
+        "path_type": "hardlink",
+        "sha256": "5999b4e69973ee62aa324cece66b1a3fa95d48baf04a4a88a10d3f0f64154424",
+        "sha256_in_prefix": "5999b4e69973ee62aa324cece66b1a3fa95d48baf04a4a88a10d3f0f64154424",
+        "size_in_bytes": 15959
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_channel_descriptor.h",
+        "path_type": "hardlink",
+        "sha256": "ff69b21887414c4d299456c628e4b1f0752a1997745011e8f98bca7b6c64a5b5",
+        "sha256_in_prefix": "ff69b21887414c4d299456c628e4b1f0752a1997745011e8f98bca7b6c64a5b5",
+        "size_in_bytes": 11708
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "cdf6131c913f33fcb6636b2c3fc647fc439cccc060e08ab682e82568a708e63b",
+        "sha256_in_prefix": "cdf6131c913f33fcb6636b2c3fc647fc439cccc060e08ab682e82568a708e63b",
+        "size_in_bytes": 31425
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_atomic.h",
+        "path_type": "hardlink",
+        "sha256": "3c94514e9f373348c810103f896cdf5b01d97a549b2f74c1ad20ea94edd242d9",
+        "sha256_in_prefix": "3c94514e9f373348c810103f896cdf5b01d97a549b2f74c1ad20ea94edd242d9",
+        "size_in_bytes": 49919
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_bf16.h",
+        "path_type": "hardlink",
+        "sha256": "7ee72fd7fd3a247566f364f44e6bc44416e6b594c340ae96262ff9f281903978",
+        "sha256_in_prefix": "7ee72fd7fd3a247566f364f44e6bc44416e6b594c340ae96262ff9f281903978",
+        "size_in_bytes": 40634
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_bfloat16.h",
+        "path_type": "hardlink",
+        "sha256": "70526540410b19abbff6078009eba28851f2b805820faf95b92a9c4e7a9a8d7d",
+        "sha256_in_prefix": "70526540410b19abbff6078009eba28851f2b805820faf95b92a9c4e7a9a8d7d",
+        "size_in_bytes": 9484
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_common.h",
+        "path_type": "hardlink",
+        "sha256": "77392e233ba496a4d168d26328ba9f1449ba161e2d2bf1644e360716c6649822",
+        "sha256_in_prefix": "77392e233ba496a4d168d26328ba9f1449ba161e2d2bf1644e360716c6649822",
+        "size_in_bytes": 1370
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_complex.h",
+        "path_type": "hardlink",
+        "sha256": "484ca097c5ff3025c3557c4d2019b90ecd1e5b06bea235575145b8f12220b17f",
+        "sha256_in_prefix": "484ca097c5ff3025c3557c4d2019b90ecd1e5b06bea235575145b8f12220b17f",
+        "size_in_bytes": 5855
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_cooperative_groups.h",
+        "path_type": "hardlink",
+        "sha256": "4afae49e21e20c6b7eced65106f6e4c9a8df5314db190ce9642d609dde13fa2f",
+        "sha256_in_prefix": "4afae49e21e20c6b7eced65106f6e4c9a8df5314db190ce9642d609dde13fa2f",
+        "size_in_bytes": 31624
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_fp16.h",
+        "path_type": "hardlink",
+        "sha256": "f3a370f7b89a882e10579c41bfc777070738162a0c8790d0b821e3dec87f62bc",
+        "sha256_in_prefix": "f3a370f7b89a882e10579c41bfc777070738162a0c8790d0b821e3dec87f62bc",
+        "size_in_bytes": 57854
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_gl_interop.h",
+        "path_type": "hardlink",
+        "sha256": "f6fc6257aad844c1b1d764cf9eb01546fadf2f2a11a7be174602923c13dada19",
+        "sha256_in_prefix": "f6fc6257aad844c1b1d764cf9eb01546fadf2f2a11a7be174602923c13dada19",
+        "size_in_bytes": 3860
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_math_constants.h",
+        "path_type": "hardlink",
+        "sha256": "bb57c869ff8089617bd19035cf15645086d1aa824bbb996b7d86e0b7fbacc929",
+        "sha256_in_prefix": "bb57c869ff8089617bd19035cf15645086d1aa824bbb996b7d86e0b7fbacc929",
+        "size_in_bytes": 5890
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_runtime.h",
+        "path_type": "hardlink",
+        "sha256": "66f0ec434022667275efc36e02c03b02e1ebc925db377685b3967d9b6b6c2038",
+        "sha256_in_prefix": "66f0ec434022667275efc36e02c03b02e1ebc925db377685b3967d9b6b6c2038",
+        "size_in_bytes": 13954
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_runtime_pt_api.h",
+        "path_type": "hardlink",
+        "sha256": "7dce26b470645a6892461f26f9dc48c6fbbdcecc1e2d3c048288649ed61c809c",
+        "sha256_in_prefix": "7dce26b470645a6892461f26f9dc48c6fbbdcecc1e2d3c048288649ed61c809c",
+        "size_in_bytes": 9997
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_unsafe_atomics.h",
+        "path_type": "hardlink",
+        "sha256": "c3d9c9d52df619197f7a30e219a72d78ce997fce22a2f2227c0cd65fc0737b44",
+        "sha256_in_prefix": "c3d9c9d52df619197f7a30e219a72d78ce997fce22a2f2227c0cd65fc0737b44",
+        "size_in_bytes": 24202
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_hip_vector_types.h",
+        "path_type": "hardlink",
+        "sha256": "a8f7664499f3960b6356c86469fa07c5d1e830b928612f54f990fe4e32f39ebd",
+        "sha256_in_prefix": "a8f7664499f3960b6356c86469fa07c5d1e830b928612f54f990fe4e32f39ebd",
+        "size_in_bytes": 57088
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_math_functions.h",
+        "path_type": "hardlink",
+        "sha256": "e3ac22684312b4273312c1ed71c8079404dfc3fd0ee63e99f2b945902edb9940",
+        "sha256_in_prefix": "e3ac22684312b4273312c1ed71c8079404dfc3fd0ee63e99f2b945902edb9940",
+        "size_in_bytes": 3171
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_surface_functions.h",
+        "path_type": "hardlink",
+        "sha256": "aec42eca536a98d84b6fb3d98c1cfb59baee0ffe98217b4ea6d63604d243c555",
+        "sha256_in_prefix": "aec42eca536a98d84b6fb3d98c1cfb59baee0ffe98217b4ea6d63604d243c555",
+        "size_in_bytes": 11062
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/amd_warp_functions.h",
+        "path_type": "hardlink",
+        "sha256": "a7c0ddb6ec6a960187cca7553cc1c39d9383f330397fa1a32c760caf4fc52a34",
+        "sha256_in_prefix": "a7c0ddb6ec6a960187cca7553cc1c39d9383f330397fa1a32c760caf4fc52a34",
+        "size_in_bytes": 18966
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/concepts.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec43a4a6bdb0dbe8dc954435d79cb1b450a405627b6ed53384139efa64743743",
+        "sha256_in_prefix": "ec43a4a6bdb0dbe8dc954435d79cb1b450a405627b6ed53384139efa64743743",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/device_library_decls.h",
+        "path_type": "hardlink",
+        "sha256": "e1c952a607fcf7c5158df6455670e47188bbe40dbb72b3ecb85b4b72cd6ce0a5",
+        "sha256_in_prefix": "e1c952a607fcf7c5158df6455670e47188bbe40dbb72b3ecb85b4b72cd6ce0a5",
+        "size_in_bytes": 7457
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/functional_grid_launch.hpp",
+        "path_type": "hardlink",
+        "sha256": "bbb85107d9105d7e7be5ae42edc57780aa30e790d20540b03b47538c8b3095a8",
+        "sha256_in_prefix": "bbb85107d9105d7e7be5ae42edc57780aa30e790d20540b03b47538c8b3095a8",
+        "size_in_bytes": 8129
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch.h",
+        "path_type": "hardlink",
+        "sha256": "b4d4bb090c3d832fb3f77d021251f79fa73988cbe9b10fd61592b4db898dcc4a",
+        "sha256_in_prefix": "b4d4bb090c3d832fb3f77d021251f79fa73988cbe9b10fd61592b4db898dcc4a",
+        "size_in_bytes": 1830
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch.hpp",
+        "path_type": "hardlink",
+        "sha256": "12e025337a25cab02b79bab05b9792c68e207e3bd6086380180b8b2e616db60c",
+        "sha256_in_prefix": "12e025337a25cab02b79bab05b9792c68e207e3bd6086380180b8b2e616db60c",
+        "size_in_bytes": 1370
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/grid_launch_GGL.hpp",
+        "path_type": "hardlink",
+        "sha256": "2a9400bb2cb50f2b78e5670f691ff1f84c7ea273c6107034d4305b95aed34fe9",
+        "sha256_in_prefix": "2a9400bb2cb50f2b78e5670f691ff1f84c7ea273c6107034d4305b95aed34fe9",
+        "size_in_bytes": 1219
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/helpers.hpp",
+        "path_type": "hardlink",
+        "sha256": "862da95b59974276c8c2f9b05adfe71ba037f2ca8b39df903f94bdb044d3b3ad",
+        "sha256_in_prefix": "862da95b59974276c8c2f9b05adfe71ba037f2ca8b39df903f94bdb044d3b3ad",
+        "size_in_bytes": 5707
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_api_trace.hpp",
+        "path_type": "hardlink",
+        "sha256": "774d63e121503ffe802f0507072c739d957c4ab4076eeba3458a27f2bc45c3e2",
+        "sha256_in_prefix": "774d63e121503ffe802f0507072c739d957c4ab4076eeba3458a27f2bc45c3e2",
+        "size_in_bytes": 94612
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_assert.h",
+        "path_type": "hardlink",
+        "sha256": "7cdb06db72884ae63e939245a17fb9859eea19049c8ac5ee1dc744c189573aac",
+        "sha256_in_prefix": "7cdb06db72884ae63e939245a17fb9859eea19049c8ac5ee1dc744c189573aac",
+        "size_in_bytes": 3978
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_cooperative_groups_helper.h",
+        "path_type": "hardlink",
+        "sha256": "b50fd722f18a86fae3d61ee063e2152e62af20f86c41ad18b017e5c5d8541cff",
+        "sha256_in_prefix": "b50fd722f18a86fae3d61ee063e2152e62af20f86c41ad18b017e5c5d8541cff",
+        "size_in_bytes": 7957
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_fp16_gcc.h",
+        "path_type": "hardlink",
+        "sha256": "06d16c2a64e9b4de13387a1c12271f35b065d8909d6562a6fdb77999ce4ecd86",
+        "sha256_in_prefix": "06d16c2a64e9b4de13387a1c12271f35b065d8909d6562a6fdb77999ce4ecd86",
+        "size_in_bytes": 6660
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_fp16_math_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "eb7b4a58c3dd5b9eaa5a51ff1db09a17f8ac557b9f9b9d78a25fd2c4be188d34",
+        "sha256_in_prefix": "eb7b4a58c3dd5b9eaa5a51ff1db09a17f8ac557b9f9b9d78a25fd2c4be188d34",
+        "size_in_bytes": 5134
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_ldg.h",
+        "path_type": "hardlink",
+        "sha256": "2801196fd1f8cf80c3ae46a5a0c39e5b36a18837c8d95e9cebcbd64f78dbe5f5",
+        "sha256_in_prefix": "2801196fd1f8cf80c3ae46a5a0c39e5b36a18837c8d95e9cebcbd64f78dbe5f5",
+        "size_in_bytes": 3652
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_prof_str.h",
+        "path_type": "hardlink",
+        "sha256": "b354f622b0b06336503ae0ace69a6e7a01506e35d2176240d5e5120a6660f400",
+        "sha256_in_prefix": "b354f622b0b06336503ae0ace69a6e7a01506e35d2176240d5e5120a6660f400",
+        "size_in_bytes": 621355
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hip_runtime_prof.h",
+        "path_type": "hardlink",
+        "sha256": "e8655f87595ad30b4157074a5f9cb40b7d9d3c3f6c849a75a3cc19747b236470",
+        "sha256_in_prefix": "e8655f87595ad30b4157074a5f9cb40b7d9d3c3f6c849a75a3cc19747b236470",
+        "size_in_bytes": 2715
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/host_defines.h",
+        "path_type": "hardlink",
+        "sha256": "87f669144e02966da2c91c897af0dbe7b63e802fba4553e3867679af33f1894a",
+        "sha256_in_prefix": "87f669144e02966da2c91c897af0dbe7b63e802fba4553e3867679af33f1894a",
+        "size_in_bytes": 7038
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/hsa_helpers.hpp",
+        "path_type": "hardlink",
+        "sha256": "3acfac25038523fd006e1f10974e6cd11b5faee93836c48c7e0ec1b6e8313208",
+        "sha256_in_prefix": "3acfac25038523fd006e1f10974e6cd11b5faee93836c48c7e0ec1b6e8313208",
+        "size_in_bytes": 3232
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/macro_based_grid_launch.hpp",
+        "path_type": "hardlink",
+        "sha256": "ea872c02b35af7f47a0fa5c2b8dcbc66adb7286fa3dae62c8ea342b6732b270b",
+        "sha256_in_prefix": "ea872c02b35af7f47a0fa5c2b8dcbc66adb7286fa3dae62c8ea342b6732b270b",
+        "size_in_bytes": 67925
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/math_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "9eea7962171e2679e0a0b24211223ca97d3c74da5b65c8b48bbf162aefb07dd2",
+        "sha256_in_prefix": "9eea7962171e2679e0a0b24211223ca97d3c74da5b65c8b48bbf162aefb07dd2",
+        "size_in_bytes": 17000
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/ockl_image.h",
+        "path_type": "hardlink",
+        "sha256": "2f344f18c6f9d79fe220020871b6f6b9007e6d3bd3e313a3639d55740443ee57",
+        "sha256_in_prefix": "2f344f18c6f9d79fe220020871b6f6b9007e6d3bd3e313a3639d55740443ee57",
+        "size_in_bytes": 10538
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/program_state.hpp",
+        "path_type": "hardlink",
+        "sha256": "f1013d3a607c38a4f2eeb06bdc46048b3248dacfbfd6d817a6053bcc20362b2d",
+        "sha256_in_prefix": "f1013d3a607c38a4f2eeb06bdc46048b3248dacfbfd6d817a6053bcc20362b2d",
+        "size_in_bytes": 3154
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/texture_fetch_functions.h",
+        "path_type": "hardlink",
+        "sha256": "131d65176801589c6d0b7c8ff695d1485cb0329de06c49b29744b0f222fdd723",
+        "sha256_in_prefix": "131d65176801589c6d0b7c8ff695d1485cb0329de06c49b29744b0f222fdd723",
+        "size_in_bytes": 17787
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/amd_detail/texture_indirect_functions.h",
+        "path_type": "hardlink",
+        "sha256": "2a45b9a3980ca6854c4d1c337d71c0efe919f729c8f0e688c3a8c9d44075b3df",
+        "sha256_in_prefix": "2a45b9a3980ca6854c4d1c337d71c0efe919f729c8f0e688c3a8c9d44075b3df",
+        "size_in_bytes": 18447
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/channel_descriptor.h",
+        "path_type": "hardlink",
+        "sha256": "81361eed2cc883e9b74e1390636bebe5187afae5af50ffdddfbbfc1784f6435e",
+        "sha256_in_prefix": "81361eed2cc883e9b74e1390636bebe5187afae5af50ffdddfbbfc1784f6435e",
+        "size_in_bytes": 1773
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "be4c9badd93ac3264ff93d48e4f463b5f70ca866170de0690798e1623df9f065",
+        "sha256_in_prefix": "be4c9badd93ac3264ff93d48e4f463b5f70ca866170de0690798e1623df9f065",
+        "size_in_bytes": 1589
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/driver_types.h",
+        "path_type": "hardlink",
+        "sha256": "9b51c8f341c2f34aa44de728d89774ef0a0bfe34f2e3c973f49883095ffccec8",
+        "sha256_in_prefix": "9b51c8f341c2f34aa44de728d89774ef0a0bfe34f2e3c973f49883095ffccec8",
+        "size_in_bytes": 18985
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_bf16.h",
+        "path_type": "hardlink",
+        "sha256": "94bc3a2b996d6fa02a4ae20d613abc7e5c71b039013fc636cdbaa652305c1bd7",
+        "sha256_in_prefix": "94bc3a2b996d6fa02a4ae20d613abc7e5c71b039013fc636cdbaa652305c1bd7",
+        "size_in_bytes": 1571
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_bfloat16.h",
+        "path_type": "hardlink",
+        "sha256": "36aa32f558df8e0955c76fcd25ca7c8724f5b0952e9174568fc5cc96276fd720",
+        "sha256_in_prefix": "36aa32f558df8e0955c76fcd25ca7c8724f5b0952e9174568fc5cc96276fd720",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_common.h",
+        "path_type": "hardlink",
+        "sha256": "ab968f846dc31d6d22509edac92e657ccfd99d940d6cc98b99f74794ec1b3dd0",
+        "sha256_in_prefix": "ab968f846dc31d6d22509edac92e657ccfd99d940d6cc98b99f74794ec1b3dd0",
+        "size_in_bytes": 3450
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_complex.h",
+        "path_type": "hardlink",
+        "sha256": "4e677340fe6854f7e1055011258711e5ecaff4722798a305b85a10ff510293f2",
+        "sha256_in_prefix": "4e677340fe6854f7e1055011258711e5ecaff4722798a305b85a10ff510293f2",
+        "size_in_bytes": 1594
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_cooperative_groups.h",
+        "path_type": "hardlink",
+        "sha256": "80c2ef6984376fe7f5bdca0cb44c2d90dd213b9fffccd7cfe69e6804a9affd21",
+        "sha256_in_prefix": "80c2ef6984376fe7f5bdca0cb44c2d90dd213b9fffccd7cfe69e6804a9affd21",
+        "size_in_bytes": 1878
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_deprecated.h",
+        "path_type": "hardlink",
+        "sha256": "8052ee0ae2a7ed1ff109fba6fe2fd0faf8b72e0f0d5872a984a64acdef03c04a",
+        "sha256_in_prefix": "8052ee0ae2a7ed1ff109fba6fe2fd0faf8b72e0f0d5872a984a64acdef03c04a",
+        "size_in_bytes": 6340
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_ext.h",
+        "path_type": "hardlink",
+        "sha256": "8cad5073e497814c914e3f1b05af593ffffde5081ddbe5b59b09c9a3a4299e8a",
+        "sha256_in_prefix": "8cad5073e497814c914e3f1b05af593ffffde5081ddbe5b59b09c9a3a4299e8a",
+        "size_in_bytes": 8560
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_fp16.h",
+        "path_type": "hardlink",
+        "sha256": "bca261fb38035945bb3725f1b6fda1a3a6952d75fc0483dfcc28a0110e5de88e",
+        "sha256_in_prefix": "bca261fb38035945bb3725f1b6fda1a3a6952d75fc0483dfcc28a0110e5de88e",
+        "size_in_bytes": 1523
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_gl_interop.h",
+        "path_type": "hardlink",
+        "sha256": "f86c244853019de33c6a4144ee9aa5862d24f85b76bb3e7aef8c06a22694e374",
+        "sha256_in_prefix": "f86c244853019de33c6a4144ee9aa5862d24f85b76bb3e7aef8c06a22694e374",
+        "size_in_bytes": 1438
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_hcc.h",
+        "path_type": "hardlink",
+        "sha256": "458ac0ac39674c43fcf7129bcc8a56d7bfdbb016399a80a2b6ad343cbfb8a162",
+        "sha256_in_prefix": "458ac0ac39674c43fcf7129bcc8a56d7bfdbb016399a80a2b6ad343cbfb8a162",
+        "size_in_bytes": 1307
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_math_constants.h",
+        "path_type": "hardlink",
+        "sha256": "f1b49fbdee44edc0eebcd01490551e43048b837889247baa86e0f81661cdc443",
+        "sha256_in_prefix": "f1b49fbdee44edc0eebcd01490551e43048b837889247baa86e0f81661cdc443",
+        "size_in_bytes": 1588
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_profile.h",
+        "path_type": "hardlink",
+        "sha256": "b23b0db9dbaee4977ab3bb099dd66f64b944d11674c0dd6b4d5c2fe6747b21fd",
+        "sha256_in_prefix": "b23b0db9dbaee4977ab3bb099dd66f64b944d11674c0dd6b4d5c2fe6747b21fd",
+        "size_in_bytes": 1304
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_runtime.h",
+        "path_type": "hardlink",
+        "sha256": "bb2f7497c35ea7ac4d5337867073280eff38053de132989e4d5fb98a39292f90",
+        "sha256_in_prefix": "bb2f7497c35ea7ac4d5337867073280eff38053de132989e4d5fb98a39292f90",
+        "size_in_bytes": 3058
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_runtime_api.h",
+        "path_type": "hardlink",
+        "sha256": "7f36ffc64b62b0255ca76a561be64a8481be6154330e31b23ede30bc0e226b23",
+        "sha256_in_prefix": "7f36ffc64b62b0255ca76a561be64a8481be6154330e31b23ede30bc0e226b23",
+        "size_in_bytes": 386498
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_texture_types.h",
+        "path_type": "hardlink",
+        "sha256": "02192f8c6e1c0e37ff6452e0e52b124df0675c6eb5e0f04ad5754f6bb8ab65b9",
+        "sha256_in_prefix": "02192f8c6e1c0e37ff6452e0e52b124df0675c6eb5e0f04ad5754f6bb8ab65b9",
+        "size_in_bytes": 1237
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_vector_types.h",
+        "path_type": "hardlink",
+        "sha256": "e8570130190fdd93751276a5a5af61574568a7174126f6d40ae6b12128336d36",
+        "sha256_in_prefix": "e8570130190fdd93751276a5a5af61574568a7174126f6d40ae6b12128336d36",
+        "size_in_bytes": 1630
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hip_version.h",
+        "path_type": "hardlink",
+        "sha256": "277be0cdf647d1490af1162fc87563d4f6d4352647d493ed95c997c4b060c159",
+        "sha256_in_prefix": "277be0cdf647d1490af1162fc87563d4f6d4352647d493ed95c997c4b060c159",
+        "size_in_bytes": 407
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/hiprtc.h",
+        "path_type": "hardlink",
+        "sha256": "9e92ba7f66646087b96e52481aea1fb931b43eb48c4b69a414152aadd3a9d00d",
+        "sha256_in_prefix": "9e92ba7f66646087b96e52481aea1fb931b43eb48c4b69a414152aadd3a9d00d",
+        "size_in_bytes": 15631
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/library_types.h",
+        "path_type": "hardlink",
+        "sha256": "b4f3894d079d3c7e6a0bd99e6b02e02a99db16b402d962a57e8eacd2b84aa197",
+        "sha256_in_prefix": "b4f3894d079d3c7e6a0bd99e6b02e02a99db16b402d962a57e8eacd2b84aa197",
+        "size_in_bytes": 2370
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/math_functions.h",
+        "path_type": "hardlink",
+        "sha256": "7ebcdd278bde046f27f402cee04991add3a20e0b91e853faca02e7bce9d55523",
+        "sha256_in_prefix": "7ebcdd278bde046f27f402cee04991add3a20e0b91e853faca02e7bce9d55523",
+        "size_in_bytes": 1815
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/surface_types.h",
+        "path_type": "hardlink",
+        "sha256": "b901e3213a610ccee4e299ee1280c4ba9314c41a1bcef849a52cb4ba7a5e821e",
+        "sha256_in_prefix": "b901e3213a610ccee4e299ee1280c4ba9314c41a1bcef849a52cb4ba7a5e821e",
+        "size_in_bytes": 1959
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hip/texture_types.h",
+        "path_type": "hardlink",
+        "sha256": "0ad99dca465f0e29219eb55f749937c3654ae57dc07ffeab10acd4f9580bbb6e",
+        "sha256_in_prefix": "0ad99dca465f0e29219eb55f749937c3654ae57dc07ffeab10acd4f9580bbb6e",
+        "size_in_bytes": 6687
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/Brig.h",
+        "path_type": "hardlink",
+        "sha256": "e47f9bb421eae34aa08e3a70540a1159fdc4d1c71ff89e9408f11c2b1fe118ac",
+        "sha256_in_prefix": "e47f9bb421eae34aa08e3a70540a1159fdc4d1c71ff89e9408f11c2b1fe118ac",
+        "size_in_bytes": 32705
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_common.h",
+        "path_type": "hardlink",
+        "sha256": "abfccdd1eabe77047b16743ce0f729577c99caf8c7b28b880232602a5b46a17f",
+        "sha256_in_prefix": "abfccdd1eabe77047b16743ce0f729577c99caf8c7b28b880232602a5b46a17f",
+        "size_in_bytes": 3912
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_elf.h",
+        "path_type": "hardlink",
+        "sha256": "ffd669dc45a2a2c7aede58d284d6f035ef3802645635f8c3c5166e8f48c95126",
+        "sha256_in_prefix": "ffd669dc45a2a2c7aede58d284d6f035ef3802645635f8c3c5166e8f48c95126",
+        "size_in_bytes": 16305
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_kernel_code.h",
+        "path_type": "hardlink",
+        "sha256": "0b9e45f1ae3cd10b16d7afa2c0df53213ddc2a71a1e86a1ea04684bf76958788",
+        "sha256_in_prefix": "0b9e45f1ae3cd10b16d7afa2c0df53213ddc2a71a1e86a1ea04684bf76958788",
+        "size_in_bytes": 12659
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_queue.h",
+        "path_type": "hardlink",
+        "sha256": "649fa4e70637d2178b9909c6074554cf7e970a2547466b2983915134c18893f5",
+        "sha256_in_prefix": "649fa4e70637d2178b9909c6074554cf7e970a2547466b2983915134c18893f5",
+        "size_in_bytes": 4766
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/amd_hsa_signal.h",
+        "path_type": "hardlink",
+        "sha256": "1437a06675900b4e06b67a878d7381b01f80a1549aa9d84d63a3306ee6b91460",
+        "sha256_in_prefix": "1437a06675900b4e06b67a878d7381b01f80a1549aa9d84d63a3306ee6b91460",
+        "size_in_bytes": 2947
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa.h",
+        "path_type": "hardlink",
+        "sha256": "25fb752b9b8501c6ac383f48616eb00f91ac19070f413ae66e98e27bed16874d",
+        "sha256_in_prefix": "25fb752b9b8501c6ac383f48616eb00f91ac19070f413ae66e98e27bed16874d",
+        "size_in_bytes": 190916
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_amd_tool.h",
+        "path_type": "hardlink",
+        "sha256": "a72652c88565f9403900e86d7bbf23be7e15de109dd1dc49008bfb29e003b0fb",
+        "sha256_in_prefix": "a72652c88565f9403900e86d7bbf23be7e15de109dd1dc49008bfb29e003b0fb",
+        "size_in_bytes": 2843
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_api_trace.h",
+        "path_type": "hardlink",
+        "sha256": "da2bb01dca725bdc2fafe58f28281ab50cd805a03cad36b7c350513170467122",
+        "sha256_in_prefix": "da2bb01dca725bdc2fafe58f28281ab50cd805a03cad36b7c350513170467122",
+        "size_in_bytes": 28982
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_amd.h",
+        "path_type": "hardlink",
+        "sha256": "462c37222f8062db35c3fca3543f7a657b98ebe041a67971fdb9e796d4e12b5b",
+        "sha256_in_prefix": "462c37222f8062db35c3fca3543f7a657b98ebe041a67971fdb9e796d4e12b5b",
+        "size_in_bytes": 116016
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_finalize.h",
+        "path_type": "hardlink",
+        "sha256": "b2fd0065b0ccf81d7021d4377074cc96952d35a7103763e43a05fdd0866897fa",
+        "sha256_in_prefix": "b2fd0065b0ccf81d7021d4377074cc96952d35a7103763e43a05fdd0866897fa",
+        "size_in_bytes": 20227
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ext_image.h",
+        "path_type": "hardlink",
+        "sha256": "b796099bf6b0f4478f09e14bd61a087d0f2e6c88c1b5efa9b5f45eaba4ecfbc6",
+        "sha256_in_prefix": "b796099bf6b0f4478f09e14bd61a087d0f2e6c88c1b5efa9b5f45eaba4ecfbc6",
+        "size_in_bytes": 54232
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ven_amd_aqlprofile.h",
+        "path_type": "hardlink",
+        "sha256": "f6e7afda74f6f4c09dbbbf8732483d888b47a29e9030e04c40be430059dfb528",
+        "sha256_in_prefix": "f6e7afda74f6f4c09dbbbf8732483d888b47a29e9030e04c40be430059dfb528",
+        "size_in_bytes": 19777
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/hsa/hsa_ven_amd_loader.h",
+        "path_type": "hardlink",
+        "sha256": "73a7313c0cc0a31eeee886c5cc491065f0ae465f8aaf7f56858dbfc36dd7d51e",
+        "sha256_in_prefix": "73a7313c0cc0a31eeee886c5cc491065f0ae465f8aaf7f56858dbfc36dd7d51e",
+        "size_in_bytes": 26146
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/ext/prof_protocol.h",
+        "path_type": "hardlink",
+        "sha256": "e8501cbd50fe74d33bbae945b3607e693c70e71380586cba7af743e3251a79b0",
+        "sha256_in_prefix": "e8501cbd50fe74d33bbae945b3607e693c70e71380586cba7af743e3251a79b0",
+        "size_in_bytes": 3849
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hip_ostream_ops.h",
+        "path_type": "hardlink",
+        "sha256": "58d5c56716b00571e6146303148399a97902c3a573c837b1c063e4189adee30d",
+        "sha256_in_prefix": "58d5c56716b00571e6146303148399a97902c3a573c837b1c063e4189adee30d",
+        "size_in_bytes": 184840
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hsa_ostream_ops.h",
+        "path_type": "hardlink",
+        "sha256": "018c05f884fd0e1976157f86baf089657e9f4a61cad3190a2ce471f50c6e48af",
+        "sha256_in_prefix": "018c05f884fd0e1976157f86baf089657e9f4a61cad3190a2ce471f50c6e48af",
+        "size_in_bytes": 57857
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/hsa_prof_str.h",
+        "path_type": "hardlink",
+        "sha256": "72d4fe28ab0819aca9ed150652c14d47e744eb95727725e56bf420bdff9e7d35",
+        "sha256_in_prefix": "72d4fe28ab0819aca9ed150652c14d47e744eb95727725e56bf420bdff9e7d35",
+        "size_in_bytes": 122884
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer.h",
+        "path_type": "hardlink",
+        "sha256": "07cb07cf60cc369acfec4a8d5881b054b635290329c6685f572e14a11f1dcf36",
+        "sha256_in_prefix": "07cb07cf60cc369acfec4a8d5881b054b635290329c6685f572e14a11f1dcf36",
+        "size_in_bytes": 23849
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_ext.h",
+        "path_type": "hardlink",
+        "sha256": "bcb699f29780c52cb4730add11a94a9d402990ab297dad388b0d4caff65c8a8d",
+        "sha256_in_prefix": "bcb699f29780c52cb4730add11a94a9d402990ab297dad388b0d4caff65c8a8d",
+        "size_in_bytes": 2940
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hcc.h",
+        "path_type": "hardlink",
+        "sha256": "36517747c250f685fd946a66d1bda7f84589d2bdf2f6c3fdc1bc27a2e71a0ae6",
+        "sha256_in_prefix": "36517747c250f685fd946a66d1bda7f84589d2bdf2f6c3fdc1bc27a2e71a0ae6",
+        "size_in_bytes": 1303
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hip.h",
+        "path_type": "hardlink",
+        "sha256": "442cd8b8dc35bcb47bc4ae2b6f4e93b4cf53539e3a51828727cdc8307999126f",
+        "sha256_in_prefix": "442cd8b8dc35bcb47bc4ae2b6f4e93b4cf53539e3a51828727cdc8307999126f",
+        "size_in_bytes": 1432
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_hsa.h",
+        "path_type": "hardlink",
+        "sha256": "33c00f33ae17340592b25c508ac33ea5c98aa1441a51d4cc68abd2002cadd008",
+        "sha256_in_prefix": "33c00f33ae17340592b25c508ac33ea5c98aa1441a51d4cc68abd2002cadd008",
+        "size_in_bytes": 4108
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_plugin.h",
+        "path_type": "hardlink",
+        "sha256": "f06184d730db74f09526d6e6c0e098abb5f49b01637d646dcc360a2c3e1c2b2b",
+        "sha256_in_prefix": "f06184d730db74f09526d6e6c0e098abb5f49b01637d646dcc360a2c3e1c2b2b",
+        "size_in_bytes": 4786
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctracer_roctx.h",
+        "path_type": "hardlink",
+        "sha256": "8018c1939bdbd25dcf6c1490ed5f6216d68cfd1ce42032445b503f3d70628413",
+        "sha256_in_prefix": "8018c1939bdbd25dcf6c1490ed5f6216d68cfd1ce42032445b503f3d70628413",
+        "size_in_bytes": 2014
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/include/roctracer/roctx.h",
+        "path_type": "hardlink",
+        "sha256": "461257517461489e4b444ff5826ec4ebe6e310cadf70504b0cbb9fdd4c40221f",
+        "sha256_in_prefix": "461257517461489e4b444ff5826ec4ebe6e310cadf70504b0cbb9fdd4c40221f",
+        "size_in_bytes": 6717
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/lib/ockl.bc",
+        "path_type": "hardlink",
+        "sha256": "c10282ce42ae9081dbbb49728ca5189619dd73b4b6ef1b68e8be78274067f82d",
+        "sha256_in_prefix": "c10282ce42ae9081dbbb49728ca5189619dd73b4b6ef1b68e8be78274067f82d",
+        "size_in_bytes": 246124
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/amd/lib/ocml.bc",
+        "path_type": "hardlink",
+        "sha256": "50f3535d6d2009750d07e73aa2b498c1bfa6cfdfe68d473bce7cbfbdf1736b8e",
+        "sha256_in_prefix": "50f3535d6d2009750d07e73aa2b498c1bfa6cfdfe68d473bce7cbfbdf1736b8e",
+        "size_in_bytes": 205964
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/compiler.py",
+        "path_type": "hardlink",
+        "sha256": "20b017e9c4d858ab05e783f77df50b86c6d6eee5d79f3f4b158562b4a54f8443",
+        "sha256_in_prefix": "20b017e9c4d858ab05e783f77df50b86c6d6eee5d79f3f4b158562b4a54f8443",
+        "size_in_bytes": 2720
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/driver.py",
+        "path_type": "hardlink",
+        "sha256": "f44338a31e0534290b08653050804c3fabbde403a6d3004ae04f0c28495f0802",
+        "sha256_in_prefix": "f44338a31e0534290b08653050804c3fabbde403a6d3004ae04f0c28495f0802",
+        "size_in_bytes": 977
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "a4b219bc6dcd4e2133aea3a0d37b2add0baf01357b5d361cc631b4538b580fa5",
+        "sha256_in_prefix": "a4b219bc6dcd4e2133aea3a0d37b2add0baf01357b5d361cc631b4538b580fa5",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/compiler.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "df3d0b16ba4936338e32f984f0b47f1c3d1d01d95ece81a727bee76098c6db46",
+        "sha256_in_prefix": "df3d0b16ba4936338e32f984f0b47f1c3d1d01d95ece81a727bee76098c6db46",
+        "size_in_bytes": 12263
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/__pycache__/driver.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "9567a27565f638cdaab9a2603fc05d27e33537a650f15a0b8fa1f1db6972d02a",
+        "sha256_in_prefix": "9567a27565f638cdaab9a2603fc05d27e33537a650f15a0b8fa1f1db6972d02a",
+        "size_in_bytes": 14956
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/bin/cuobjdump",
+        "path_type": "hardlink",
+        "sha256": "bee11fa80424bd47f67bbed9ba8135c5ab675cc1ce1a3e61433a7c03ec1a4313",
+        "sha256_in_prefix": "bee11fa80424bd47f67bbed9ba8135c5ab675cc1ce1a3e61433a7c03ec1a4313",
+        "size_in_bytes": 667136
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/bin/nvdisasm",
+        "path_type": "hardlink",
+        "sha256": "30f8cdf08b458012f84731aa98120baaff73a87b0505a0c32058e28f514f3dd3",
+        "sha256_in_prefix": "30f8cdf08b458012f84731aa98120baaff73a87b0505a0c32058e28f514f3dd3",
+        "size_in_bytes": 50687208
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/bin/ptxas",
+        "path_type": "hardlink",
+        "sha256": "eee2132a179257adc7714229c439748a06d6be67d7db93f421c0a33c9d2c2b2a",
+        "sha256_in_prefix": "eee2132a179257adc7714229c439748a06d6be67d7db93f421c0a33c9d2c2b2a",
+        "size_in_bytes": 30318176
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/compiler.py",
+        "path_type": "hardlink",
+        "sha256": "a979896b9c0acfd41dd953b90bdc4b10968f7c0b45a286eae3f829aaddb2bb55",
+        "sha256_in_prefix": "a979896b9c0acfd41dd953b90bdc4b10968f7c0b45a286eae3f829aaddb2bb55",
+        "size_in_bytes": 13246
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/driver.c",
+        "path_type": "hardlink",
+        "sha256": "41ce1f58e0a8aa9865e66b90d58b3307bb64c5a006830e49543444faf56202fc",
+        "sha256_in_prefix": "41ce1f58e0a8aa9865e66b90d58b3307bb64c5a006830e49543444faf56202fc",
+        "size_in_bytes": 17309
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/driver.py",
+        "path_type": "hardlink",
+        "sha256": "da771298f7bc45d24a61f35ef51742304421df1ab49d50bf1fc510dd5a46ea4b",
+        "sha256_in_prefix": "da771298f7bc45d24a61f35ef51742304421df1ab49d50bf1fc510dd5a46ea4b",
+        "size_in_bytes": 13289
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/Openacc/cupti_openacc.h",
+        "path_type": "hardlink",
+        "sha256": "67438ce5efe16ddddcc5d5f29f74821ea04141ac0b83840e467966e7b0abdbe3",
+        "sha256_in_prefix": "67438ce5efe16ddddcc5d5f29f74821ea04141ac0b83840e467966e7b0abdbe3",
+        "size_in_bytes": 3513
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/Openmp/cupti_openmp.h",
+        "path_type": "hardlink",
+        "sha256": "13558d99e6ffec76944a605e82d50d7b8215d62ee95de371833225c8a9f5ceb3",
+        "sha256_in_prefix": "13558d99e6ffec76944a605e82d50d7b8215d62ee95de371833225c8a9f5ceb3",
+        "size_in_bytes": 3491
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/Openmp/omp-tools.h",
+        "path_type": "hardlink",
+        "sha256": "026b82ff13c2ed53eedc1f96e0f997b8236e7c56b0858f0f8cd5de3da40500e8",
+        "sha256_in_prefix": "026b82ff13c2ed53eedc1f96e0f997b8236e7c56b0858f0f8cd5de3da40500e8",
+        "size_in_bytes": 37403
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/builtin_types.h",
+        "path_type": "hardlink",
+        "sha256": "2714fd55fdaadac9f14c138bf400b33666334d60023b654e554bb529d16deff8",
+        "sha256_in_prefix": "2714fd55fdaadac9f14c138bf400b33666334d60023b654e554bb529d16deff8",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/channel_descriptor.h",
+        "path_type": "hardlink",
+        "sha256": "9e8fef364cb4d8b78c2c8d0217c1835461da3e6fee45419c55431876dfd79f85",
+        "sha256_in_prefix": "9e8fef364cb4d8b78c2c8d0217c1835461da3e6fee45419c55431876dfd79f85",
+        "size_in_bytes": 21482
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/common_functions.h",
+        "path_type": "hardlink",
+        "sha256": "db62d365155c3d9cc41fa30975aee734c0af3202234937b438a47bb04423ea47",
+        "sha256_in_prefix": "db62d365155c3d9cc41fa30975aee734c0af3202234937b438a47bb04423ea47",
+        "size_in_bytes": 3410
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups.h",
+        "path_type": "hardlink",
+        "sha256": "254056f82d71ffb596b8d39aa28ad329069bd2acebca4906f28030d66107676b",
+        "sha256_in_prefix": "254056f82d71ffb596b8d39aa28ad329069bd2acebca4906f28030d66107676b",
+        "size_in_bytes": 60332
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/async.h",
+        "path_type": "hardlink",
+        "sha256": "c6c1070993f79ee118de5da9f12536775db6e97897ba652f0cffc6ca1f0f7556",
+        "sha256_in_prefix": "c6c1070993f79ee118de5da9f12536775db6e97897ba652f0cffc6ca1f0f7556",
+        "size_in_bytes": 19122
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/coalesced_reduce.h",
+        "path_type": "hardlink",
+        "sha256": "a41420158ee2eb857ced73404e0d5410840754d60e22d42d1e34b9078ca7f297",
+        "sha256_in_prefix": "a41420158ee2eb857ced73404e0d5410840754d60e22d42d1e34b9078ca7f297",
+        "size_in_bytes": 4257
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/coalesced_scan.h",
+        "path_type": "hardlink",
+        "sha256": "0df66fe5de56d1726ffad655860ac87632e3b3a682c7fbb4a32d650c8a63a354",
+        "sha256_in_prefix": "0df66fe5de56d1726ffad655860ac87632e3b3a682c7fbb4a32d650c8a63a354",
+        "size_in_bytes": 7314
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/driver_abi.h",
+        "path_type": "hardlink",
+        "sha256": "bfe6546f852018a264e8d4765825870f7c7fe36cbeb68808d6eac59fbd068be8",
+        "sha256_in_prefix": "bfe6546f852018a264e8d4765825870f7c7fe36cbeb68808d6eac59fbd068be8",
+        "size_in_bytes": 3964
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/functional.h",
+        "path_type": "hardlink",
+        "sha256": "d8157c8bc062773d24831b989090806f0171388651cb31e01be73fad52a14737",
+        "sha256_in_prefix": "d8157c8bc062773d24831b989090806f0171388651cb31e01be73fad52a14737",
+        "size_in_bytes": 8905
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/helpers.h",
+        "path_type": "hardlink",
+        "sha256": "2bd8efc675dce7ee85ba6d4a1b811028926b559e018473920096d9478b832f47",
+        "sha256_in_prefix": "2bd8efc675dce7ee85ba6d4a1b811028926b559e018473920096d9478b832f47",
+        "size_in_bytes": 26476
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/info.h",
+        "path_type": "hardlink",
+        "sha256": "223fdca88adc5c273095a42a08bec01f3303e07f3dcb4b497905c26e34c6b05a",
+        "sha256_in_prefix": "223fdca88adc5c273095a42a08bec01f3303e07f3dcb4b497905c26e34c6b05a",
+        "size_in_bytes": 12578
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/invoke.h",
+        "path_type": "hardlink",
+        "sha256": "3acab72beb59b971d508c409ef4f0f8cfa3e0703218e18c0a4ee1bd1360b1498",
+        "sha256_in_prefix": "3acab72beb59b971d508c409ef4f0f8cfa3e0703218e18c0a4ee1bd1360b1498",
+        "size_in_bytes": 8616
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/memory.h",
+        "path_type": "hardlink",
+        "sha256": "594dbc7947182c0d73d77d55606ba547879509237dc4af4a4b16d5eb9e983ecd",
+        "sha256_in_prefix": "594dbc7947182c0d73d77d55606ba547879509237dc4af4a4b16d5eb9e983ecd",
+        "size_in_bytes": 5484
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/partitioning.h",
+        "path_type": "hardlink",
+        "sha256": "e145eebd4999bc600dcb485de1eadd04d965a609e7e0ae2a1565a57f302c1cef",
+        "sha256_in_prefix": "e145eebd4999bc600dcb485de1eadd04d965a609e7e0ae2a1565a57f302c1cef",
+        "size_in_bytes": 7125
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/reduce.h",
+        "path_type": "hardlink",
+        "sha256": "51f31eccce69a91228b498e6b8580e9a232f6eee3db18823ada1eeb66555af4c",
+        "sha256_in_prefix": "51f31eccce69a91228b498e6b8580e9a232f6eee3db18823ada1eeb66555af4c",
+        "size_in_bytes": 22111
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/scan.h",
+        "path_type": "hardlink",
+        "sha256": "f93b706f601f10463fb6c9aa2634767688e43e9a11c77f3b4a8ab182f7dd06d4",
+        "sha256_in_prefix": "f93b706f601f10463fb6c9aa2634767688e43e9a11c77f3b4a8ab182f7dd06d4",
+        "size_in_bytes": 17166
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/details/sync.h",
+        "path_type": "hardlink",
+        "sha256": "ce888189cbc1eeb9576bfaff55236ebc7570acb20cec48c5fca76686f3e3d4b3",
+        "sha256_in_prefix": "ce888189cbc1eeb9576bfaff55236ebc7570acb20cec48c5fca76686f3e3d4b3",
+        "size_in_bytes": 10638
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/memcpy_async.h",
+        "path_type": "hardlink",
+        "sha256": "7ab3881ee39b75fc5184159fad7137c2c645e01d8652eab0cd0aec3f028fa5b8",
+        "sha256_in_prefix": "7ab3881ee39b75fc5184159fad7137c2c645e01d8652eab0cd0aec3f028fa5b8",
+        "size_in_bytes": 2960
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/reduce.h",
+        "path_type": "hardlink",
+        "sha256": "0748600e4a8cfbab9ea934e06f76f7e00d111f8bc6cfc9817f97b68d3d5d275a",
+        "sha256_in_prefix": "0748600e4a8cfbab9ea934e06f76f7e00d111f8bc6cfc9817f97b68d3d5d275a",
+        "size_in_bytes": 2949
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cooperative_groups/scan.h",
+        "path_type": "hardlink",
+        "sha256": "d8453a4f97163707ed9b607b162715df53e88e823ad72a397c75c6458906938d",
+        "sha256_in_prefix": "d8453a4f97163707ed9b607b162715df53e88e823ad72a397c75c6458906938d",
+        "size_in_bytes": 2940
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/common_functions.h",
+        "path_type": "hardlink",
+        "sha256": "f94e387f8c941a6c033f077b43fdc2cf989fd39c4718f4a5033cf9cccca52d24",
+        "sha256_in_prefix": "f94e387f8c941a6c033f077b43fdc2cf989fd39c4718f4a5033cf9cccca52d24",
+        "size_in_bytes": 13559
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/cudacc_ext.h",
+        "path_type": "hardlink",
+        "sha256": "296ea7d0898e64a4b456a5660475935ed1c8f35ea187cf187848148366987555",
+        "sha256_in_prefix": "296ea7d0898e64a4b456a5660475935ed1c8f35ea187cf187848148366987555",
+        "size_in_bytes": 3224
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_double_functions.h",
+        "path_type": "hardlink",
+        "sha256": "035bc1de0d2ac273447dca53d5df518860dac6a3d75e062bf95c5eda8307cb16",
+        "sha256_in_prefix": "035bc1de0d2ac273447dca53d5df518860dac6a3d75e062bf95c5eda8307cb16",
+        "size_in_bytes": 39938
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_double_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "61821ba9885be5099ff1ce187dc0bf8f2b60e054707173e3bf74c54f085bdb81",
+        "sha256_in_prefix": "61821ba9885be5099ff1ce187dc0bf8f2b60e054707173e3bf74c54f085bdb81",
+        "size_in_bytes": 8568
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "b71b96ca8daaa2a4594e89a2dc14a3c146c5bed0fd11ad1629a99180c150ce34",
+        "sha256_in_prefix": "b71b96ca8daaa2a4594e89a2dc14a3c146c5bed0fd11ad1629a99180c150ce34",
+        "size_in_bytes": 136370
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/device_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "f41c508878d1b844ce227b715c09664cf2a9f30957ac12933dc05a494426c1f4",
+        "sha256_in_prefix": "f41c508878d1b844ce227b715c09664cf2a9f30957ac12933dc05a494426c1f4",
+        "size_in_bytes": 38985
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/func_macro.h",
+        "path_type": "hardlink",
+        "sha256": "10ea4395a33dd7b6e1f5cc0188504f17af3d0c2301c398456abc4bc45b7e8bbe",
+        "sha256_in_prefix": "10ea4395a33dd7b6e1f5cc0188504f17af3d0c2301c398456abc4bc45b7e8bbe",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_config.h",
+        "path_type": "hardlink",
+        "sha256": "667351b6fba7215d1cb40472e6a6d30b57dae7e26948ae5e679bb948272efc13",
+        "sha256_in_prefix": "667351b6fba7215d1cb40472e6a6d30b57dae7e26948ae5e679bb948272efc13",
+        "size_in_bytes": 12169
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_defines.h",
+        "path_type": "hardlink",
+        "sha256": "6a0a5641be0adb97e138ffd1b2b22ecf52ffbcf782d8091b989635d908295ca7",
+        "sha256_in_prefix": "6a0a5641be0adb97e138ffd1b2b22ecf52ffbcf782d8091b989635d908295ca7",
+        "size_in_bytes": 9950
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/host_runtime.h",
+        "path_type": "hardlink",
+        "sha256": "94ea66931159564129f1d70c0061194484ec87ed7da3d8f2dfd91d48d2dcdcd8",
+        "sha256_in_prefix": "94ea66931159564129f1d70c0061194484ec87ed7da3d8f2dfd91d48d2dcdcd8",
+        "size_in_bytes": 10284
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/math_functions.h",
+        "path_type": "hardlink",
+        "sha256": "8985412050e8703b0fc6a69e28779e4f102c63ecdfd38fb37e49844f279a86e7",
+        "sha256_in_prefix": "8985412050e8703b0fc6a69e28779e4f102c63ecdfd38fb37e49844f279a86e7",
+        "size_in_bytes": 396266
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/math_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "bbe0866ddd11d8565674a1bee9b766192a2bf4a4ffc279884a3eb794f40a0123",
+        "sha256_in_prefix": "bbe0866ddd11d8565674a1bee9b766192a2bf4a4ffc279884a3eb794f40a0123",
+        "size_in_bytes": 100207
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/mma.h",
+        "path_type": "hardlink",
+        "sha256": "060492bc9fc847be56fb7b8b942db213a07bac7796b5a99a367ebe5f3614ef75",
+        "sha256_in_prefix": "060492bc9fc847be56fb7b8b942db213a07bac7796b5a99a367ebe5f3614ef75",
+        "size_in_bytes": 62564
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/mma.hpp",
+        "path_type": "hardlink",
+        "sha256": "b29a342d7ef5b540a2a712b9d7b06cb23d2773e6477fca0c5b3bc7a18601ffa2",
+        "sha256_in_prefix": "b29a342d7ef5b540a2a712b9d7b06cb23d2773e6477fca0c5b3bc7a18601ffa2",
+        "size_in_bytes": 66599
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/nvfunctional",
+        "path_type": "hardlink",
+        "sha256": "143334cea58ee9b97d8e924acfd53c08c6e3b7a8932a1d7cb506a5c40bd1b1a8",
+        "sha256_in_prefix": "143334cea58ee9b97d8e924acfd53c08c6e3b7a8932a1d7cb506a5c40bd1b1a8",
+        "size_in_bytes": 16900
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_70_rt.h",
+        "path_type": "hardlink",
+        "sha256": "29ff37d31ca603ece617b2ecba71472d23728614f952224ca1c8281c141e367b",
+        "sha256_in_prefix": "29ff37d31ca603ece617b2ecba71472d23728614f952224ca1c8281c141e367b",
+        "size_in_bytes": 6837
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_70_rt.hpp",
+        "path_type": "hardlink",
+        "sha256": "ddafeb53e63431207886d043158e0f090fe35e25854deed64f567284cb8224e0",
+        "sha256_in_prefix": "ddafeb53e63431207886d043158e0f090fe35e25854deed64f567284cb8224e0",
+        "size_in_bytes": 7837
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_80_rt.h",
+        "path_type": "hardlink",
+        "sha256": "31d2475824732ccfff9c30dfd60a3ad6b0ec97dc9d396de88ba49905f8d4c9cf",
+        "sha256_in_prefix": "31d2475824732ccfff9c30dfd60a3ad6b0ec97dc9d396de88ba49905f8d4c9cf",
+        "size_in_bytes": 7743
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_80_rt.hpp",
+        "path_type": "hardlink",
+        "sha256": "a3eac9bbe8e97a109ec8004682ffbc758441ee82530b0b8d76f482ab455445d1",
+        "sha256_in_prefix": "a3eac9bbe8e97a109ec8004682ffbc758441ee82530b0b8d76f482ab455445d1",
+        "size_in_bytes": 6705
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_90_rt.h",
+        "path_type": "hardlink",
+        "sha256": "6a7e3b9b45c505a277a545fd325138fa792d3f58dbdde2545e14379ed66dcdcf",
+        "sha256_in_prefix": "6a7e3b9b45c505a277a545fd325138fa792d3f58dbdde2545e14379ed66dcdcf",
+        "size_in_bytes": 11445
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/sm_90_rt.hpp",
+        "path_type": "hardlink",
+        "sha256": "62ea95ca0195eab82d5adc7527d70fa4423705729004823e133ea86453f7c2b1",
+        "sha256_in_prefix": "62ea95ca0195eab82d5adc7527d70fa4423705729004823e133ea86453f7c2b1",
+        "size_in_bytes": 9228
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/crt/storage_class.h",
+        "path_type": "hardlink",
+        "sha256": "77370e675ea92da37c7a3a87697c388876c127a7d75b17da53eb23d908d8cf38",
+        "sha256_in_prefix": "77370e675ea92da37c7a3a87697c388876c127a7d75b17da53eb23d908d8cf38",
+        "size_in_bytes": 4791
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuComplex.h",
+        "path_type": "hardlink",
+        "sha256": "5a9720a5a88f854fe8f6c4cf31c353119bb25c321cf31deccf8754592ced2f68",
+        "sha256_in_prefix": "5a9720a5a88f854fe8f6c4cf31c353119bb25c321cf31deccf8754592ced2f68",
+        "size_in_bytes": 12186
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda.h",
+        "path_type": "hardlink",
+        "sha256": "dbd3ae3677ecf076f6b2a0971d42b2dd5b9d5f1ccdf34e74774a16fc2df7cac1",
+        "sha256_in_prefix": "dbd3ae3677ecf076f6b2a0971d42b2dd5b9d5f1ccdf34e74774a16fc2df7cac1",
+        "size_in_bytes": 1048458
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaEGL.h",
+        "path_type": "hardlink",
+        "sha256": "fc2c1a4387043f5bdf37205249de6a171ce73c260ea2f17a0a98fe41648806ae",
+        "sha256_in_prefix": "fc2c1a4387043f5bdf37205249de6a171ce73c260ea2f17a0a98fe41648806ae",
+        "size_in_bytes": 39544
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaEGLTypedefs.h",
+        "path_type": "hardlink",
+        "sha256": "c45fc500dd4a6abf68c8727770253b8f3b53a715fc5b29698ae6326291861de9",
+        "sha256_in_prefix": "c45fc500dd4a6abf68c8727770253b8f3b53a715fc5b29698ae6326291861de9",
+        "size_in_bytes": 5645
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaGL.h",
+        "path_type": "hardlink",
+        "sha256": "80c4f51cf19afac8ae8e2d2002c298af85f8e4b736f472a0942fedb4d486c943",
+        "sha256_in_prefix": "80c4f51cf19afac8ae8e2d2002c298af85f8e4b736f472a0942fedb4d486c943",
+        "size_in_bytes": 22501
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaGLTypedefs.h",
+        "path_type": "hardlink",
+        "sha256": "742969408f8bb97805f6b3d206c8fb3a4220f20fdf5c38d3d212d94bc4c6a4e8",
+        "sha256_in_prefix": "742969408f8bb97805f6b3d206c8fb3a4220f20fdf5c38d3d212d94bc4c6a4e8",
+        "size_in_bytes": 6576
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaProfilerTypedefs.h",
+        "path_type": "hardlink",
+        "sha256": "1766962c82affc084d6f134e69955c46cc4887492eb1c9d5f143165b19010256",
+        "sha256_in_prefix": "1766962c82affc084d6f134e69955c46cc4887492eb1c9d5f143165b19010256",
+        "size_in_bytes": 3297
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaTypedefs.h",
+        "path_type": "hardlink",
+        "sha256": "d21598c95f8a33b4794236a0cfd50fd657610190c7188709998b58bc1fe7c0d7",
+        "sha256_in_prefix": "d21598c95f8a33b4794236a0cfd50fd657610190c7188709998b58bc1fe7c0d7",
+        "size_in_bytes": 110387
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaVDPAU.h",
+        "path_type": "hardlink",
+        "sha256": "369ecd7365a36b3fbe864a5b856e9ff5a6a9afe35b70f0c0824a2dd2c25eadca",
+        "sha256_in_prefix": "369ecd7365a36b3fbe864a5b856e9ff5a6a9afe35b70f0c0824a2dd2c25eadca",
+        "size_in_bytes": 12694
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudaVDPAUTypedefs.h",
+        "path_type": "hardlink",
+        "sha256": "c33f27c8e51dc0cf661fd24edd0656f80f5dcb1b7e22e7d25fb9e08125e908db",
+        "sha256_in_prefix": "c33f27c8e51dc0cf661fd24edd0656f80f5dcb1b7e22e7d25fb9e08125e908db",
+        "size_in_bytes": 4144
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier.h",
+        "path_type": "hardlink",
+        "sha256": "dd91fe6655ce0e14a2c1263daea4a78bf110c22db940c1cfe939becce7710701",
+        "sha256_in_prefix": "dd91fe6655ce0e14a2c1263daea4a78bf110c22db940c1cfe939becce7710701",
+        "size_in_bytes": 9340
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier_helpers.h",
+        "path_type": "hardlink",
+        "sha256": "382b240adb396c22a5fd12817bd33be3329222c56978f9f8e12fda269d6d1571",
+        "sha256_in_prefix": "382b240adb396c22a5fd12817bd33be3329222c56978f9f8e12fda269d6d1571",
+        "size_in_bytes": 12489
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_awbarrier_primitives.h",
+        "path_type": "hardlink",
+        "sha256": "9f9fff1358d8603865807f9fdeef0c423b73e7b519eefe55b2184cc9ed5e89c3",
+        "sha256_in_prefix": "9f9fff1358d8603865807f9fdeef0c423b73e7b519eefe55b2184cc9ed5e89c3",
+        "size_in_bytes": 4699
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_bf16.h",
+        "path_type": "hardlink",
+        "sha256": "d8128437ff296e27a20474a149f21ac1af8ecbfde327340097be13aa82d0dcc4",
+        "sha256_in_prefix": "d8128437ff296e27a20474a149f21ac1af8ecbfde327340097be13aa82d0dcc4",
+        "size_in_bytes": 185707
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_bf16.hpp",
+        "path_type": "hardlink",
+        "sha256": "6499594a4409eb91b4ca130f0c0ab79bea0c68427789af453ac6e09f30ad3d2d",
+        "sha256_in_prefix": "6499594a4409eb91b4ca130f0c0ab79bea0c68427789af453ac6e09f30ad3d2d",
+        "size_in_bytes": 137924
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_device_runtime_api.h",
+        "path_type": "hardlink",
+        "sha256": "6c885fbac8ab5dee7ea2c3933c020b0e1ea963c316d6179fc99bd30ff23382a3",
+        "sha256_in_prefix": "6c885fbac8ab5dee7ea2c3933c020b0e1ea963c316d6179fc99bd30ff23382a3",
+        "size_in_bytes": 46249
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_egl_interop.h",
+        "path_type": "hardlink",
+        "sha256": "3cd5989ecdf4308cad2501d23a1ed46d96256935f97b46dabf32b5e2d75efc2f",
+        "sha256_in_prefix": "3cd5989ecdf4308cad2501d23a1ed46d96256935f97b46dabf32b5e2d75efc2f",
+        "size_in_bytes": 37109
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp16.h",
+        "path_type": "hardlink",
+        "sha256": "d49ed295da66264f12343183dd23b4c95aec2e81e4a4dd559ccb5166bd866dcb",
+        "sha256_in_prefix": "d49ed295da66264f12343183dd23b4c95aec2e81e4a4dd559ccb5166bd866dcb",
+        "size_in_bytes": 175974
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp16.hpp",
+        "path_type": "hardlink",
+        "sha256": "27279d5485002cf06247f0a2dd1c5e7ffb14b3d56f0e23f830373ded893f62cf",
+        "sha256_in_prefix": "27279d5485002cf06247f0a2dd1c5e7ffb14b3d56f0e23f830373ded893f62cf",
+        "size_in_bytes": 123259
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp8.h",
+        "path_type": "hardlink",
+        "sha256": "43738fe68ff7ad261b2ad54895c5d5aff0a7714dd23ccfb4f63eb4e5ed997a0c",
+        "sha256_in_prefix": "43738fe68ff7ad261b2ad54895c5d5aff0a7714dd23ccfb4f63eb4e5ed997a0c",
+        "size_in_bytes": 13833
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_fp8.hpp",
+        "path_type": "hardlink",
+        "sha256": "6fe3dcc9981e8b9326229ea8a74410e3406036ea4efde8bae3c846fdd512f854",
+        "sha256_in_prefix": "6fe3dcc9981e8b9326229ea8a74410e3406036ea4efde8bae3c846fdd512f854",
+        "size_in_bytes": 64246
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_gl_interop.h",
+        "path_type": "hardlink",
+        "sha256": "55012cc0578e045e8937a434a5d964bdce564fb6c3d459d37ca7b0bc036e9427",
+        "sha256_in_prefix": "55012cc0578e045e8937a434a5d964bdce564fb6c3d459d37ca7b0bc036e9427",
+        "size_in_bytes": 19150
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_occupancy.h",
+        "path_type": "hardlink",
+        "sha256": "2abf47c8e7be865463040cdb20dc146243606db220223baf2acd3d51984c610a",
+        "sha256_in_prefix": "2abf47c8e7be865463040cdb20dc146243606db220223baf2acd3d51984c610a",
+        "size_in_bytes": 67179
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline.h",
+        "path_type": "hardlink",
+        "sha256": "d1e9d71b8f7037825a8e5422dda85ba767a2fee7d363f3339e273bcdf5a62873",
+        "sha256_in_prefix": "d1e9d71b8f7037825a8e5422dda85ba767a2fee7d363f3339e273bcdf5a62873",
+        "size_in_bytes": 8130
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline_helpers.h",
+        "path_type": "hardlink",
+        "sha256": "6e8d4bedeeaf0ae33e2b7225f0ad73e302548dae43c9740a768fe149650c13e1",
+        "sha256_in_prefix": "6e8d4bedeeaf0ae33e2b7225f0ad73e302548dae43c9740a768fe149650c13e1",
+        "size_in_bytes": 13852
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_pipeline_primitives.h",
+        "path_type": "hardlink",
+        "sha256": "167249b6e57aac7afa2e02f9e970f08a57126c5afa5b51e3ea67f500968c236d",
+        "sha256_in_prefix": "167249b6e57aac7afa2e02f9e970f08a57126c5afa5b51e3ea67f500968c236d",
+        "size_in_bytes": 8675
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_runtime.h",
+        "path_type": "hardlink",
+        "sha256": "6be39758fb262923ecb7b991082c4735957b9beb912c2018f281918be749ccf0",
+        "sha256_in_prefix": "6be39758fb262923ecb7b991082c4735957b9beb912c2018f281918be749ccf0",
+        "size_in_bytes": 90683
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_runtime_api.h",
+        "path_type": "hardlink",
+        "sha256": "ed8b3dcafff6b6b1445726ed6e1f9424a9c3286f1f1d6bd48d25f872064609c9",
+        "sha256_in_prefix": "ed8b3dcafff6b6b1445726ed6e1f9424a9c3286f1f1d6bd48d25f872064609c9",
+        "size_in_bytes": 608580
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_stdint.h",
+        "path_type": "hardlink",
+        "sha256": "5db14e93d0ad2632aa93b3e960da9b495b03c40b1533c6af038ad6a4f8b40634",
+        "sha256_in_prefix": "5db14e93d0ad2632aa93b3e960da9b495b03c40b1533c6af038ad6a4f8b40634",
+        "size_in_bytes": 4093
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_surface_types.h",
+        "path_type": "hardlink",
+        "sha256": "330e4ba386fc43e7fd9a880ebc04c6c8786ef5ddadd8ae973b1baab59ad28770",
+        "sha256_in_prefix": "330e4ba386fc43e7fd9a880ebc04c6c8786ef5ddadd8ae973b1baab59ad28770",
+        "size_in_bytes": 3688
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_texture_types.h",
+        "path_type": "hardlink",
+        "sha256": "2136d7f893673fb466f894a0355749f69aba93c155a2bf116e7aee0ec2aaeac9",
+        "sha256_in_prefix": "2136d7f893673fb466f894a0355749f69aba93c155a2bf116e7aee0ec2aaeac9",
+        "size_in_bytes": 3688
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cuda_vdpau_interop.h",
+        "path_type": "hardlink",
+        "sha256": "6d741a9d67362055d900a58d1a5db1033f672ef1664295b21abb03bdf792f450",
+        "sha256_in_prefix": "6d741a9d67362055d900a58d1a5db1033f672ef1664295b21abb03bdf792f450",
+        "size_in_bytes": 7727
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cudart_platform.h",
+        "path_type": "hardlink",
+        "sha256": "60deac2a10746fdc39b465f52182fbba52553eb580897f40e38a8bbf812d5b94",
+        "sha256_in_prefix": "60deac2a10746fdc39b465f52182fbba52553eb580897f40e38a8bbf812d5b94",
+        "size_in_bytes": 2717
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti.h",
+        "path_type": "hardlink",
+        "sha256": "2645720064c8318cf09bad9d7d5a9ab379cc7082e180ffd6773e9f878fcd103d",
+        "sha256_in_prefix": "2645720064c8318cf09bad9d7d5a9ab379cc7082e180ffd6773e9f878fcd103d",
+        "size_in_bytes": 4697
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_activity.h",
+        "path_type": "hardlink",
+        "sha256": "d5a348ff39909e3020b8c054d14aaa311fe1784efb16269f424665f68affd56c",
+        "sha256_in_prefix": "d5a348ff39909e3020b8c054d14aaa311fe1784efb16269f424665f68affd56c",
+        "size_in_bytes": 210387
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_activity_deprecated.h",
+        "path_type": "hardlink",
+        "sha256": "ad826ca002710360534f9d3ea2537c118712cdd95706945b4750132c6deb5483",
+        "sha256_in_prefix": "ad826ca002710360534f9d3ea2537c118712cdd95706945b4750132c6deb5483",
+        "size_in_bytes": 121526
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_callbacks.h",
+        "path_type": "hardlink",
+        "sha256": "ceb11545bd21b9b49f0faf505261ec2622fca007efab2b8a19c4d5462850ae77",
+        "sha256_in_prefix": "ceb11545bd21b9b49f0faf505261ec2622fca007efab2b8a19c4d5462850ae77",
+        "size_in_bytes": 29729
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_checkpoint.h",
+        "path_type": "hardlink",
+        "sha256": "ad3cfc2685b1a844815f26565216491a6e31798731e0e24eb49ecb775dd3fdbd",
+        "sha256_in_prefix": "ad3cfc2685b1a844815f26565216491a6e31798731e0e24eb49ecb775dd3fdbd",
+        "size_in_bytes": 5264
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_common.h",
+        "path_type": "hardlink",
+        "sha256": "f399bbe1bc54817a77b4468f4297b379ace6a6c34cc38d4fb2335262641d4f6d",
+        "sha256_in_prefix": "f399bbe1bc54817a77b4468f4297b379ace6a6c34cc38d4fb2335262641d4f6d",
+        "size_in_bytes": 3514
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_driver_cbid.h",
+        "path_type": "hardlink",
+        "sha256": "7472b241865b05b765c62c7316422834783921f197760ae2ca337506ed62ea0e",
+        "sha256_in_prefix": "7472b241865b05b765c62c7316422834783921f197760ae2ca337506ed62ea0e",
+        "size_in_bytes": 74462
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_events.h",
+        "path_type": "hardlink",
+        "sha256": "7fb94b1a60f67bc173bcc8518279f4fafed4d2f4e95248901c8a50c6001119bd",
+        "sha256_in_prefix": "7fb94b1a60f67bc173bcc8518279f4fafed4d2f4e95248901c8a50c6001119bd",
+        "size_in_bytes": 51896
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_metrics.h",
+        "path_type": "hardlink",
+        "sha256": "88b00e943adc6c712c20852682ad13a7564e63d3b73addf08f6f9b23c8986d2b",
+        "sha256_in_prefix": "88b00e943adc6c712c20852682ad13a7564e63d3b73addf08f6f9b23c8986d2b",
+        "size_in_bytes": 32148
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_nvtx_cbid.h",
+        "path_type": "hardlink",
+        "sha256": "fdaccfb51d60e2a8afbd7eea6ef1d1520d111c2585ee210e2721cc37da997bd1",
+        "sha256_in_prefix": "fdaccfb51d60e2a8afbd7eea6ef1d1520d111c2585ee210e2721cc37da997bd1",
+        "size_in_bytes": 5912
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_pcsampling.h",
+        "path_type": "hardlink",
+        "sha256": "c9c2474f7e8398f21a5731ec077c718d792117211f30224e9772db0ac1c58320",
+        "sha256_in_prefix": "c9c2474f7e8398f21a5731ec077c718d792117211f30224e9772db0ac1c58320",
+        "size_in_bytes": 32144
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_pcsampling_util.h",
+        "path_type": "hardlink",
+        "sha256": "971f0268d5e8c097b966f734e8b13ebbf66bcbf8ce0ecd6633a8fd4395885fd1",
+        "sha256_in_prefix": "971f0268d5e8c097b966f734e8b13ebbf66bcbf8ce0ecd6633a8fd4395885fd1",
+        "size_in_bytes": 12430
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_profiler_target.h",
+        "path_type": "hardlink",
+        "sha256": "26c71ea03ba196558d13368ed31c53f35749e7936b6c5d14b51249822b743ff1",
+        "sha256_in_prefix": "26c71ea03ba196558d13368ed31c53f35749e7936b6c5d14b51249822b743ff1",
+        "size_in_bytes": 32131
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_result.h",
+        "path_type": "hardlink",
+        "sha256": "6be0b863b2c06028824f59e039fa03b938b6b2d106d584da7f0c27e947cbf8b5",
+        "sha256_in_prefix": "6be0b863b2c06028824f59e039fa03b938b6b2d106d584da7f0c27e947cbf8b5",
+        "size_in_bytes": 12603
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_runtime_cbid.h",
+        "path_type": "hardlink",
+        "sha256": "d75a5797431d993b7152781e97eaeee0976a5af17f804206d786901314727f32",
+        "sha256_in_prefix": "d75a5797431d993b7152781e97eaeee0976a5af17f804206d786901314727f32",
+        "size_in_bytes": 46436
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_sass_metrics.h",
+        "path_type": "hardlink",
+        "sha256": "dd15bdb2726e15074e86b127df00c93abbb4e6ad15ff3b2c5aba83eedbd524ac",
+        "sha256_in_prefix": "dd15bdb2726e15074e86b127df00c93abbb4e6ad15ff3b2c5aba83eedbd524ac",
+        "size_in_bytes": 19674
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_target.h",
+        "path_type": "hardlink",
+        "sha256": "c78573d54a5bea6f62c6656998668a425743598408dce67ea1c1171b334ad041",
+        "sha256_in_prefix": "c78573d54a5bea6f62c6656998668a425743598408dce67ea1c1171b334ad041",
+        "size_in_bytes": 1263
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/cupti_version.h",
+        "path_type": "hardlink",
+        "sha256": "b2377e694a131a4116caf036554588a59c17c9701a725a82f206f0367b8ae43d",
+        "sha256_in_prefix": "b2377e694a131a4116caf036554588a59c17c9701a725a82f206f0367b8ae43d",
+        "size_in_bytes": 4425
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_atomic_functions.h",
+        "path_type": "hardlink",
+        "sha256": "391da33527d22b3685ae2ef8ce1e15b73e4cd33f540c1537aca782d6b61a550b",
+        "sha256_in_prefix": "391da33527d22b3685ae2ef8ce1e15b73e4cd33f540c1537aca782d6b61a550b",
+        "size_in_bytes": 9500
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_atomic_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "d1eecc3a234d5279e5a17a41febf564f960ec2ce5cc60cd0400cd1098be06850",
+        "sha256_in_prefix": "d1eecc3a234d5279e5a17a41febf564f960ec2ce5cc60cd0400cd1098be06850",
+        "size_in_bytes": 10486
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_double_functions.h",
+        "path_type": "hardlink",
+        "sha256": "294c487796757f1f1259f2d14f13c3ed107eccdef3b25cdbe27ec96892df2f72",
+        "sha256_in_prefix": "294c487796757f1f1259f2d14f13c3ed107eccdef3b25cdbe27ec96892df2f72",
+        "size_in_bytes": 3452
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_functions.h",
+        "path_type": "hardlink",
+        "sha256": "6d64ab853604f4d425b2cef131230456eb2fb68f63d9f8140d75951f65bf70e0",
+        "sha256_in_prefix": "6d64ab853604f4d425b2cef131230456eb2fb68f63d9f8140d75951f65bf70e0",
+        "size_in_bytes": 3410
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_launch_parameters.h",
+        "path_type": "hardlink",
+        "sha256": "1f5fc20bebef01a4b6eb2b385ec4c590c813c544dc8808dd8ecc238b3922b2f4",
+        "sha256_in_prefix": "1f5fc20bebef01a4b6eb2b385ec4c590c813c544dc8808dd8ecc238b3922b2f4",
+        "size_in_bytes": 3846
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/device_types.h",
+        "path_type": "hardlink",
+        "sha256": "d8b171a190493e80395741f511b29311a5c38b718324fb7338f7511c36ae7084",
+        "sha256_in_prefix": "d8b171a190493e80395741f511b29311a5c38b718324fb7338f7511c36ae7084",
+        "size_in_bytes": 3588
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/driver_functions.h",
+        "path_type": "hardlink",
+        "sha256": "70ddc88d1033d8c8f63e3df94b2c4922464d0c3bac9c9a9aab305d333a5029b0",
+        "sha256_in_prefix": "70ddc88d1033d8c8f63e3df94b2c4922464d0c3bac9c9a9aab305d333a5029b0",
+        "size_in_bytes": 4625
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/driver_types.h",
+        "path_type": "hardlink",
+        "sha256": "e1e050d7437381fb36065c466861d53162ef9c97caac49cc9a5f737c58b40f20",
+        "sha256_in_prefix": "e1e050d7437381fb36065c466861d53162ef9c97caac49cc9a5f737c58b40f20",
+        "size_in_bytes": 177782
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/fatbinary_section.h",
+        "path_type": "hardlink",
+        "sha256": "367b947f2df9f32189c787a7ab4a419deb63bf5ed459afa73a58184e8522b6bc",
+        "sha256_in_prefix": "367b947f2df9f32189c787a7ab4a419deb63bf5ed459afa73a58184e8522b6bc",
+        "size_in_bytes": 1809
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudaGL_meta.h",
+        "path_type": "hardlink",
+        "sha256": "75f77642e6917448db4ad38abda40b8b531dfeaae945087c3dfc99ce727c6d66",
+        "sha256_in_prefix": "75f77642e6917448db4ad38abda40b8b531dfeaae945087c3dfc99ce727c6d66",
+        "size_in_bytes": 3115
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudaVDPAU_meta.h",
+        "path_type": "hardlink",
+        "sha256": "7c079db28431694de12000290160ce2ac6bd92072e430e2d7727fc9252e6fb79",
+        "sha256_in_prefix": "7c079db28431694de12000290160ce2ac6bd92072e430e2d7727fc9252e6fb79",
+        "size_in_bytes": 1453
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_gl_interop_meta.h",
+        "path_type": "hardlink",
+        "sha256": "2d73aabd009e8f4b028004f52d428a619e3ae84171378848c1ff682215ce2c5d",
+        "sha256_in_prefix": "2d73aabd009e8f4b028004f52d428a619e3ae84171378848c1ff682215ce2c5d",
+        "size_in_bytes": 2250
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_meta.h",
+        "path_type": "hardlink",
+        "sha256": "85ac18a437b4c696831439c295723dd498f0091c566fe012d054bcc9d50c8317",
+        "sha256_in_prefix": "85ac18a437b4c696831439c295723dd498f0091c566fe012d054bcc9d50c8317",
+        "size_in_bytes": 94639
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_runtime_api_meta.h",
+        "path_type": "hardlink",
+        "sha256": "0fc09b00ddfe8cbb85d8a19fb011d71042d280bf762ab500883bee81613c07c3",
+        "sha256_in_prefix": "0fc09b00ddfe8cbb85d8a19fb011d71042d280bf762ab500883bee81613c07c3",
+        "size_in_bytes": 69706
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cuda_vdpau_interop_meta.h",
+        "path_type": "hardlink",
+        "sha256": "f0e2ea58ddba6846294d6517b5b1c9bc0e4662156fdf26d854e4d6ef22b7ef3f",
+        "sha256_in_prefix": "f0e2ea58ddba6846294d6517b5b1c9bc0e4662156fdf26d854e4d6ef22b7ef3f",
+        "size_in_bytes": 1367
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_cudart_removed_meta.h",
+        "path_type": "hardlink",
+        "sha256": "5f72395979a1b6c24d365818edca09e6f838b75d46e45451e97a3b31ba0879c9",
+        "sha256_in_prefix": "5f72395979a1b6c24d365818edca09e6f838b75d46e45451e97a3b31ba0879c9",
+        "size_in_bytes": 5172
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/generated_nvtx_meta.h",
+        "path_type": "hardlink",
+        "sha256": "6076ff443f20dece26f0f267ed9d309f1bd41daae5ec13805f9003afe04bdc72",
+        "sha256_in_prefix": "6076ff443f20dece26f0f267ed9d309f1bd41daae5ec13805f9003afe04bdc72",
+        "size_in_bytes": 7513
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/host_config.h",
+        "path_type": "hardlink",
+        "sha256": "06c707fc66b30196dba2d75d5732f946669f6d0f908d1c7c7fe2353b4d48056f",
+        "sha256_in_prefix": "06c707fc66b30196dba2d75d5732f946669f6d0f908d1c7c7fe2353b4d48056f",
+        "size_in_bytes": 3380
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/host_defines.h",
+        "path_type": "hardlink",
+        "sha256": "6c1430405e42d4dd5cdaaa4b579ea0d5cfb07aef58b20cfe8087f62a7deecff0",
+        "sha256_in_prefix": "6c1430405e42d4dd5cdaaa4b579ea0d5cfb07aef58b20cfe8087f62a7deecff0",
+        "size_in_bytes": 3386
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/library_types.h",
+        "path_type": "hardlink",
+        "sha256": "a7aef8e9a09dfc0ff556580a4612c90a1cde678b4dedee07047d879bb8438db5",
+        "sha256_in_prefix": "a7aef8e9a09dfc0ff556580a4612c90a1cde678b4dedee07047d879bb8438db5",
+        "size_in_bytes": 4836
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/math_constants.h",
+        "path_type": "hardlink",
+        "sha256": "715ea103241ef17edfecc06d68a8e3209ab707270e503a7a239722cc95f91cbc",
+        "sha256_in_prefix": "715ea103241ef17edfecc06d68a8e3209ab707270e503a7a239722cc95f91cbc",
+        "size_in_bytes": 7608
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/math_functions.h",
+        "path_type": "hardlink",
+        "sha256": "e57702ea3f9f24ab6dbe1c1ce2164da0b1cdc3cd3c6b665820eb59eebcbbc9dd",
+        "sha256_in_prefix": "e57702ea3f9f24ab6dbe1c1ce2164da0b1cdc3cd3c6b665820eb59eebcbbc9dd",
+        "size_in_bytes": 3398
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/mma.h",
+        "path_type": "hardlink",
+        "sha256": "218fd57a7c6e1277301aaf76321ad651bf97b308747a40172f2f516f18716b66",
+        "sha256_in_prefix": "218fd57a7c6e1277301aaf76321ad651bf97b308747a40172f2f516f18716b66",
+        "size_in_bytes": 2932
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvPTXCompiler.h",
+        "path_type": "hardlink",
+        "sha256": "cffbf43fa4a3d0a7c34019802887601683ceca586c3b8076db5c3728352a6ccd",
+        "sha256_in_prefix": "cffbf43fa4a3d0a7c34019802887601683ceca586c3b8076db5c3728352a6ccd",
+        "size_in_bytes": 12076
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvfunctional",
+        "path_type": "hardlink",
+        "sha256": "2241680a2fd0e0e84ff6712e048fb98d6c05951fcf7c6d398491fb95232c7d67",
+        "sha256_in_prefix": "2241680a2fd0e0e84ff6712e048fb98d6c05951fcf7c6d398491fb95232c7d67",
+        "size_in_bytes": 2975
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_common.h",
+        "path_type": "hardlink",
+        "sha256": "06a3e697d031c8dd74fa9b564f7850ce1d89516a905f9ed0e418d0dd9b9a28db",
+        "sha256_in_prefix": "06a3e697d031c8dd74fa9b564f7850ce1d89516a905f9ed0e418d0dd9b9a28db",
+        "size_in_bytes": 17255
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_cuda_host.h",
+        "path_type": "hardlink",
+        "sha256": "6819f222bfe17b13c318190fe964ae8cdd6623f0d83f6e6c1085d6618d4eed52",
+        "sha256_in_prefix": "6819f222bfe17b13c318190fe964ae8cdd6623f0d83f6e6c1085d6618d4eed52",
+        "size_in_bytes": 8298
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_host.h",
+        "path_type": "hardlink",
+        "sha256": "69f7471ba7ab69ea3896d945f6286c92a854ec871cc5c4426990d9ebf8a48e48",
+        "sha256_in_prefix": "69f7471ba7ab69ea3896d945f6286c92a854ec871cc5c4426990d9ebf8a48e48",
+        "size_in_bytes": 68506
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/nvperf_target.h",
+        "path_type": "hardlink",
+        "sha256": "64303e248e39f6d2c15b888b2c242361844031e1f07ea0c88176d5a952c3619e",
+        "sha256_in_prefix": "64303e248e39f6d2c15b888b2c242361844031e1f07ea0c88176d5a952c3619e",
+        "size_in_bytes": 22539
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_atomic_functions.h",
+        "path_type": "hardlink",
+        "sha256": "c78c9c20d56afff97d0784903c3f88e3c8d06cac717419a0a7c55fd863b441f8",
+        "sha256_in_prefix": "c78c9c20d56afff97d0784903c3f88e3c8d06cac717419a0a7c55fd863b441f8",
+        "size_in_bytes": 4478
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_atomic_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "d65e4d2ccf038436ea619fc4e752e8a8495025739b91bc28e7b777afee2e11b1",
+        "sha256_in_prefix": "d65e4d2ccf038436ea619fc4e752e8a8495025739b91bc28e7b777afee2e11b1",
+        "size_in_bytes": 4107
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "6b88c34a9fc3516d1dd3d839c20126fc8edb19301eef71ca4629e4841290062b",
+        "sha256_in_prefix": "6b88c34a9fc3516d1dd3d839c20126fc8edb19301eef71ca4629e4841290062b",
+        "size_in_bytes": 51048
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_20_intrinsics.hpp",
+        "path_type": "hardlink",
+        "sha256": "061101b9748a06c3462430490ed60bd1c191237c17ff0fce2200390fe6312169",
+        "sha256_in_prefix": "061101b9748a06c3462430490ed60bd1c191237c17ff0fce2200390fe6312169",
+        "size_in_bytes": 7694
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_30_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "6fa5bc571a7dbc3f4e08923a959b86c9961711d437122f0f4c09681cd93009c4",
+        "sha256_in_prefix": "6fa5bc571a7dbc3f4e08923a959b86c9961711d437122f0f4c09681cd93009c4",
+        "size_in_bytes": 16978
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_30_intrinsics.hpp",
+        "path_type": "hardlink",
+        "sha256": "c97d1e6dddbae6d27e04386f96e3f606169d3ee597a5164f23679e40516de72b",
+        "sha256_in_prefix": "c97d1e6dddbae6d27e04386f96e3f606169d3ee597a5164f23679e40516de72b",
+        "size_in_bytes": 24567
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_atomic_functions.h",
+        "path_type": "hardlink",
+        "sha256": "1c69d98101c0084d8001beb369b194511739dc8b1565e95cd81489aafb3d3a06",
+        "sha256_in_prefix": "1c69d98101c0084d8001beb369b194511739dc8b1565e95cd81489aafb3d3a06",
+        "size_in_bytes": 5703
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_atomic_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "0904d3bce118a7eb3986a0202ef0289f5d6f2d80eb0e9f1c4c775e97e5d1cc14",
+        "sha256_in_prefix": "0904d3bce118a7eb3986a0202ef0289f5d6f2d80eb0e9f1c4c775e97e5d1cc14",
+        "size_in_bytes": 6592
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "5dd92881db23cb5be1f2edde1aed22e714e61f10460238fafef54647eb2974e1",
+        "sha256_in_prefix": "5dd92881db23cb5be1f2edde1aed22e714e61f10460238fafef54647eb2974e1",
+        "size_in_bytes": 33539
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_32_intrinsics.hpp",
+        "path_type": "hardlink",
+        "sha256": "1a5f1a48b0cb722b785b7a4a412d7d1ac0c6f1161cc03eb91f0601fc27997bc3",
+        "sha256_in_prefix": "1a5f1a48b0cb722b785b7a4a412d7d1ac0c6f1161cc03eb91f0601fc27997bc3",
+        "size_in_bytes": 70616
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_35_atomic_functions.h",
+        "path_type": "hardlink",
+        "sha256": "6b75e812c29108439fd10ff963ffeb31f982e2949cbf85645208158152559f8e",
+        "sha256_in_prefix": "6b75e812c29108439fd10ff963ffeb31f982e2949cbf85645208158152559f8e",
+        "size_in_bytes": 2909
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_35_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "d264b9f8b0a0bd9893bcbefe306ff863023ecd61af33eb38c7246e324ba7302f",
+        "sha256_in_prefix": "d264b9f8b0a0bd9893bcbefe306ff863023ecd61af33eb38c7246e324ba7302f",
+        "size_in_bytes": 2664
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_60_atomic_functions.h",
+        "path_type": "hardlink",
+        "sha256": "fda9df35a26cbd0a43128ad879428891b8b3624c2b8a705c1bf6428840ad2ea2",
+        "sha256_in_prefix": "fda9df35a26cbd0a43128ad879428891b8b3624c2b8a705c1bf6428840ad2ea2",
+        "size_in_bytes": 13178
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_60_atomic_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "72020a75d0e7d81dd0cd897378120b00fd48472b3be10082c6c1f442a6951a5b",
+        "sha256_in_prefix": "72020a75d0e7d81dd0cd897378120b00fd48472b3be10082c6c1f442a6951a5b",
+        "size_in_bytes": 22903
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_61_intrinsics.h",
+        "path_type": "hardlink",
+        "sha256": "87f3012f55140f1417fea39d752226ceac858dcae1866ffadc6f7ba460f2ade5",
+        "sha256_in_prefix": "87f3012f55140f1417fea39d752226ceac858dcae1866ffadc6f7ba460f2ade5",
+        "size_in_bytes": 10902
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/sm_61_intrinsics.hpp",
+        "path_type": "hardlink",
+        "sha256": "37e9d0bdc06c3cc4f6526cb9cd1ebd73d2b5ab7eba5be26a7bb369a0b4ea4e68",
+        "sha256_in_prefix": "37e9d0bdc06c3cc4f6526cb9cd1ebd73d2b5ab7eba5be26a7bb369a0b4ea4e68",
+        "size_in_bytes": 6787
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_functions.h",
+        "path_type": "hardlink",
+        "sha256": "6f53bcd9202f120596c40f6e6535907068a6cd95287a6d906c0113df08777d97",
+        "sha256_in_prefix": "6f53bcd9202f120596c40f6e6535907068a6cd95287a6d906c0113df08777d97",
+        "size_in_bytes": 6782
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_indirect_functions.h",
+        "path_type": "hardlink",
+        "sha256": "bf2f50b85555f9ecd93fec76453f512e9daa21481d9e000238299a9527d514f0",
+        "sha256_in_prefix": "bf2f50b85555f9ecd93fec76453f512e9daa21481d9e000238299a9527d514f0",
+        "size_in_bytes": 10877
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/surface_types.h",
+        "path_type": "hardlink",
+        "sha256": "5e41570f59c76de48c81a8d1f94244f6e43b4c1cb32678dd9d42f8fb21a2b9f9",
+        "sha256_in_prefix": "5e41570f59c76de48c81a8d1f94244f6e43b4c1cb32678dd9d42f8fb21a2b9f9",
+        "size_in_bytes": 4530
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_fetch_functions.h",
+        "path_type": "hardlink",
+        "sha256": "28b0a65317f9698e7f51a957f2d48507a7b84eb8c0f21c943f12ce90c165b40a",
+        "sha256_in_prefix": "28b0a65317f9698e7f51a957f2d48507a7b84eb8c0f21c943f12ce90c165b40a",
+        "size_in_bytes": 12468
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_indirect_functions.h",
+        "path_type": "hardlink",
+        "sha256": "947ff2dcd8be86ae11674fcf3056c1334b61e7e3a64e7dd3b6ab699071e103cc",
+        "sha256_in_prefix": "947ff2dcd8be86ae11674fcf3056c1334b61e7e3a64e7dd3b6ab699071e103cc",
+        "size_in_bytes": 21163
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/texture_types.h",
+        "path_type": "hardlink",
+        "sha256": "ef79ed57283cafc7f32b2e55224eb2baf0b8e460de59ea5a2c8a8893e337462f",
+        "sha256_in_prefix": "ef79ed57283cafc7f32b2e55224eb2baf0b8e460de59ea5a2c8a8893e337462f",
+        "size_in_bytes": 6360
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_functions.h",
+        "path_type": "hardlink",
+        "sha256": "5b2a4690bf880db18e95acbb83f1b4a771ceece2c6444d03a3ffc9b621685b16",
+        "sha256_in_prefix": "5b2a4690bf880db18e95acbb83f1b4a771ceece2c6444d03a3ffc9b621685b16",
+        "size_in_bytes": 8003
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_functions.hpp",
+        "path_type": "hardlink",
+        "sha256": "69f5e13527772c54d9a3de843ed7ac4cb7efc5de274e62d5ce0923f7aeeb4d18",
+        "sha256_in_prefix": "69f5e13527772c54d9a3de843ed7ac4cb7efc5de274e62d5ce0923f7aeeb4d18",
+        "size_in_bytes": 10060
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/include/vector_types.h",
+        "path_type": "hardlink",
+        "sha256": "e82278caddca0fbcd055f9b5361ae0a8d618103108656c1a8af945c75da784d8",
+        "sha256_in_prefix": "e82278caddca0fbcd055f9b5361ae0a8d618103108656c1a8af945c75da784d8",
+        "size_in_bytes": 13396
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/backends/nvidia/lib/libdevice.10.bc",
+        "path_type": "hardlink",
+        "sha256": "5c2fae37c86e68c3a38605a95f512d7d12d5f3db986310be47f57304aa72a5ee",
+        "sha256_in_prefix": "5c2fae37c86e68c3a38605a95f512d7d12d5f3db986310be47f57304aa72a5ee",
+        "size_in_bytes": 473728
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3c3d953a2aa76f7a94aed8bbec2fc4f37957f11721fa32d5c0df7c23b5e23110",
+        "sha256_in_prefix": "3c3d953a2aa76f7a94aed8bbec2fc4f37957f11721fa32d5c0df7c23b5e23110",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "58152968fb8388c178f9cae44f75beefebaf6a14f7d6fb07aec6e36183c75ac6",
+        "sha256_in_prefix": "58152968fb8388c178f9cae44f75beefebaf6a14f7d6fb07aec6e36183c75ac6",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__pycache__/code_generator.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "8514935d2997c343932ce5c53df3eddc02e28a8c48411e3e5ec4758cea19ee8f",
+        "sha256_in_prefix": "8514935d2997c343932ce5c53df3eddc02e28a8c48411e3e5ec4758cea19ee8f",
+        "size_in_bytes": 43300
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__pycache__/compiler.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "657a8bcd6d1dd0f7011ce6b23f1ceb6eddd1c49b35aa795acf6e672943b7be76",
+        "sha256_in_prefix": "657a8bcd6d1dd0f7011ce6b23f1ceb6eddd1c49b35aa795acf6e672943b7be76",
+        "size_in_bytes": 14379
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__pycache__/errors.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "703b2a1be41246ab25bfc65c9a4066ddfa1218a9e3c10bc45c9f5c4047aadc2e",
+        "sha256_in_prefix": "703b2a1be41246ab25bfc65c9a4066ddfa1218a9e3c10bc45c9f5c4047aadc2e",
+        "size_in_bytes": 2015
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/__pycache__/make_launcher.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "1e46360dfe2d58c33a44c6083467e59c7ee08982f0f00f2e495176b50cb35b4a",
+        "sha256_in_prefix": "1e46360dfe2d58c33a44c6083467e59c7ee08982f0f00f2e495176b50cb35b4a",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/code_generator.py",
+        "path_type": "hardlink",
+        "sha256": "835d4fc33500e1accafc5c5e00f4f73d87432c114860c04b68849bf6f942b8e5",
+        "sha256_in_prefix": "835d4fc33500e1accafc5c5e00f4f73d87432c114860c04b68849bf6f942b8e5",
+        "size_in_bytes": 57757
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/compiler.py",
+        "path_type": "hardlink",
+        "sha256": "dc767c8fadcf23ea82d79e257c37d44077eae7f681cf967565fd43e9c017937b",
+        "sha256_in_prefix": "dc767c8fadcf23ea82d79e257c37d44077eae7f681cf967565fd43e9c017937b",
+        "size_in_bytes": 16605
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/errors.py",
+        "path_type": "hardlink",
+        "sha256": "23d635e690d670bf61798e1259674b78c0ed5ba222ab6a455f329f27a758fc2d",
+        "sha256_in_prefix": "23d635e690d670bf61798e1259674b78c0ed5ba222ab6a455f329f27a758fc2d",
+        "size_in_bytes": 1732
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/compiler/make_launcher.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/errors.py",
+        "path_type": "hardlink",
+        "sha256": "f167e7b9128b1b9efc9a063a701037102aee54c7fd50b10a14d811709e888563",
+        "sha256_in_prefix": "f167e7b9128b1b9efc9a063a701037102aee54c7fd50b10a14d811709e888563",
+        "size_in_bytes": 89
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8f6c7878e4605b1083b5b00c223ebba8fa65e03cde2627dfc61aa408bbc804d5",
+        "sha256_in_prefix": "8f6c7878e4605b1083b5b00c223ebba8fa65e03cde2627dfc61aa408bbc804d5",
+        "size_in_bytes": 4716
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "f3875b6c0e6f16f8eb7e80e21c21154ea9c5dd763d4a6447390e801acc360904",
+        "sha256_in_prefix": "f3875b6c0e6f16f8eb7e80e21c21154ea9c5dd763d4a6447390e801acc360904",
+        "size_in_bytes": 4371
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/core.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "c8ca920d7a8c6981741eca3249394317debaefeadeb0a496daff393e754b12d4",
+        "sha256_in_prefix": "c8ca920d7a8c6981741eca3249394317debaefeadeb0a496daff393e754b12d4",
+        "size_in_bytes": 87871
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/math.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "c38b853b4cc1d9373e9551d4a3ec73759c205d97d02d697ea94004415c4d2cb7",
+        "sha256_in_prefix": "c38b853b4cc1d9373e9551d4a3ec73759c205d97d02d697ea94004415c4d2cb7",
+        "size_in_bytes": 7666
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/random.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "02a83432b1047535d8ff68db7c65d2261caf9a112c965c027218244fc200f1ba",
+        "sha256_in_prefix": "02a83432b1047535d8ff68db7c65d2261caf9a112c965c027218244fc200f1ba",
+        "size_in_bytes": 5425
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/semantic.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "ea573806e7b7d7e671526a41f648c54cfb933791a63cebb3d3019264a06e450d",
+        "sha256_in_prefix": "ea573806e7b7d7e671526a41f648c54cfb933791a63cebb3d3019264a06e450d",
+        "size_in_bytes": 46593
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/__pycache__/standard.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "7f676e339f16817bc7542daf77b769bcd033e1187e67d1afd55a7fa94b26339e",
+        "sha256_in_prefix": "7f676e339f16817bc7542daf77b769bcd033e1187e67d1afd55a7fa94b26339e",
+        "size_in_bytes": 10634
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/core.py",
+        "path_type": "hardlink",
+        "sha256": "71330f394e584b0df29595d49f6ac8ac0c5503db9147090dc58ad888cebac7be",
+        "sha256_in_prefix": "71330f394e584b0df29595d49f6ac8ac0c5503db9147090dc58ad888cebac7be",
+        "size_in_bytes": 89244
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f24adfd52383f7866791ebaa5d45a5d2cc826e56ee2fd285f438e85d201fe643",
+        "sha256_in_prefix": "f24adfd52383f7866791ebaa5d45a5d2cc826e56ee2fd285f438e85d201fe643",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "7399fcb6ac4a16b47710ceb7ba9432433889dac0564a3198b33936d1a04dfc20",
+        "sha256_in_prefix": "7399fcb6ac4a16b47710ceb7ba9432433889dac0564a3198b33936d1a04dfc20",
+        "size_in_bytes": 236
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/__pycache__/libdevice.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "377997d9de028b34d3ea628e8a3175dfe6cfd6b53b6efb508dfd7fabfdd68b86",
+        "sha256_in_prefix": "377997d9de028b34d3ea628e8a3175dfe6cfd6b53b6efb508dfd7fabfdd68b86",
+        "size_in_bytes": 26343
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2fe2f4973b719fd3b4eb01b3572866411150fc423eea0c81eb9884cceee8101e",
+        "sha256_in_prefix": "2fe2f4973b719fd3b4eb01b3572866411150fc423eea0c81eb9884cceee8101e",
+        "size_in_bytes": 290
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "c3a0277da8b884e504420490d0a2f5feb181c81bee7efe907564d65a09dbda0f",
+        "sha256_in_prefix": "c3a0277da8b884e504420490d0a2f5feb181c81bee7efe907564d65a09dbda0f",
+        "size_in_bytes": 441
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/libdevice.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "253e216e1473bbb1ceab23ffc89b81cf346cfc0be2311e0952de71f64d41df34",
+        "sha256_in_prefix": "253e216e1473bbb1ceab23ffc89b81cf346cfc0be2311e0952de71f64d41df34",
+        "size_in_bytes": 48010
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/__pycache__/utils.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "3a3abba8c889b7ac18e979bff65d105fdff375e38c7695212b87e184122f4546",
+        "sha256_in_prefix": "3a3abba8c889b7ac18e979bff65d105fdff375e38c7695212b87e184122f4546",
+        "size_in_bytes": 3826
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/libdevice.py",
+        "path_type": "hardlink",
+        "sha256": "5a262e5667ad513f05ef843c6ae42d0e7912414ffeae4c85d1d3a0ba30e1b890",
+        "sha256_in_prefix": "5a262e5667ad513f05ef843c6ae42d0e7912414ffeae4c85d1d3a0ba30e1b890",
+        "size_in_bytes": 56033
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/cuda/utils.py",
+        "path_type": "hardlink",
+        "sha256": "7b506c955ee5646862dae548968e6523d75c37ad4750c214d9ab0f6918ecc88a",
+        "sha256_in_prefix": "7b506c955ee5646862dae548968e6523d75c37ad4750c214d9ab0f6918ecc88a",
+        "size_in_bytes": 4379
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/hip/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "89e4844782de5fdff4868ac2846514570a6e280a6b92e91af2e180904043c833",
+        "sha256_in_prefix": "89e4844782de5fdff4868ac2846514570a6e280a6b92e91af2e180904043c833",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/hip/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "2fec639f143568d20b85e91a6d61ec61b28400f8a9aee1058fbfccdbc134ade2",
+        "sha256_in_prefix": "2fec639f143568d20b85e91a6d61ec61b28400f8a9aee1058fbfccdbc134ade2",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/hip/__pycache__/libdevice.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b3d1404124da8491aaa0827facc03acd8566dcd2bedf08dcae7ccb7086f618d",
+        "sha256_in_prefix": "5b3d1404124da8491aaa0827facc03acd8566dcd2bedf08dcae7ccb7086f618d",
+        "size_in_bytes": 13606
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/hip/libdevice.py",
+        "path_type": "hardlink",
+        "sha256": "35a02a8c1b8b71cd9ef573b1662e1e60cd7073c125de20abb1809f5a05a9fb6f",
+        "sha256_in_prefix": "35a02a8c1b8b71cd9ef573b1662e1e60cd7073c125de20abb1809f5a05a9fb6f",
+        "size_in_bytes": 16551
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/extra/libdevice.py",
+        "path_type": "hardlink",
+        "sha256": "c0d1aa3bbd44707aeb9cdf40ad043ace7c12a72c17bbe39a53054c06854f8ca2",
+        "sha256_in_prefix": "c0d1aa3bbd44707aeb9cdf40ad043ace7c12a72c17bbe39a53054c06854f8ca2",
+        "size_in_bytes": 14729
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/math.py",
+        "path_type": "hardlink",
+        "sha256": "a34be0d3ae4b3ac9aede195cfda42f8a0a097b2bc9642fb59673ce6b3b607f10",
+        "sha256_in_prefix": "a34be0d3ae4b3ac9aede195cfda42f8a0a097b2bc9642fb59673ce6b3b607f10",
+        "size_in_bytes": 7332
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/random.py",
+        "path_type": "hardlink",
+        "sha256": "36130a37af1b19a0dec569aa08d30b00c74c8f02b6b632999d86dea169146792",
+        "sha256_in_prefix": "36130a37af1b19a0dec569aa08d30b00c74c8f02b6b632999d86dea169146792",
+        "size_in_bytes": 6736
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/semantic.py",
+        "path_type": "hardlink",
+        "sha256": "36d42f0429aae027cb985b53b9abc616fae4dad9e0ea03953e1e9fb46d0fb9a0",
+        "sha256_in_prefix": "36d42f0429aae027cb985b53b9abc616fae4dad9e0ea03953e1e9fb46d0fb9a0",
+        "size_in_bytes": 73108
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/language/standard.py",
+        "path_type": "hardlink",
+        "sha256": "e5d2cb724c08d0ef4130f3ba858d22cf21f834bfd970a5388aa6ad2a6bab91f9",
+        "sha256_in_prefix": "e5d2cb724c08d0ef4130f3ba858d22cf21f834bfd970a5388aa6ad2a6bab91f9",
+        "size_in_bytes": 13132
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "628fc87dc3f9e07c6e70569035ce1a3ad7ce1abc947106540c0e1a38d83ab079",
+        "sha256_in_prefix": "628fc87dc3f9e07c6e70569035ce1a3ad7ce1abc947106540c0e1a38d83ab079",
+        "size_in_bytes": 324
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "ec5564aee61a543b2c948054d244b4c861071b051ba7e59a3c52a0c0376190ac",
+        "sha256_in_prefix": "ec5564aee61a543b2c948054d244b4c861071b051ba7e59a3c52a0c0376190ac",
+        "size_in_bytes": 425
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__pycache__/cross_entropy.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "90190111f84a3401403e09af0574ae3b759681b119d5433c62051067e7bb8e56",
+        "sha256_in_prefix": "90190111f84a3401403e09af0574ae3b759681b119d5433c62051067e7bb8e56",
+        "size_in_bytes": 3414
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__pycache__/flash_attention.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "74059c41bc7a830b1e6a2d3b72487adb39081dbb7fddc5cbfa2531ddc22270d0",
+        "sha256_in_prefix": "74059c41bc7a830b1e6a2d3b72487adb39081dbb7fddc5cbfa2531ddc22270d0",
+        "size_in_bytes": 8752
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__pycache__/matmul.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb2c30720036672e4cacf8438a400b2f75d90eca14d0039d435cc7f76033ef2f",
+        "sha256_in_prefix": "fb2c30720036672e4cacf8438a400b2f75d90eca14d0039d435cc7f76033ef2f",
+        "size_in_bytes": 5974
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/__pycache__/matmul_perf_model.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "344c4813f305dfaef473735e6ae0e7b72f131442e5bdcb6090cca680e9eff045",
+        "sha256_in_prefix": "344c4813f305dfaef473735e6ae0e7b72f131442e5bdcb6090cca680e9eff045",
+        "size_in_bytes": 4604
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e9811540dce2a60402a683bfec1f07edc91a496d8876dd76e38b3b2322d60307",
+        "sha256_in_prefix": "e9811540dce2a60402a683bfec1f07edc91a496d8876dd76e38b3b2322d60307",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "1df89b994b690f00361bbf344ea013caceabfd83172102390051e72f8698ed05",
+        "sha256_in_prefix": "1df89b994b690f00361bbf344ea013caceabfd83172102390051e72f8698ed05",
+        "size_in_bytes": 245
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/matmul.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "2e3dc7f4afdd1cb7ddd588ff840b63220de864ae9cfb567ca7a22f7ffbc05682",
+        "sha256_in_prefix": "2e3dc7f4afdd1cb7ddd588ff840b63220de864ae9cfb567ca7a22f7ffbc05682",
+        "size_in_bytes": 10303
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/__pycache__/softmax.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "b68497fd997da2ec947af09bc3f3290ef0e239c77ab5227738fbf4111d64be09",
+        "sha256_in_prefix": "b68497fd997da2ec947af09bc3f3290ef0e239c77ab5227738fbf4111d64be09",
+        "size_in_bytes": 5564
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/matmul.py",
+        "path_type": "hardlink",
+        "sha256": "4b6f56bf45f8ec052808c7d2c3b03bf8bb7a954c863f3cbadd0f29703e353b5c",
+        "sha256_in_prefix": "4b6f56bf45f8ec052808c7d2c3b03bf8bb7a954c863f3cbadd0f29703e353b5c",
+        "size_in_bytes": 15920
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/blocksparse/softmax.py",
+        "path_type": "hardlink",
+        "sha256": "da37e6bb5067f57b0ce0fc81b1245a4a2dfe5cad1b240071c10f97b13c28edf8",
+        "sha256_in_prefix": "da37e6bb5067f57b0ce0fc81b1245a4a2dfe5cad1b240071c10f97b13c28edf8",
+        "size_in_bytes": 8243
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/cross_entropy.py",
+        "path_type": "hardlink",
+        "sha256": "26bfa243aa19422afc821e1646694fa21fc26387ccf31f5cf5d0ecb9abf21724",
+        "sha256_in_prefix": "26bfa243aa19422afc821e1646694fa21fc26387ccf31f5cf5d0ecb9abf21724",
+        "size_in_bytes": 3451
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/flash_attention.py",
+        "path_type": "hardlink",
+        "sha256": "d56f3e0fd38525601898d86c162a4ab9f1dbd59344388bb3e1932aff71c4ab7b",
+        "sha256_in_prefix": "d56f3e0fd38525601898d86c162a4ab9f1dbd59344388bb3e1932aff71c4ab7b",
+        "size_in_bytes": 18030
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/matmul.py",
+        "path_type": "hardlink",
+        "sha256": "90a55e646eeddf583f892f5293663e5c97371b33f90d3c2672fd75394004e3ee",
+        "sha256_in_prefix": "90a55e646eeddf583f892f5293663e5c97371b33f90d3c2672fd75394004e3ee",
+        "size_in_bytes": 9257
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/ops/matmul_perf_model.py",
+        "path_type": "hardlink",
+        "sha256": "13c2eea88adbfaefcd0aa4830f4afd84734f90f2824cc4ca24d0153ae66899a5",
+        "sha256_in_prefix": "13c2eea88adbfaefcd0aa4830f4afd84734f90f2824cc4ca24d0153ae66899a5",
+        "size_in_bytes": 6697
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f0c30658c36c1f1be016f6bc97aa3d97351c01d1a3a71890a2eb93c09e2a91d4",
+        "sha256_in_prefix": "f0c30658c36c1f1be016f6bc97aa3d97351c01d1a3a71890a2eb93c09e2a91d4",
+        "size_in_bytes": 184
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "b15c39a3580b4b4695ad09da6782b639545dc86e7d97316214a71b0058e62b76",
+        "sha256_in_prefix": "b15c39a3580b4b4695ad09da6782b639545dc86e7d97316214a71b0058e62b76",
+        "size_in_bytes": 353
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/flags.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "ab027a8df4cacb735cbce8675da04463564de12795f119b84ca5f9e45b58c4f7",
+        "sha256_in_prefix": "ab027a8df4cacb735cbce8675da04463564de12795f119b84ca5f9e45b58c4f7",
+        "size_in_bytes": 838
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/hook.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "9c3c037eaa6d2543e0bfe2c4a945800a9a597e14c542f57a64446164912bc838",
+        "sha256_in_prefix": "9c3c037eaa6d2543e0bfe2c4a945800a9a597e14c542f57a64446164912bc838",
+        "size_in_bytes": 1729
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/profile.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "33ffb15d45960faae0c68a4242d914bbe366a79540d57e357f2979f712013a02",
+        "sha256_in_prefix": "33ffb15d45960faae0c68a4242d914bbe366a79540d57e357f2979f712013a02",
+        "size_in_bytes": 5669
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/proton.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "d5620d4b3b1951b86df94e95f381f1114e6604efbb3f5fb42ecf6bc2eb750e74",
+        "sha256_in_prefix": "d5620d4b3b1951b86df94e95f381f1114e6604efbb3f5fb42ecf6bc2eb750e74",
+        "size_in_bytes": 2555
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/scope.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "822a274a373fbfe4a753b2ccf1eea430728fb8952e32efc5c6ee3a4f71db2ab8",
+        "sha256_in_prefix": "822a274a373fbfe4a753b2ccf1eea430728fb8952e32efc5c6ee3a4f71db2ab8",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/__pycache__/viewer.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "9827956b6c7a22f927c339873b0a0803060339d080fe243e402b62c9cbbb9d36",
+        "sha256_in_prefix": "9827956b6c7a22f927c339873b0a0803060339d080fe243e402b62c9cbbb9d36",
+        "size_in_bytes": 6736
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/flags.py",
+        "path_type": "hardlink",
+        "sha256": "04504a427a3344df49a75f3f4b932e21ebb9089316eff237f29339e6a3a0da84",
+        "sha256_in_prefix": "04504a427a3344df49a75f3f4b932e21ebb9089316eff237f29339e6a3a0da84",
+        "size_in_bytes": 604
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/hook.py",
+        "path_type": "hardlink",
+        "sha256": "d45ab0006add9a6cd6232cb7aaa3c7dfedce1ed42d74deb8151c049e2cd70b1f",
+        "sha256_in_prefix": "d45ab0006add9a6cd6232cb7aaa3c7dfedce1ed42d74deb8151c049e2cd70b1f",
+        "size_in_bytes": 1100
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/profile.py",
+        "path_type": "hardlink",
+        "sha256": "457cfa6de8faf99df78b508b1fd6864a07a041bd4b30a5b06e7c1d2322d296de",
+        "sha256_in_prefix": "457cfa6de8faf99df78b508b1fd6864a07a041bd4b30a5b06e7c1d2322d296de",
+        "size_in_bytes": 5832
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/proton.py",
+        "path_type": "hardlink",
+        "sha256": "7f57289028b6c18cc23a797cced3dbfbfc5cfae29204c5b7877b896a3bd8b97f",
+        "sha256_in_prefix": "7f57289028b6c18cc23a797cced3dbfbfc5cfae29204c5b7877b896a3bd8b97f",
+        "size_in_bytes": 2624
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/scope.py",
+        "path_type": "hardlink",
+        "sha256": "830b238b0ad71f5ebf48c1c4a2818cdca2cb7bb5c8a308c5bddfff2f9b785928",
+        "sha256_in_prefix": "830b238b0ad71f5ebf48c1c4a2818cdca2cb7bb5c8a308c5bddfff2f9b785928",
+        "size_in_bytes": 3125
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/profiler/viewer.py",
+        "path_type": "hardlink",
+        "sha256": "d1c1e183a80e7b6b78fc903d197a7cc01b6117248ee87c3c9185b63d6c23c0c3",
+        "sha256_in_prefix": "d1c1e183a80e7b6b78fc903d197a7cc01b6117248ee87c3c9185b63d6c23c0c3",
+        "size_in_bytes": 9635
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "98a2f972a2010d4c3658ef343510a1e2cd46f0a61aaa0339f534c06d390f3e34",
+        "sha256_in_prefix": "98a2f972a2010d4c3658ef343510a1e2cd46f0a61aaa0339f534c06d390f3e34",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "d500e5f4337632e75d68861926b25c28cab53f6daa71b71edfc9377b60b0746e",
+        "sha256_in_prefix": "d500e5f4337632e75d68861926b25c28cab53f6daa71b71edfc9377b60b0746e",
+        "size_in_bytes": 731
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/autotuner.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "5de3016361b5064839e003e1b8b25b21daef4e83a559e5b16d5c8f63d569d4a9",
+        "sha256_in_prefix": "5de3016361b5064839e003e1b8b25b21daef4e83a559e5b16d5c8f63d569d4a9",
+        "size_in_bytes": 14275
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/build.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "232eaaf558815ee9f1ee27e2ff089adcd85ebe34d87044eaf5d638371dc49c8f",
+        "sha256_in_prefix": "232eaaf558815ee9f1ee27e2ff089adcd85ebe34d87044eaf5d638371dc49c8f",
+        "size_in_bytes": 2192
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/cache.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2c43cab7cf1bfcac06f8fc2155c1909f3e58fc84f9677bdcac9442248a83084",
+        "sha256_in_prefix": "e2c43cab7cf1bfcac06f8fc2155c1909f3e58fc84f9677bdcac9442248a83084",
+        "size_in_bytes": 9790
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/driver.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "8cd7ea50b36806a8672c67cd9bd15284cb294ff1a327c5c9afe6aa72a657682f",
+        "sha256_in_prefix": "8cd7ea50b36806a8672c67cd9bd15284cb294ff1a327c5c9afe6aa72a657682f",
+        "size_in_bytes": 2689
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/errors.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "e87e51535cd42c1aa6880258ecc50be2e63fab9c842af019aca3893f45c7e3db",
+        "sha256_in_prefix": "e87e51535cd42c1aa6880258ecc50be2e63fab9c842af019aca3893f45c7e3db",
+        "size_in_bytes": 1482
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/interpreter.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "04d76187798209e6a55a74738d1581e0960e6cbc67f5e41d1b62f40e9d51fe26",
+        "sha256_in_prefix": "04d76187798209e6a55a74738d1581e0960e6cbc67f5e41d1b62f40e9d51fe26",
+        "size_in_bytes": 50275
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/__pycache__/jit.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "06685f17cd043eea953462f7da374ec69ca8ea8464613c861af91fac08cd41cd",
+        "sha256_in_prefix": "06685f17cd043eea953462f7da374ec69ca8ea8464613c861af91fac08cd41cd",
+        "size_in_bytes": 27977
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/autotuner.py",
+        "path_type": "hardlink",
+        "sha256": "9dd27fc2e39569708156c8e6233157d4844f1d3007e852949bed421e93a1350b",
+        "sha256_in_prefix": "9dd27fc2e39569708156c8e6233157d4844f1d3007e852949bed421e93a1350b",
+        "size_in_bytes": 14974
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/build.py",
+        "path_type": "hardlink",
+        "sha256": "ecfa821a309dc236a4009aba151c6727c090b5499604d798aa0a9875f92cd46d",
+        "sha256_in_prefix": "ecfa821a309dc236a4009aba151c6727c090b5499604d798aa0a9875f92cd46d",
+        "size_in_bytes": 2594
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/cache.py",
+        "path_type": "hardlink",
+        "sha256": "166afa0200ee6d3ed73def4b6a7e9613f7336d24bb64567fffcaa476f6969121",
+        "sha256_in_prefix": "166afa0200ee6d3ed73def4b6a7e9613f7336d24bb64567fffcaa476f6969121",
+        "size_in_bytes": 9759
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/driver.py",
+        "path_type": "hardlink",
+        "sha256": "559fbcf375eb8bbd51ef694707abac2292e8de018b6d92640252cfddec164a97",
+        "sha256_in_prefix": "559fbcf375eb8bbd51ef694707abac2292e8de018b6d92640252cfddec164a97",
+        "size_in_bytes": 1509
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/errors.py",
+        "path_type": "hardlink",
+        "sha256": "a23ef7767df8a896cb84e8da91a900b993d2bfe95a672218ca526227044403c6",
+        "sha256_in_prefix": "a23ef7767df8a896cb84e8da91a900b993d2bfe95a672218ca526227044403c6",
+        "size_in_bytes": 787
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/interpreter.py",
+        "path_type": "hardlink",
+        "sha256": "3569e57a6c4e2901903e76146c886240942444a806a36cae5277367670274dd7",
+        "sha256_in_prefix": "3569e57a6c4e2901903e76146c886240942444a806a36cae5277367670274dd7",
+        "size_in_bytes": 49061
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/runtime/jit.py",
+        "path_type": "hardlink",
+        "sha256": "7542bf9254646331ed90ce16fe1bfb2caf87d77d748d84396aab44c8027d508b",
+        "sha256_in_prefix": "7542bf9254646331ed90ce16fe1bfb2caf87d77d748d84396aab44c8027d508b",
+        "size_in_bytes": 34722
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/testing.py",
+        "path_type": "hardlink",
+        "sha256": "d464b766632e34d2b63a983df74a8951d947d807c8299bd5fb335945825ae18b",
+        "sha256_in_prefix": "d464b766632e34d2b63a983df74a8951d947d807c8299bd5fb335945825ae18b",
+        "size_in_bytes": 18347
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "0e2c235a9490691754d134cdd670aaa71bed7b8ed530a2e2bd77db5dba539fe4",
+        "sha256_in_prefix": "0e2c235a9490691754d134cdd670aaa71bed7b8ed530a2e2bd77db5dba539fe4",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__pycache__/build_extern.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "753284c20d5d267a2985c1efbaf3f53bf29fc431c8dfcb8f747267dd259b9fce",
+        "sha256_in_prefix": "753284c20d5d267a2985c1efbaf3f53bf29fc431c8dfcb8f747267dd259b9fce",
+        "size_in_bytes": 12153
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__pycache__/compile.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "5d58f8fb6141044f524cdadbe3c60f61ca9084280a0a09ee5a04736b1f54cda7",
+        "sha256_in_prefix": "5d58f8fb6141044f524cdadbe3c60f61ca9084280a0a09ee5a04736b1f54cda7",
+        "size_in_bytes": 6767
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__pycache__/disasm.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "26ba646e6b4ca8dad69be6db70625cc603326a765a410efb7f013039b672fb36",
+        "sha256_in_prefix": "26ba646e6b4ca8dad69be6db70625cc603326a765a410efb7f013039b672fb36",
+        "size_in_bytes": 2739
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/__pycache__/link.cpython-38.pyc",
+        "path_type": "hardlink",
+        "sha256": "d04e10d81bc536eb5e65163659e952fe138b5ab3cf954946d88a0e3598a20757",
+        "sha256_in_prefix": "d04e10d81bc536eb5e65163659e952fe138b5ab3cf954946d88a0e3598a20757",
+        "size_in_bytes": 11032
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/build_extern.py",
+        "path_type": "hardlink",
+        "sha256": "8c2afeda1bb79cb1812098421944358c0cb32edb6e8218e488f184c111632d1d",
+        "sha256_in_prefix": "8c2afeda1bb79cb1812098421944358c0cb32edb6e8218e488f184c111632d1d",
+        "size_in_bytes": 13673
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/compile.c",
+        "path_type": "hardlink",
+        "sha256": "ae3b8043c6fed834ed6e3dbd4a02b5371248e41494d8ff5c729f706b9a7c2327",
+        "sha256_in_prefix": "ae3b8043c6fed834ed6e3dbd4a02b5371248e41494d8ff5c729f706b9a7c2327",
+        "size_in_bytes": 2090
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/compile.h",
+        "path_type": "hardlink",
+        "sha256": "9fd40a2056532f8452b225ed03104ff571929f18f269ebd043d6c1a700ecbc08",
+        "sha256_in_prefix": "9fd40a2056532f8452b225ed03104ff571929f18f269ebd043d6c1a700ecbc08",
+        "size_in_bytes": 332
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/compile.py",
+        "path_type": "hardlink",
+        "sha256": "091d7ff93073efbacc78df65376a5ce84b44ad0c1f401741310be958aafe7b3b",
+        "sha256_in_prefix": "091d7ff93073efbacc78df65376a5ce84b44ad0c1f401741310be958aafe7b3b",
+        "size_in_bytes": 6468
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/disasm.py",
+        "path_type": "hardlink",
+        "sha256": "539f0644beefd7886ee3e07f91691c887698f635489132a0ec3b62a07e0b4c7a",
+        "sha256_in_prefix": "539f0644beefd7886ee3e07f91691c887698f635489132a0ec3b62a07e0b4c7a",
+        "size_in_bytes": 5080
+      },
+      {
+        "_path": "lib/python3.8/site-packages/triton/tools/link.py",
+        "path_type": "hardlink",
+        "sha256": "bbbaad7d944bae266400c10636f8fc605fa4d5cb6198b2fb0701d8a81813eb71",
+        "sha256_in_prefix": "bbbaad7d944bae266400c10636f8fc605fa4d5cb6198b2fb0701d8a81813eb71",
+        "size_in_bytes": 11871
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4a2861bd72e629a4f197763481c4592ac6fcbf1671a2b43e5fe3b50ae475011d",
+  "size": 244724383,
+  "subdir": "linux-64",
+  "timestamp": 1721333124000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/pytorch/linux-64/torchtriton-3.0.0-py38.tar.bz2",
+  "version": "3.0.0"
+}

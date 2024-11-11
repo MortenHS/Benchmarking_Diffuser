@@ -1,0 +1,52 @@
+{
+  "build": "hd681fbe_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "cuda-version >=12.4,<12.5.0a0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-cudart_linux-64-12.4.127-hd681fbe_0",
+  "features": "",
+  "files": [
+    "targets/x86_64-linux/lib/libcudart.so.12",
+    "targets/x86_64-linux/lib/libcudart.so.12.4.127"
+  ],
+  "fn": "cuda-cudart_linux-64-12.4.127-hd681fbe_0.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-cudart_linux-64-12.4.127-hd681fbe_0",
+    "type": 1
+  },
+  "md5": "18733c6375e707cef03a03ee06c8c662",
+  "name": "cuda-cudart_linux-64",
+  "noarch": "generic",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-cudart_linux-64-12.4.127-hd681fbe_0.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "targets/x86_64-linux/lib/libcudart.so.12",
+        "path_type": "softlink",
+        "sha256": "55985215f950f2b181b956347f5cd3186d53f032a3b1e82fec6654c3abe62069",
+        "size_in_bytes": 724993
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcudart.so.12.4.127",
+        "path_type": "hardlink",
+        "sha256": "55985215f950f2b181b956347f5cd3186d53f032a3b1e82fec6654c3abe62069",
+        "sha256_in_prefix": "55985215f950f2b181b956347f5cd3186d53f032a3b1e82fec6654c3abe62069",
+        "size_in_bytes": 724993
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "20f6cf2eda1ca7c0a765440b1fe4c32de552744c850eb1b142536c30c90f2421",
+  "size": 212383,
+  "subdir": "noarch",
+  "timestamp": 1714768610000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/cuda-cudart_linux-64-12.4.127-hd681fbe_0.conda",
+  "version": "12.4.127"
+}

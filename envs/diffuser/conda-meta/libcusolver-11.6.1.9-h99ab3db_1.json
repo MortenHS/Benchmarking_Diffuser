@@ -1,0 +1,99 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libcublas >=12.4.5.8,<12.5.0a0",
+    "libcusparse >=12.3.1.170,<12.4.0a0",
+    "libgcc-ng >=11.2.0",
+    "libnvjitlink >=12.4.127,<12.5.0a0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libcusolver-11.6.1.9-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libcusolver.so.11",
+    "lib/libcusolver.so.11.6.1.9",
+    "lib/libcusolverMg.so.11",
+    "lib/libcusolverMg.so.11.6.1.9",
+    "targets/x86_64-linux/lib/libcusolver.so.11",
+    "targets/x86_64-linux/lib/libcusolver.so.11.6.1.9",
+    "targets/x86_64-linux/lib/libcusolverMg.so.11",
+    "targets/x86_64-linux/lib/libcusolverMg.so.11.6.1.9"
+  ],
+  "fn": "libcusolver-11.6.1.9-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libcusolver-11.6.1.9-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "9834d3887485d1659e668ecd9335ed40",
+  "name": "libcusolver",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libcusolver-11.6.1.9-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libcusolver.so.11",
+        "path_type": "softlink",
+        "sha256": "69c3b2270e3234929ba9ee8348b558975e2106c8c5b58bbb57d87b886bf712cd",
+        "size_in_bytes": 120126976
+      },
+      {
+        "_path": "lib/libcusolver.so.11.6.1.9",
+        "path_type": "softlink",
+        "sha256": "69c3b2270e3234929ba9ee8348b558975e2106c8c5b58bbb57d87b886bf712cd",
+        "size_in_bytes": 120126976
+      },
+      {
+        "_path": "lib/libcusolverMg.so.11",
+        "path_type": "softlink",
+        "sha256": "fa7cb54be6987c28a0380b63f346a86f6c3793f53a453d79d875cf3a47ae1760",
+        "size_in_bytes": 82264969
+      },
+      {
+        "_path": "lib/libcusolverMg.so.11.6.1.9",
+        "path_type": "softlink",
+        "sha256": "fa7cb54be6987c28a0380b63f346a86f6c3793f53a453d79d875cf3a47ae1760",
+        "size_in_bytes": 82264969
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusolver.so.11",
+        "path_type": "softlink",
+        "sha256": "69c3b2270e3234929ba9ee8348b558975e2106c8c5b58bbb57d87b886bf712cd",
+        "size_in_bytes": 120126976
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusolver.so.11.6.1.9",
+        "path_type": "hardlink",
+        "sha256": "69c3b2270e3234929ba9ee8348b558975e2106c8c5b58bbb57d87b886bf712cd",
+        "sha256_in_prefix": "69c3b2270e3234929ba9ee8348b558975e2106c8c5b58bbb57d87b886bf712cd",
+        "size_in_bytes": 120126976
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusolverMg.so.11",
+        "path_type": "softlink",
+        "sha256": "fa7cb54be6987c28a0380b63f346a86f6c3793f53a453d79d875cf3a47ae1760",
+        "size_in_bytes": 82264969
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusolverMg.so.11.6.1.9",
+        "path_type": "hardlink",
+        "sha256": "fa7cb54be6987c28a0380b63f346a86f6c3793f53a453d79d875cf3a47ae1760",
+        "sha256_in_prefix": "fa7cb54be6987c28a0380b63f346a86f6c3793f53a453d79d875cf3a47ae1760",
+        "size_in_bytes": 82264969
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "cf1c37a039a6fc15eae197de9821c949bbeeafdcdd8d66069598936f235f064a",
+  "size": 87533391,
+  "subdir": "linux-64",
+  "timestamp": 1715202300000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libcusolver-11.6.1.9-h99ab3db_1.conda",
+  "version": "11.6.1.9"
+}

@@ -1,0 +1,67 @@
+{
+  "build": "h7934f7d_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libnvfatbin-12.4.127-h7934f7d_2",
+  "features": "",
+  "files": [
+    "lib/libnvfatbin.so.12",
+    "lib/libnvfatbin.so.12.4.127",
+    "targets/x86_64-linux/lib/libnvfatbin.so.12",
+    "targets/x86_64-linux/lib/libnvfatbin.so.12.4.127"
+  ],
+  "fn": "libnvfatbin-12.4.127-h7934f7d_2.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libnvfatbin-12.4.127-h7934f7d_2",
+    "type": 1
+  },
+  "md5": "147e1383eac4337a79fcc10cde9512ed",
+  "name": "libnvfatbin",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libnvfatbin-12.4.127-h7934f7d_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libnvfatbin.so.12",
+        "path_type": "softlink",
+        "sha256": "108a8b0221df71730ea30ac30850603d02efb0a408afe7272bb59e43c1a510ac",
+        "size_in_bytes": 2388281
+      },
+      {
+        "_path": "lib/libnvfatbin.so.12.4.127",
+        "path_type": "softlink",
+        "sha256": "108a8b0221df71730ea30ac30850603d02efb0a408afe7272bb59e43c1a510ac",
+        "size_in_bytes": 2388281
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvfatbin.so.12",
+        "path_type": "softlink",
+        "sha256": "108a8b0221df71730ea30ac30850603d02efb0a408afe7272bb59e43c1a510ac",
+        "size_in_bytes": 2388281
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvfatbin.so.12.4.127",
+        "path_type": "hardlink",
+        "sha256": "108a8b0221df71730ea30ac30850603d02efb0a408afe7272bb59e43c1a510ac",
+        "sha256_in_prefix": "108a8b0221df71730ea30ac30850603d02efb0a408afe7272bb59e43c1a510ac",
+        "size_in_bytes": 2388281
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a0ee6444bdd11c48e2f5b4e80a50ca0158fa4b9f7443d1551c78954d0441976c",
+  "size": 878034,
+  "subdir": "linux-64",
+  "timestamp": 1715877887000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnvfatbin-12.4.127-h7934f7d_2.conda",
+  "version": "12.4.127"
+}

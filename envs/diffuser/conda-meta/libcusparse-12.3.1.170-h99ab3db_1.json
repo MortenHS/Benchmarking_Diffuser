@@ -1,0 +1,68 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libnvjitlink >=12.4.127,<12.5.0a0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libcusparse-12.3.1.170-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libcusparse.so.12",
+    "lib/libcusparse.so.12.3.1.170",
+    "targets/x86_64-linux/lib/libcusparse.so.12",
+    "targets/x86_64-linux/lib/libcusparse.so.12.3.1.170"
+  ],
+  "fn": "libcusparse-12.3.1.170-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libcusparse-12.3.1.170-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "df9189b5f7e95314d4b18ec017e681d4",
+  "name": "libcusparse",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libcusparse-12.3.1.170-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libcusparse.so.12",
+        "path_type": "softlink",
+        "sha256": "20cc16104ba12c3d37e946d5e6f591be5334a7c79e68021b184fb1ebefd65cd8",
+        "size_in_bytes": 281295680
+      },
+      {
+        "_path": "lib/libcusparse.so.12.3.1.170",
+        "path_type": "softlink",
+        "sha256": "20cc16104ba12c3d37e946d5e6f591be5334a7c79e68021b184fb1ebefd65cd8",
+        "size_in_bytes": 281295680
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusparse.so.12",
+        "path_type": "softlink",
+        "sha256": "20cc16104ba12c3d37e946d5e6f591be5334a7c79e68021b184fb1ebefd65cd8",
+        "size_in_bytes": 281295680
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcusparse.so.12.3.1.170",
+        "path_type": "hardlink",
+        "sha256": "20cc16104ba12c3d37e946d5e6f591be5334a7c79e68021b184fb1ebefd65cd8",
+        "sha256_in_prefix": "20cc16104ba12c3d37e946d5e6f591be5334a7c79e68021b184fb1ebefd65cd8",
+        "size_in_bytes": 281295680
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "fb725f679e6d33866d5ab85e2ed6a38b5ad349556904c8b7cc73597a8a61414e",
+  "size": 125880580,
+  "subdir": "linux-64",
+  "timestamp": 1715023162000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libcusparse-12.3.1.170-h99ab3db_1.conda",
+  "version": "12.3.1.170"
+}

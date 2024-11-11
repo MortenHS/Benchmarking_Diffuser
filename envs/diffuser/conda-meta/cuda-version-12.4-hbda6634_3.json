@@ -1,0 +1,36 @@
+{
+  "build": "hbda6634_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [
+    "cudatoolkit 12.4|12.4.*",
+    "__cuda >=12"
+  ],
+  "depends": [],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-version-12.4-hbda6634_3",
+  "features": "",
+  "files": [],
+  "fn": "cuda-version-12.4-hbda6634_3.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-version-12.4-hbda6634_3",
+    "type": 1
+  },
+  "md5": "01da91cd7f8aacc5c5ed2bf2e7ab14dd",
+  "name": "cuda-version",
+  "noarch": "generic",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-version-12.4-hbda6634_3.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c3e912318e7a30aa3e2825d87a623fb29105c6a51002663123c156e7277957c7",
+  "size": 19955,
+  "subdir": "noarch",
+  "timestamp": 1714504055000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/cuda-version-12.4-hbda6634_3.conda",
+  "version": "12.4"
+}

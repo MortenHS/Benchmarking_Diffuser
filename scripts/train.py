@@ -1,9 +1,7 @@
 import diffuser.utils as utils
 import pdb
-import minari
 import gymnasium as gym
 import gymnasium_robotics
-import numpy as np
 
 #-----------------------------------------------------------------------------#
 #----------------------------------- setup -----------------------------------#

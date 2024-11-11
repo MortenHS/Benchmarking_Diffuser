@@ -1,0 +1,45 @@
+{
+  "build": "h06a4308_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-cudart 12.4.127.*",
+    "cuda-nvrtc 12.4.127.*",
+    "cuda-opencl 12.4.127.*",
+    "libcublas 12.4.5.8.*",
+    "libcufft 11.2.1.3.*",
+    "libcufile 1.9.1.3.*",
+    "libcurand 10.3.5.147.*",
+    "libcusolver 11.6.1.9.*",
+    "libcusparse 12.3.1.170.*",
+    "libnpp 12.2.5.30.*",
+    "libnvfatbin 12.4.127.*",
+    "libnvjitlink 12.4.127.*",
+    "libnvjpeg 12.3.1.117.*"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-libraries-12.4.1-h06a4308_1",
+  "features": "",
+  "files": [],
+  "fn": "cuda-libraries-12.4.1-h06a4308_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-libraries-12.4.1-h06a4308_1",
+    "type": 1
+  },
+  "md5": "b5586e3a3218d7c7bfc8281dae05c4a1",
+  "name": "cuda-libraries",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-libraries-12.4.1-h06a4308_1.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "48df28e8ad2b5791e093421e4cf6f3f172c41ebe6fcd4de9fad1061de0ae11b8",
+  "size": 18971,
+  "subdir": "linux-64",
+  "timestamp": 1716218655000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cuda-libraries-12.4.1-h06a4308_1.conda",
+  "version": "12.4.1"
+}

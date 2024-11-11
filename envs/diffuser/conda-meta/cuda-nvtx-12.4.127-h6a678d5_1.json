@@ -1,0 +1,66 @@
+{
+  "build": "h6a678d5_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-nvtx-12.4.127-h6a678d5_1",
+  "features": "",
+  "files": [
+    "lib/libnvToolsExt.so.1",
+    "lib/libnvToolsExt.so.1.0.0",
+    "targets/x86_64-linux/lib/libnvToolsExt.so.1",
+    "targets/x86_64-linux/lib/libnvToolsExt.so.1.0.0"
+  ],
+  "fn": "cuda-nvtx-12.4.127-h6a678d5_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-nvtx-12.4.127-h6a678d5_1",
+    "type": 1
+  },
+  "md5": "3ab3673de24a36e5a6e07113f1266325",
+  "name": "cuda-nvtx",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-nvtx-12.4.127-h6a678d5_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libnvToolsExt.so.1",
+        "path_type": "softlink",
+        "sha256": "cea9bb5747737a8aa6794dca306fae9ea8ffc2251a5bf3ed1b519016ae5b4f6c",
+        "size_in_bytes": 43681
+      },
+      {
+        "_path": "lib/libnvToolsExt.so.1.0.0",
+        "path_type": "softlink",
+        "sha256": "cea9bb5747737a8aa6794dca306fae9ea8ffc2251a5bf3ed1b519016ae5b4f6c",
+        "size_in_bytes": 43681
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvToolsExt.so.1",
+        "path_type": "softlink",
+        "sha256": "cea9bb5747737a8aa6794dca306fae9ea8ffc2251a5bf3ed1b519016ae5b4f6c",
+        "size_in_bytes": 43681
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvToolsExt.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "cea9bb5747737a8aa6794dca306fae9ea8ffc2251a5bf3ed1b519016ae5b4f6c",
+        "sha256_in_prefix": "cea9bb5747737a8aa6794dca306fae9ea8ffc2251a5bf3ed1b519016ae5b4f6c",
+        "size_in_bytes": 43681
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "6be816a2d9025025237b16f185c3846f4a3dccc016677a6be6948e1c439f0f1d",
+  "size": 30402,
+  "subdir": "linux-64",
+  "timestamp": 1715021390000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cuda-nvtx-12.4.127-h6a678d5_1.conda",
+  "version": "12.4.127"
+}

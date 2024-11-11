@@ -1,0 +1,36 @@
+{
+  "build": "hb982923_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "__linux",
+    "cuda-libraries 12.4.1.*"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-runtime-12.4.1-hb982923_0",
+  "features": "",
+  "files": [],
+  "fn": "cuda-runtime-12.4.1-hb982923_0.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-runtime-12.4.1-hb982923_0",
+    "type": 1
+  },
+  "md5": "dc247788a03f6c3c5e3b4136da2a9fd4",
+  "name": "cuda-runtime",
+  "noarch": "generic",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-runtime-12.4.1-hb982923_0.conda",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "72d0738307b22d6a030a8753e4fcf9547aa4cf8557a19ada37a926f5029f0874",
+  "size": 18889,
+  "subdir": "noarch",
+  "timestamp": 1716239594000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/cuda-runtime-12.4.1-hb982923_0.conda",
+  "version": "12.4.1"
+}

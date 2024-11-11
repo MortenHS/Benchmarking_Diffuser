@@ -1,0 +1,45 @@
+{
+  "build": "hc786d27_7",
+  "build_number": 7,
+  "channel": "https://conda.anaconda.org/pytorch/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-cudart >=12.4,<12.5",
+    "cuda-cupti >=12.4,<12.5",
+    "cuda-libraries >=12.4,<12.5",
+    "cuda-nvrtc >=12.4,<12.5",
+    "cuda-nvtx >=12.4,<12.5",
+    "cuda-runtime >=12.4,<12.5",
+    "libcublas >=12.4.5.8,<12.5.2.13",
+    "libcufft >=11.2.1.3,<11.2.3.18",
+    "libcusolver >=11.6.1.9,<11.6.2.40",
+    "libcusparse >=12.3.1.170,<12.4.1.18",
+    "libnpp >=12.2.5.30,<12.3.0.116",
+    "libnvjitlink >=12.4.127,<12.5.40",
+    "libnvjpeg >=12.3.1.117,<12.3.2.38"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/pytorch-cuda-12.4-hc786d27_7",
+  "features": "",
+  "files": [],
+  "fn": "pytorch-cuda-12.4-hc786d27_7.tar.bz2",
+  "license": "",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/pytorch-cuda-12.4-hc786d27_7",
+    "type": 1
+  },
+  "md5": "06635b1bbf5e2fef4a8b9b282500cd7b",
+  "name": "pytorch-cuda",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/pytorch-cuda-12.4-hc786d27_7.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4ce6352f6270673aaf335909da2bbdd70ad8aaae489319e1e3a5ac0aae720314",
+  "size": 7189,
+  "subdir": "linux-64",
+  "timestamp": 1724179791000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/pytorch/linux-64/pytorch-cuda-12.4-hc786d27_7.tar.bz2",
+  "version": "12.4"
+}

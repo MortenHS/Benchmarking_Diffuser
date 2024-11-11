@@ -1,0 +1,67 @@
+{
+  "build": "h99ab3db_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libcurand-10.3.5.147-h99ab3db_1",
+  "features": "",
+  "files": [
+    "lib/libcurand.so.10",
+    "lib/libcurand.so.10.3.5.147",
+    "targets/x86_64-linux/lib/libcurand.so.10",
+    "targets/x86_64-linux/lib/libcurand.so.10.3.5.147"
+  ],
+  "fn": "libcurand-10.3.5.147-h99ab3db_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libcurand-10.3.5.147-h99ab3db_1",
+    "type": 1
+  },
+  "md5": "90c5387d4d88ea2162ac43a8d89412ac",
+  "name": "libcurand",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libcurand-10.3.5.147-h99ab3db_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libcurand.so.10",
+        "path_type": "softlink",
+        "sha256": "58dc6186e3fa8efaa38bd08dfd9399998b9c2c766e3085c7447ad9ad383bf3e9",
+        "size_in_bytes": 96525744
+      },
+      {
+        "_path": "lib/libcurand.so.10.3.5.147",
+        "path_type": "softlink",
+        "sha256": "58dc6186e3fa8efaa38bd08dfd9399998b9c2c766e3085c7447ad9ad383bf3e9",
+        "size_in_bytes": 96525744
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcurand.so.10",
+        "path_type": "softlink",
+        "sha256": "58dc6186e3fa8efaa38bd08dfd9399998b9c2c766e3085c7447ad9ad383bf3e9",
+        "size_in_bytes": 96525744
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libcurand.so.10.3.5.147",
+        "path_type": "hardlink",
+        "sha256": "58dc6186e3fa8efaa38bd08dfd9399998b9c2c766e3085c7447ad9ad383bf3e9",
+        "sha256_in_prefix": "58dc6186e3fa8efaa38bd08dfd9399998b9c2c766e3085c7447ad9ad383bf3e9",
+        "size_in_bytes": 96525744
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "474557c43e3b97e990f8231966738d2f76137873e7b1b31e996346aaa69c4e1b",
+  "size": 44495048,
+  "subdir": "linux-64",
+  "timestamp": 1714677562000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libcurand-10.3.5.147-h99ab3db_1.conda",
+  "version": "10.3.5.147"
+}

@@ -1,0 +1,70 @@
+{
+  "build": "h6a678d5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0",
+    "ocl-icd >=2.3.2,<3.0a0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/cuda-opencl-12.4.127-h6a678d5_0",
+  "features": "",
+  "files": [
+    "etc/OpenCL/vendors/cuda.icd",
+    "targets/x86_64-linux/lib/libOpenCL.so.1",
+    "targets/x86_64-linux/lib/libOpenCL.so.1.0",
+    "targets/x86_64-linux/lib/libOpenCL.so.1.0.0"
+  ],
+  "fn": "cuda-opencl-12.4.127-h6a678d5_0.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/cuda-opencl-12.4.127-h6a678d5_0",
+    "type": 1
+  },
+  "md5": "4c631396b2bd38a946728126cc8a0508",
+  "name": "cuda-opencl",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/cuda-opencl-12.4.127-h6a678d5_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "etc/OpenCL/vendors/cuda.icd",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/croot/cuda-opencl_1715892624318/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "d94a3ddcdbaa25af9d1ba2c98e6320db001d0633c074462684fe096c21d4dfa3",
+        "sha256_in_prefix": "251e653891dfb9fddda6c652f1571f47151eab5a1a58690a3c3fcdb0eec4adca",
+        "size_in_bytes": 294
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libOpenCL.so.1",
+        "path_type": "softlink",
+        "sha256": "f50044a63d3dcf9b5a9814051002715456012a7351ea887ecadad42c79060172",
+        "size_in_bytes": 37385
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libOpenCL.so.1.0",
+        "path_type": "softlink",
+        "sha256": "f50044a63d3dcf9b5a9814051002715456012a7351ea887ecadad42c79060172",
+        "size_in_bytes": 37385
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libOpenCL.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "f50044a63d3dcf9b5a9814051002715456012a7351ea887ecadad42c79060172",
+        "sha256_in_prefix": "f50044a63d3dcf9b5a9814051002715456012a7351ea887ecadad42c79060172",
+        "size_in_bytes": 37385
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "185dfd91de680ce71617bf99ddf90bc049cb83c175a71cd60061ddc8c6206d1b",
+  "size": 28964,
+  "subdir": "linux-64",
+  "timestamp": 1715892650000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/cuda-opencl-12.4.127-h6a678d5_0.conda",
+  "version": "12.4.127"
+}

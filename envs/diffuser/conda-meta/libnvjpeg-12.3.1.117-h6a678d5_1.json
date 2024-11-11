@@ -1,0 +1,66 @@
+{
+  "build": "h6a678d5_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "cuda-version >=12.4,<12.5.0a0",
+    "libgcc-ng >=11.2.0",
+    "libstdcxx-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/cluster/home/mortenhs/.conda/pkgs/libnvjpeg-12.3.1.117-h6a678d5_1",
+  "features": "",
+  "files": [
+    "lib/libnvjpeg.so.12",
+    "lib/libnvjpeg.so.12.3.1.117",
+    "targets/x86_64-linux/lib/libnvjpeg.so.12",
+    "targets/x86_64-linux/lib/libnvjpeg.so.12.3.1.117"
+  ],
+  "fn": "libnvjpeg-12.3.1.117-h6a678d5_1.conda",
+  "license": "LicenseRef-NVIDIA-End-User-License-Agreement",
+  "link": {
+    "source": "/cluster/home/mortenhs/.conda/pkgs/libnvjpeg-12.3.1.117-h6a678d5_1",
+    "type": 1
+  },
+  "md5": "6c33d81ed0de1ce93915e0f57b98564d",
+  "name": "libnvjpeg",
+  "package_tarball_full_path": "/cluster/home/mortenhs/.conda/pkgs/libnvjpeg-12.3.1.117-h6a678d5_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libnvjpeg.so.12",
+        "path_type": "softlink",
+        "sha256": "599b51af0c587182d6a1455c24a89519c4c83c13731507495fb50738762adfb9",
+        "size_in_bytes": 6722352
+      },
+      {
+        "_path": "lib/libnvjpeg.so.12.3.1.117",
+        "path_type": "softlink",
+        "sha256": "599b51af0c587182d6a1455c24a89519c4c83c13731507495fb50738762adfb9",
+        "size_in_bytes": 6722352
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvjpeg.so.12",
+        "path_type": "softlink",
+        "sha256": "599b51af0c587182d6a1455c24a89519c4c83c13731507495fb50738762adfb9",
+        "size_in_bytes": 6722352
+      },
+      {
+        "_path": "targets/x86_64-linux/lib/libnvjpeg.so.12.3.1.117",
+        "path_type": "hardlink",
+        "sha256": "599b51af0c587182d6a1455c24a89519c4c83c13731507495fb50738762adfb9",
+        "sha256_in_prefix": "599b51af0c587182d6a1455c24a89519c4c83c13731507495fb50738762adfb9",
+        "size_in_bytes": 6722352
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "8c54b444680955768ff2aa81e2dbf5fac846a609309268f4d5c09c50ed0e839c",
+  "size": 2675698,
+  "subdir": "linux-64",
+  "timestamp": 1715371593000,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnvjpeg-12.3.1.117-h6a678d5_1.conda",
+  "version": "12.3.1.117"
+}
