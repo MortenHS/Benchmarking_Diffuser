@@ -48,7 +48,7 @@ def get_dataset(env):
         ## the terminal and timeout fields
         dataset = antmaze_fix_timeouts(env, dataset)
         dataset = antmaze_scale_rewards(dataset)
-        get_max_delta(dataset)
+        # get_max_delta(dataset)
 
     return dataset
 
