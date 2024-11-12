@@ -307,7 +307,7 @@ class AntMazeRenderer:
         self.ax.set_xlim(-5, 5)
         self.ax.set_ylim(-5, 5)
         self.goal = self.env.goal_location if hasattr(self.env, 'goal_location') else None
-        self._background = None
+        self._background = self.env.maze_arr == 10
 
     def render(self, observations, conditions=None, **kwargs):
         """
@@ -346,22 +346,63 @@ class AntMazeRenderer:
                 if cell == 1:  # Wall
                     self.ax.add_patch(plt.Rectangle((j - 0.5, i - 0.5), 1, 1, color='black'))
     
-        def composite(self, savepath, paths, ncol=5, **kwargs):
-            '''
-                savepath : str
-                observations : [ n_paths x horizon x 2 ]
-            '''
-            assert len(paths) % ncol == 0, 'Number of paths must be divisible by number of columns'
-            images = []
-            for path, kw in zipkw(paths, **kwargs):
-                img = self.renders(*path, **kw)
-                images.append(img)
-            images = np.stack(images, axis=0)
-            nrow = len(images) // ncol
-            images = einops.rearrange(images,
-                '(nrow ncol) H W C -> (nrow H) (ncol W) C', nrow=nrow, ncol=ncol)
-            imageio.imsave(savepath, images)
-            print(f'Saved {len(paths)} samples to: {savepath}')
+    # def composite(self, savepath, paths, ncol=5, **kwargs):
+    #     '''
+    #         savepath : str
+    #         observations : [ n_paths x horizon x 2 ]
+    #     '''
+    #     assert len(paths) % ncol == 0, 'Number of paths must be divisible by number of columns'
+    #     images = []
+    #     for path, kw in zipkw(paths, **kwargs):
+    #         img = self.render(*path, **kw) #Originally renders with an s
+    #         images.append(img)
+    #     images = np.stack(images, axis=0)
+    #     nrow = len(images) // ncol
+    #     images = einops.rearrange(images,
+    #         '(nrow ncol) H W C -> (nrow H) (ncol W) C', nrow=nrow, ncol=ncol)
+    #     imageio.imsave(savepath, images)
+    #     print(f'Saved {len(paths)} samples to: {savepath}')
+
+    def composite(self, savepath, paths, ncol=5, **kwargs):
+        '''
+        Generate a composite image of multiple trajectories.
+        Args:
+            savepath (str): Path to save the output image.
+            paths (list): List of paths, where each path is [horizon x 2].
+            ncol (int): Number of columns in the composite image.
+        '''
+        assert len(paths) % ncol == 0
+        images = []
+        # Iterate over each path and render it using the AntMazeRenderer
+        for path in paths:
+            # Render the trajectory and capture the output as an image
+            for obs in path:
+                # Render the current observation and convert it to an image
+                self.render([obs])
+                self.fig.canvas.draw()
+        
+                img = np.frombuffer(self.fig.canvas.tostring_rgb(), dtype=np.uint8)
+                img = img.reshape(self.fig.canvas.get_width_height()[::-1] + (3,))
+                
+                if len(img.shape) == 3:
+                    images.append(img)
+        
+        if len(images) == 0:
+            raise ValueError("No images were rendered.")
+        
+        images = np.stack(images, axis=0)
+        if len(images.shape) != 4:
+            raise ValueError(f"Expected 4-dimensional array, but got {images.shape}")
+        
+        nrow = len(images) // ncol
+        images = einops.rearrange(
+            images, '(nrow ncol) H W C -> (nrow H) (ncol W) C', nrow=nrow, ncol=ncol
+        )
+        
+        # Save the composite image
+        imageio.imsave(savepath, images)
+        print(f'Saved {len(paths)} samples to: {savepath}')
+
     # def composite(self, savepath, paths, ncol=5, **kwargs):
     #     '''
     #     Generate a composite image of multiple trajectories.
@@ -396,7 +437,6 @@ class AntMazeRenderer:
     #     # Save the composite image
     #     imageio.imsave(savepath, images)
     #     print(f'Saved {len(paths)} samples to: {savepath}')
-
 
     def close(self):
         """

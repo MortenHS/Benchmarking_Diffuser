@@ -57,7 +57,7 @@ base = {
         'sample_freq': 1000,
         'n_saves': 50,
         'save_parallel': False,
-        'n_reference': 50,
+        'n_reference': 50, 
         'n_samples': 10,
         'bucket': None,
         'device': 'cuda',
