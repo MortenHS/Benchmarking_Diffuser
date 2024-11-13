@@ -12,7 +12,7 @@ import gymnasium_robotics
 #     config: str = 'config.maze2d'
 
 class Parser(utils.Parser):
-    dataset: str = 'antmaze-medium-diverse'
+    dataset: str = 'antmaze-medium-diverse-v2'
     config: str = 'config.antmaze'
 
 args = Parser().parse_args('diffusion')

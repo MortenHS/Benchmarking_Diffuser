@@ -28,9 +28,7 @@ from d4rl.locomotion import goal_reaching_env
 from d4rl.locomotion import maze_env
 from d4rl import offline_env
 from d4rl.locomotion import wrappers
-import gymnasium as gym
-import gymnasium_robotics
-from gymnasium_robotics.envs.maze import ant_maze_v5
+from d4rl.pointmaze.maze_model import parse_maze
 
 
 # from d4rl.pointmaze import maze_model
@@ -243,28 +241,34 @@ class AntMazeEnv(maze_env.MazeEnv, GoalReachingAntEnv, offline_env.OfflineEnv):
   """Ant navigating a maze."""
   LOCOMOTION_ENV = GoalReachingAntEnv
 
-  def __init__(self, goal_sampler=None, expose_all_qpos=True,
-               reward_type='dense', v2_resets=False,
-               *args, **kwargs):
+  def __init__(self, maze_spec=U_MAZE, maze_arr='found', goal_sampler=None, expose_all_qpos=True, 
+               reward_type='dense', v2_resets=False, 
+               *args, **kwargs):    
+    # print(f"[AntMazeEnv] Initializing with maze_arr: {maze_arr}")
+    offline_env.OfflineEnv.__init__(self, **kwargs)
+
     if goal_sampler is None:
       goal_sampler = lambda np_rand: maze_env.MazeEnv.goal_sampler(self, np_rand)
+    
+    self.str_maze_spec = maze_spec
+    self.maze_arr = 'found' #parse_maze(maze_spec)
+    print(f"[AntMazeEnv] self.maze_arr set to: {self.maze_arr}")
 
     maze_env.MazeEnv.__init__(
         self, *args, manual_collision=False,
         goal_sampler=goal_sampler,
         expose_all_qpos=expose_all_qpos,
         reward_type=reward_type,
+        maze_arr=maze_arr,
         **kwargs)
-    offline_env.OfflineEnv.__init__(self, **kwargs)    
-
-    self.maze_model_env = maze_model.MazeEnv(maze_arr=maze_arr, str_maze_spec=str_maze_spec)
-    self.str_maze_spec = self.maze_model_env.str_maze_spec
-    self.maze_arr = parse_maze(str_maze_spec)
-    # #--------------------------------------------------------
+    print(f"[AntMazeEnv] After MazeEnv init, self.maze_arr: {getattr(self, 'maze_arr', None)}")
+        
+  
     # We set the target goal here for evaluation
     self.set_target()
     self.v2_resets = v2_resets
-          
+    print(f"[AntMazeEnv] Initialization complete. self.maze_arr: {self.maze_arr}")
+        
   def reset(self):
     if self.v2_resets:
       """

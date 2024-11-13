@@ -141,6 +141,7 @@ class MazeEnv(gym.Env):
       manual_collision=False,
       non_zero_reset=False,
       reward_type='dense',
+      maze_arr='found',
       *args,
       **kwargs):
     if self.LOCOMOTION_ENV is None:
@@ -149,7 +150,7 @@ class MazeEnv(gym.Env):
     xml_path = self.LOCOMOTION_ENV.FILE
     tree = ET.parse(xml_path)
     worldbody = tree.find(".//worldbody")
-
+    self.maze_arr = maze_arr
     self._maze_map = maze_map
 
     self._maze_height = maze_height
@@ -201,7 +202,7 @@ class MazeEnv(gym.Env):
     _, file_path = tempfile.mkstemp(text=True, suffix='.xml')
     tree.write(file_path)
 
-    self.LOCOMOTION_ENV.__init__(self, *args, file_path=file_path, non_zero_reset=non_zero_reset, reward_type=reward_type, **kwargs)
+    self.LOCOMOTION_ENV.__init__(self, *args, file_path=file_path, non_zero_reset=non_zero_reset, reward_type=reward_type, maze_arr=maze_arr, **kwargs)
 
     self.target_goal = None
 

@@ -155,7 +155,6 @@ OPEN = \
 
 class MazeEnv(mujoco_env.MujocoEnv, utils.EzPickle, offline_env.OfflineEnv):
     def __init__(self,
-                 maze_spec=U_MAZE,
                  reward_type='dense',
                  reset_target=False,
                  **kwargs):
