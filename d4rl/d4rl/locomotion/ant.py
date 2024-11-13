@@ -221,6 +221,25 @@ OPEN = \
         "#OOOOO#\\"+\
         "#######"
 
+class MazeParser:
+  def __init__(self, maze_str):
+    self.maze_str = self.parse_maze(maze_str)
+
+  @staticmethod
+  def parse_maze(maze_str):
+    lines = maze_str.strip().split('\\')
+    width, height = len(lines), len(lines[0])
+    maze_arr = np.zeros((width, height), dtype=np.int32)
+    for w in range(width):
+        for h in range(height):
+            tile = lines[w][h]
+            if tile == '#':
+                maze_arr[w, h] = WALL
+            elif tile == ' ':
+                maze_arr[w, h] = EMPTY
+            elif tile == 'G':
+                maze_arr[w, h] = GOAL
+    return maze_arr
 
 class GoalReachingAntEnv(goal_reaching_env.GoalReachingEnv, AntEnv):
   """Ant locomotion rewarded for goal-reaching."""
@@ -292,6 +311,9 @@ class AntMazeEnv(maze_env.MazeEnv, GoalReachingAntEnv, offline_env.OfflineEnv):
 
   def seed(self, seed=0):
       mujoco_env.MujocoEnv.seed(self, seed)
+
+  def get_maze_arr(self):
+    return maze_arr == 10
 
 def make_ant_maze_env(**kwargs):
   env = AntMazeEnv(**kwargs)

@@ -32,7 +32,7 @@ base = {
         'loss_discount': 1,
         'predict_epsilon': False,
         'dim_mults': (1, 4, 8),
-        'renderer': 'utils.MazeRenderer',
+        'renderer': 'utils.AntMazeRenderer',
         ## dataset
         'loader': 'datasets.GoalDataset',
         'termination_penalty': None,

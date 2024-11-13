@@ -13,6 +13,7 @@ from .arrays import to_np
 from .video import save_video, save_videos
 from diffuser.datasets.d4rl import load_environment
 from d4rl.locomotion.ant import AntMazeEnv
+from d4rl.locomotion.ant import MazeParser
 
 #-----------------------------------------------------------------------------#
 #------------------------------- helper structs ------------------------------#
@@ -273,14 +274,40 @@ class Maze2dRenderer(MazeRenderer):
     def __init__(self, env, observation_dim=None):
         self.env_name = env
         self.env = load_environment(env)
-        print("\n[Maze2dRenderer] Explicit attributes of env:")
-        print(vars(self.env))
         self.observation_dim = np.prod(self.env.observation_space.shape)
         self.action_dim = np.prod(self.env.action_space.shape)
         self.goal = None
         self._background = self.env.maze_arr == 10
         self._remove_margins = False
         self._extent = (0, 1, 1, 0)
+    def renders(self, observations, conditions=None, **kwargs):
+        bounds = MAZE_BOUNDS[self.env_name]
+        observations = observations + .5
+        if len(bounds) == 2:
+            _, scale = bounds
+            observations /= scale
+        elif len(bounds) == 4:
+            _, iscale, _, jscale = bounds
+            observations[:, 0] /= iscale
+            observations[:, 1] /= jscale
+        else:
+            raise RuntimeError(f'Unrecognized bounds for {self.env_name}: {bounds}')
+        if conditions is not None:
+            conditions /= scale
+        return super().renders(observations, conditions, **kwargs)
+
+class AntMazeRenderer(MazeRenderer):
+    def __init__(self, env, maze_parser, observation_dim=None):
+        self.maze_arr = maze_parser.maze_arr
+        self._background = self.maze_arr == 10
+        self.env_name = env
+        self.env = load_environment(env)
+        self.observation_dim = np.prod(self.env.observation_space.shape)
+        self.action_dim = np.prod(self.env.action_space.shape)
+        self.goal = self.env.set_target()
+        self._remove_margins = False
+        self._extent = (0, 1, 1, 0)
+
     def renders(self, observations, conditions=None, **kwargs):
         bounds = MAZE_BOUNDS[self.env_name]
         observations = observations + .5
