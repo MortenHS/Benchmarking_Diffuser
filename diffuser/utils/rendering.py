@@ -222,8 +222,11 @@ class MuJoCoRenderer:
 MAZE_BOUNDS = {
     'maze2d-umaze-v1': (0, 5, 0, 5),
     'maze2d-medium-v1': (0, 8, 0, 8),
-    'maze2d-large-v1': (0, 9, 0, 12)
-    # ,'antmaze-medium-diverse':(0, 9, 0, 12)
+    'maze2d-large-v1': (0, 9, 0, 12),
+    # Egendefinerte
+    'antmaze-medium-diverse':(0, 8, 0, 8),
+    'antmaze-large-diverse':(0, 16, 0, 16),
+    'antmaze-umaze':(0, 5, 0, 5)
 }
 
 class MazeRenderer:

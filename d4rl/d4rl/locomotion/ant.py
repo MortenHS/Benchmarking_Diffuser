@@ -28,8 +28,13 @@ from d4rl.locomotion import goal_reaching_env
 from d4rl.locomotion import maze_env
 from d4rl import offline_env
 from d4rl.locomotion import wrappers
+import gymnasium as gym
+import gymnasium_robotics
+from gymnasium_robotics.envs.maze import ant_maze_v5
 
-from d4rl.maze_model import parse_maze
+
+# from d4rl.pointmaze import maze_model
+# from d4rl.pointmaze.maze_model import parse_maze
 
 GYM_ASSETS_DIR = os.path.join(
     os.path.dirname(mujoco_goal_env.__file__),
@@ -239,24 +244,23 @@ class AntMazeEnv(maze_env.MazeEnv, GoalReachingAntEnv, offline_env.OfflineEnv):
   LOCOMOTION_ENV = GoalReachingAntEnv
 
   def __init__(self, goal_sampler=None, expose_all_qpos=True,
-               reward_type='dense', v2_resets=False, maze_arr=10, str_maze_spec=MEDIUM_MAZE,
+               reward_type='dense', v2_resets=False,
                *args, **kwargs):
     if goal_sampler is None:
       goal_sampler = lambda np_rand: maze_env.MazeEnv.goal_sampler(self, np_rand)
+
     maze_env.MazeEnv.__init__(
         self, *args, manual_collision=False,
         goal_sampler=goal_sampler,
         expose_all_qpos=expose_all_qpos,
         reward_type=reward_type,
-        maze_arr=maze_arr,
         **kwargs)
-    offline_env.OfflineEnv.__init__(self, **kwargs)
+    offline_env.OfflineEnv.__init__(self, **kwargs)    
 
-    # Import from maze_model.py
     self.maze_model_env = maze_model.MazeEnv(maze_arr=maze_arr, str_maze_spec=str_maze_spec)
     self.str_maze_spec = self.maze_model_env.str_maze_spec
     self.maze_arr = parse_maze(str_maze_spec)
-    #--------------------------------------------------------
+    # #--------------------------------------------------------
     # We set the target goal here for evaluation
     self.set_target()
     self.v2_resets = v2_resets
@@ -288,4 +292,4 @@ class AntMazeEnv(maze_env.MazeEnv, GoalReachingAntEnv, offline_env.OfflineEnv):
 def make_ant_maze_env(**kwargs):
   env = AntMazeEnv(**kwargs)
   return wrappers.NormalizedBoxEnv(env)
-  
+
