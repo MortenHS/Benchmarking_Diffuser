@@ -57,7 +57,7 @@ class OfflineEnv(gym.Env):
 
     def __init__(self, dataset_url=None, ref_max_score=None, ref_min_score=None, 
                        deprecated=False, deprecation_message=None, **kwargs):
-        super(OfflineEnv, self).__init__(**kwargs)
+        super(OfflineEnv, self).__init__() # removed **kwargs
         self.dataset_url = self._dataset_url = dataset_url
         self.ref_max_score = ref_max_score
         self.ref_min_score = ref_min_score

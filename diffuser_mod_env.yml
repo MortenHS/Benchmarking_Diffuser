@@ -1,4 +1,4 @@
-name: diffuser_mod
+name: diffuser_work
 channels:
   - conda-forge
   - defaults
@@ -154,4 +154,4 @@ dependencies:
       - urllib3==2.2.3
       - virtualenv==20.27.1
       - wandb==0.18.6
-prefix: /cluster/work/mortenhs/.conda/envs/diffuser_mod
+prefix: /cluster/work/mortenhs/.conda/envs/diffuser_work

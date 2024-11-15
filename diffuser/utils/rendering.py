@@ -13,7 +13,6 @@ from .arrays import to_np
 from .video import save_video, save_videos
 from diffuser.datasets.d4rl import load_environment
 from d4rl.locomotion.ant import AntMazeEnv
-from d4rl.locomotion.ant import MazeParser
 
 #-----------------------------------------------------------------------------#
 #------------------------------- helper structs ------------------------------#
@@ -226,15 +225,32 @@ MAZE_BOUNDS = {
     'maze2d-large-v1': (0, 9, 0, 12),
     # Egendefinerte
     'antmaze-medium-diverse':(0, 8, 0, 8),
-    'antmaze-large-diverse':(0, 16, 0, 16),
+    'antmaze-large-diverse':(0, 9, 0, 12),
     'antmaze-umaze':(0, 5, 0, 5)
 }
+
+WALL = 10
+EMPTY = 11
+GOAL = 12
+def parse_maze(maze_str):
+  lines = maze_str.strip().split('\\')
+  width, height = len(lines), len(lines[0])
+  maze_arr = np.zeros((width, height), dtype=np.int32)
+  for w in range(width):
+      for h in range(height):
+          tile = lines[w][h]
+          if tile == '#':
+              maze_arr[w, h] = WALL
+          elif tile == ' ':
+              maze_arr[w, h] = EMPTY
+          elif tile == 'G':
+              maze_arr[w, h] = GOAL
+  return maze_arr
+
 
 class MazeRenderer:
     def __init__(self, env):
         if type(env) is str: env = load_environment(env)
-        print("\n[MazeRenderer] Explicit attributes of env:")
-        print(vars(env))
         self._config = env._config
         self._background = self._config != ' '
         self._remove_margins = False
@@ -278,6 +294,7 @@ class Maze2dRenderer(MazeRenderer):
         self.action_dim = np.prod(self.env.action_space.shape)
         self.goal = None
         self._background = self.env.maze_arr == 10
+        print(f"Background in Maze2dRenderer: {self._background}")
         self._remove_margins = False
         self._extent = (0, 1, 1, 0)
     def renders(self, observations, conditions=None, **kwargs):
@@ -297,17 +314,16 @@ class Maze2dRenderer(MazeRenderer):
         return super().renders(observations, conditions, **kwargs)
 
 class AntMazeRenderer(MazeRenderer):
-    def __init__(self, env, maze_parser, observation_dim=None):
-        self.maze_arr = maze_parser.maze_arr
-        self._background = self.maze_arr == 10
+    def __init__(self, env, observation_dim=None):
         self.env_name = env
         self.env = load_environment(env)
         self.observation_dim = np.prod(self.env.observation_space.shape)
         self.action_dim = np.prod(self.env.action_space.shape)
         self.goal = self.env.set_target()
+        self._background = parse_maze(self.env.str_maze_spec)
+        print(f"Background in AntMazeRenderer: {self._background}")
         self._remove_margins = False
         self._extent = (0, 1, 1, 0)
-
     def renders(self, observations, conditions=None, **kwargs):
         bounds = MAZE_BOUNDS[self.env_name]
         observations = observations + .5

@@ -30,10 +30,6 @@ from d4rl import offline_env
 from d4rl.locomotion import wrappers
 from d4rl.pointmaze.maze_model import parse_maze
 
-
-# from d4rl.pointmaze import maze_model
-# from d4rl.pointmaze.maze_model import parse_maze
-
 GYM_ASSETS_DIR = os.path.join(
     os.path.dirname(mujoco_goal_env.__file__),
     'assets')
@@ -221,25 +217,21 @@ OPEN = \
         "#OOOOO#\\"+\
         "#######"
 
-class MazeParser:
-  def __init__(self, maze_str):
-    self.maze_str = self.parse_maze(maze_str)
 
-  @staticmethod
-  def parse_maze(maze_str):
-    lines = maze_str.strip().split('\\')
-    width, height = len(lines), len(lines[0])
-    maze_arr = np.zeros((width, height), dtype=np.int32)
-    for w in range(width):
-        for h in range(height):
-            tile = lines[w][h]
-            if tile == '#':
-                maze_arr[w, h] = WALL
-            elif tile == ' ':
-                maze_arr[w, h] = EMPTY
-            elif tile == 'G':
-                maze_arr[w, h] = GOAL
-    return maze_arr
+# def parse_maze(maze_str):
+#   lines = maze_str.strip().split('\\')
+#   width, height = len(lines), len(lines[0])
+#   maze_arr = np.zeros((width, height), dtype=np.int32)
+#   for w in range(width):
+#       for h in range(height):
+#           tile = lines[w][h]
+#           if tile == '#':
+#               maze_arr[w, h] = WALL
+#           elif tile == ' ':
+#               maze_arr[w, h] = EMPTY
+#           elif tile == 'G':
+#               maze_arr[w, h] = GOAL
+#   return maze_arr
 
 class GoalReachingAntEnv(goal_reaching_env.GoalReachingEnv, AntEnv):
   """Ant locomotion rewarded for goal-reaching."""
@@ -260,33 +252,28 @@ class AntMazeEnv(maze_env.MazeEnv, GoalReachingAntEnv, offline_env.OfflineEnv):
   """Ant navigating a maze."""
   LOCOMOTION_ENV = GoalReachingAntEnv
 
-  def __init__(self, maze_spec=U_MAZE, maze_arr='found', goal_sampler=None, expose_all_qpos=True, 
+  def __init__(self, maze_spec=MEDIUM_MAZE, goal_sampler=None, expose_all_qpos=True, 
                reward_type='dense', v2_resets=False, 
                *args, **kwargs):    
-    # print(f"[AntMazeEnv] Initializing with maze_arr: {maze_arr}")
-    offline_env.OfflineEnv.__init__(self, **kwargs)
-
+  
     if goal_sampler is None:
       goal_sampler = lambda np_rand: maze_env.MazeEnv.goal_sampler(self, np_rand)
     
     self.str_maze_spec = maze_spec
-    self.maze_arr = 'found' #parse_maze(maze_spec)
-    print(f"[AntMazeEnv] self.maze_arr set to: {self.maze_arr}")
+    self.maze_arr = parse_maze(self.str_maze_spec)
 
     maze_env.MazeEnv.__init__(
         self, *args, manual_collision=False,
         goal_sampler=goal_sampler,
         expose_all_qpos=expose_all_qpos,
         reward_type=reward_type,
-        maze_arr=maze_arr,
+        # maze_arr=maze_arr,
         **kwargs)
-    print(f"[AntMazeEnv] After MazeEnv init, self.maze_arr: {getattr(self, 'maze_arr', None)}")
-        
+    offline_env.OfflineEnv.__init__(self, **kwargs)       
   
     # We set the target goal here for evaluation
     self.set_target()
     self.v2_resets = v2_resets
-    print(f"[AntMazeEnv] Initialization complete. self.maze_arr: {self.maze_arr}")
         
   def reset(self):
     if self.v2_resets:

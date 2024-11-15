@@ -13,6 +13,9 @@ GOAL = 12
 
 
 def parse_maze(maze_str):
+    WALL = 10
+    EMPTY = 11
+    GOAL = 12
     lines = maze_str.strip().split('\\')
     width, height = len(lines), len(lines[0])
     maze_arr = np.zeros((width, height), dtype=np.int32)
@@ -155,6 +158,7 @@ OPEN = \
 
 class MazeEnv(mujoco_env.MujocoEnv, utils.EzPickle, offline_env.OfflineEnv):
     def __init__(self,
+                 maze_spec=U_MAZE,
                  reward_type='dense',
                  reset_target=False,
                  **kwargs):
