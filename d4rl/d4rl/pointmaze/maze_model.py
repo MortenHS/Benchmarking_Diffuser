@@ -13,9 +13,6 @@ GOAL = 12
 
 
 def parse_maze(maze_str):
-    WALL = 10
-    EMPTY = 11
-    GOAL = 12
     lines = maze_str.strip().split('\\')
     width, height = len(lines), len(lines[0])
     maze_arr = np.zeros((width, height), dtype=np.int32)
